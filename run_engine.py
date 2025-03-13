@@ -4,15 +4,18 @@ import csv
 import os
 import re
 from functools import partial
+from PIL import Image, ImageTk 
 
 root = ""
 book_title = ""
 title_widget = None
 text_widget = None
 button_frame = None
+image_frame = None
+image_label = None
 buttons = []
 book_data = {}
-read_head = "631"
+read_head = "1"
 fg_color = "black"
 bg_color = "white"
 
@@ -43,6 +46,33 @@ def load_data(file):
             book_data[data[0]].links = links.copy()
             book_data[data[0]].img = data[-1]
 
+def resize_image(image, width):
+    # Maintain aspect ratio
+    original_width, original_height = image.size
+    aspect_ratio = original_height / original_width
+    new_height = int(width * aspect_ratio)
+    return image.resize((width, new_height), Image.LANCZOS)
+
+def load_image(image_path, image_label, text_widget):
+    full_path = os.path.realpath(__file__)
+    img_path = os.path.dirname(full_path) + "\\data\\" + image_path
+
+    try:
+        image = Image.open(img_path)
+        resized_image = resize_image(image, 600)
+        photo = ImageTk.PhotoImage(resized_image)
+        image_label.config(image=photo)
+        image_label.image = photo
+
+        # Adjust the text widget height based on the image height
+        image_height = resized_image.size[1]
+        total_height = 660  # Original window height
+        text_widget_height = total_height - image_height
+        text_widget.config(height=int(text_widget_height / 20))  # 20 is an approximate height of a text line in pixels
+
+    except Exception as e:
+        image_label.config(text=f"Failed to load image: {e}")
+
 def main():
     # load book data
     load_data("vob.txt")
@@ -67,13 +97,18 @@ def main():
                             bg=bg_color, fg=fg_color, padx=10, pady=10)
     title_widget.pack(fill=tk.X)
 
+    # Load and display a placeholder image
+    global image_frame
+    image_frame = tk.Frame(main_frame)
+    image_frame.pack(fill=tk.X)
+  
     # Create a frame for the text area (left side)
     text_frame = tk.Frame(main_frame)
     text_frame.pack(fill=tk.BOTH, expand=True)
 
     # Create the Text widget for displaying text
     global text_widget
-    text_widget = tk.Text(text_frame, wrap=tk.WORD, font=("Cascadia Mono", 12), bg=bg_color, fg=fg_color, padx=10, pady=10)
+    text_widget = tk.Text(text_frame, wrap=tk.WORD, font=("Cascadia Mono", 12), bg=bg_color, fg=fg_color, padx=10, pady=0)
     text_widget.grid(row=0, column=0, sticky="nsew")
 
     # Make sure the text_frame resizes properly
@@ -103,6 +138,23 @@ def main():
 
 # link story item 
 def link_item(index):
+    # Reset text widget height
+    #text_widget.config(height=800)
+
+    global image_label
+    # Load photo if available
+    if book_data[index].img:
+        image_label = tk.Label(image_frame)
+        image_label.pack()
+        load_image(book_data[index].img, image_label, text_widget)
+    else:
+        # No image, remove image_frame from view
+        image_frame.pack_forget()
+        if image_label:
+            image_label.pack_forget()
+            image_label.destroy()
+            image_label = None  # Ensure the label is fully removed
+
     # Update the title widget
     title_widget.config(text=index)
 
