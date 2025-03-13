@@ -4,11 +4,12 @@ import csv
 import os
 import re
 from functools import partial
-from PIL import Image, ImageTk 
+from PIL import Image, ImageTk
 
-root = ""
+root = None
 book_title = ""
 title_widget = None
+text_frame = None
 text_widget = None
 button_frame = None
 image_frame = None
@@ -51,6 +52,10 @@ def resize_image(image, width):
     original_width, original_height = image.size
     aspect_ratio = original_height / original_width
     new_height = int(width * aspect_ratio)
+    if new_height > 500:
+        aspect_ratio = original_width / original_height
+        width = int(width * aspect_ratio)
+        new_height = 500
     return image.resize((width, new_height), Image.LANCZOS)
 
 def load_image(image_path, image_label, text_widget):
@@ -78,6 +83,7 @@ def main():
     load_data("vob.txt")
     
     # Create the main tkinter window
+    global root
     root = tk.Tk()
     root.title(book_title)
     root.geometry("600x800")
@@ -103,6 +109,7 @@ def main():
     image_frame.pack(fill=tk.X)
   
     # Create a frame for the text area (left side)
+    global text_frame
     text_frame = tk.Frame(main_frame)
     text_frame.pack(fill=tk.BOTH, expand=True)
 
@@ -139,25 +146,37 @@ def main():
 # link story item 
 def link_item(index):
     # Reset text widget height
-    #text_widget.config(height=800)
+    text_widget.config(height=int(660 / 20))  # Reset to default height
 
     global image_label
-    # Load photo if available
+    global text_frame
+    
+    # Check if the book item has an image
     if book_data[index].img:
-        image_label = tk.Label(image_frame)
-        image_label.pack()
-        load_image(book_data[index].img, image_label, text_widget)
-    else:
-        # No image, remove image_frame from view
-        image_frame.pack_forget()
-        if image_label:
-            image_label.pack_forget()
-            image_label.destroy()
-            image_label = None  # Ensure the label is fully removed
+        # If image_label doesn't exist, create it and pack the image_frame
+        if image_label is None:
+            image_label = tk.Label(image_frame)
+            image_label.pack(fill=tk.X)  # Pack it to fill the width of the frame
 
-    # Update the title widget
+        # Load the image into the label
+        load_image(book_data[index].img, image_label, text_widget)
+
+        # Ensure the image_frame is visible and packed above the text_frame
+        image_frame.pack(fill=tk.X, before=text_frame)  # Pack above the text_frame
+    else:
+        # If no image, remove the image label if it exists
+        if image_label:
+            image_label.pack_forget()  # Remove the image from view
+            image_label.destroy()  # Destroy the label
+            image_label = None  # Nullify the reference
+
+        # Hide the image_frame entirely (so it doesn't take up space)
+        image_frame.pack_forget()  # Remove the frame from the layout
+
+    # Update the title widget with the current index
     title_widget.config(text=index)
 
+    # Prepare the text widget for content display
     text_widget.config(state=tk.NORMAL)
     text_widget.delete(1.0, tk.END)
 
@@ -181,7 +200,6 @@ def link_item(index):
             if match:
                 if not next_match or match.start() < next_match.start():
                     next_match = match
-                    next_tag = pattern
                     tag_name = name
         
         if next_match:
@@ -221,12 +239,13 @@ def link_item(index):
             text_widget.insert(tk.END, book_data[index].content[pos:])
             break
 
-
     text_widget.config(state=tk.DISABLED)  # Disable editing
 
+    # Clear any previously created buttons
     for button in buttons:
         button.destroy()
 
+    # Show buttons for links related to the current index
     show_buttons(book_data[index].links)
 
 # show a button for each item. Items is a list containing indexes

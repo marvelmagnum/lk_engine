@@ -20,4 +20,4 @@ Health
 9
 </td>
 If you win, turn to <b>1</b>.  You can flee at the start of your round if you wish.  If you do, the orcs will chase you out of the dungeon.  Turn to <b>631</b>.",2,1,631,""
-631,"The treasure chest contains <b>200 silver coins</b> and a <b>bluestone</b>.  Take what you wish, and then <i>record the code A45</i>.  Not wishing to tarry longer, you depart the chamber and return to the crossroads.  Turn to <b>46</b>.",1,46,""
+631,"The treasure chest contains <b>200 silver coins</b> and a <b>bluestone</b>.  Take what you wish, and then <i>record the code A45</i>.  Not wishing to tarry longer, you depart the chamber and return to the crossroads.  Turn to <b>46</b>.",1,46,"img2.jpeg"
