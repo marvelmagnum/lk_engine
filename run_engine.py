@@ -257,11 +257,23 @@ def link_item(index):
 # show a button for each item. Items is a list containing indexes
 def show_buttons(items):
     count = len(items)
+    # can hold max 10 buttons
+    # Adjust for best fit buttons (Optimal specs: width 5 chars, pad= 10 px)
+    final_width = 5 # each char takes 15px approx. so 75
+    final_pad = 10
+    optimal_space = count * 75 + (count - 1) * 10
+    if optimal_space > 650:
+        final_pad = 0
+        while final_pad < 2:
+            space = 650 - (final_width * count * 15)
+            final_pad = min(int(space / (count - 1)), 10)
+            if final_pad < 2:
+                final_width -= 1
 
     # Create some buttons and add them to the button_frame
     for item in items:
-        button = tk.Button(button_frame, text=item, width=5, command=partial(link_item, item), font=("Impact", 12))
-        button.pack(side=tk.LEFT, padx=10, pady=10)
+        button = tk.Button(button_frame, text=item, width=final_width, command=partial(link_item, item), font=("Impact", 12))
+        button.pack(side=tk.LEFT, padx=final_pad, pady=10)
         buttons.append(button)
 
 
