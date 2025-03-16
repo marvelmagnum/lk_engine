@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import filedialog
 from PIL import Image, ImageTk
 import os
 import csv
@@ -56,30 +57,28 @@ def validate_input(new_value):
     except ValueError:
         return False
 
-def main():
-    root = tk.Tk()
-    root.title("JPEG Image Viewer")
-    root.resizable(False, False)
-
-    # Store PhotoImage objects in a list to prevent garbage collection
-    photo_references = []
-
-    # Load all images from the folder
+def image_viewer(root):
     full_path = os.path.realpath(__file__)
-    folder_path = os.path.dirname(full_path) + "\\data\\"
+    folder_path = os.path.dirname(full_path) + "\\data"
 
-    # List of image filenames
-    image_files = ["img1.jpeg", "img2.jpeg"]  # Add more filenames as needed
+    images = [f for f in os.listdir(folder_path) if f.lower().endswith((".jpg", ".jpeg"))]
+    current_index = 0
+    
+    # Check if there are no jpeg images in the folder
+    if not images:
+        print("No JPEG images found in the folder.")
+        root.quit()
 
-    for image_file in image_files:
-        image_path = os.path.join(folder_path, image_file)
+    photo_references = []
+    for img in images:
+        image_path = folder_path + "\\" + img
         try:
             image = Image.open(image_path)
             image = resize_image(image, 600)
             photo = ImageTk.PhotoImage(image)
-            photo_references.append(photo)  # Store the reference
+            photo_references.append((photo, img))  # Store the reference
         except Exception as e:
-            print(f"Error loading image {image_file}: {e}")
+            print(f"Error loading image {image_path}: {e}")
 
     # Create a label to display the image
     label = tk.Label(root)
@@ -88,15 +87,35 @@ def main():
     # Index to track the current image
     current_index = 0
 
-    def show_next_image():
+    def save_img_link():
+        # Print the contents of the textbox to the console
+        img_link = textbox.get()
+        if img_link in book_data.keys():
+            book_data[img_link].img = photo_references[current_index-1][1]
+        
         # Clear the textbox
         textbox.delete(0, tk.END)
 
+        if current_index == len(photo_references):
+            # Write the data file and quit program
+            with open("test.txt", 'w', encoding='utf-8') as outfile:
+                outfile.write(book_title + '\n')
+                for data in book_data:
+                    entry = data + ',"' + book_data[data].content + '",' + str(len(book_data[data].links))
+                    for link in book_data[data].links:
+                        entry += ',' + link
+                    entry += ',"' + book_data[data].img + '"'
+                    outfile.write(entry + '\n')
+            root.destroy()
+        else:
+            show_next_image()
+
+    def show_next_image():
         nonlocal current_index
         if photo_references:
             if current_index < len(photo_references):
                 # Update the label with the current image
-                label.config(image=photo_references[current_index])
+                label.config(image=photo_references[current_index][0])
                 current_index += 1
 
                 # Update the image count label
@@ -104,7 +123,7 @@ def main():
 
                 # If this is the last image, change the button text to "Quit"
                 if current_index == len(photo_references):
-                    next_button.config(text="Quit", command=root.destroy)
+                    next_button.config(text="Quit")
         else:
             print("No images to display.")
 
@@ -129,12 +148,23 @@ def main():
     textbox.pack(side=tk.LEFT, padx=5)  # Place the textbox to the left
 
     # Create a button to show the next image
-    next_button = tk.Button(control_frame, text="Next", command=show_next_image)
+    next_button = tk.Button(control_frame, text="Next", command=save_img_link)
     next_button.pack(side=tk.LEFT)  # Place the button to the right of the textbox.pack()
 
     # Show the first image initially
     show_next_image()
 
+def main():
+    root = tk.Tk()
+    root.title("JPEG Image Viewer")
+    root.resizable(False, False)
+
+    load_data("vob.txt")
+
+    # Initialize ImageViewer with the selected folder
+    image_viewer(root)
+        
+    # Start the Tkinter event loop
     root.mainloop()
 
 if __name__ == "__main__":
