@@ -79,7 +79,7 @@ def load_image(image_path, image_label, text_widget):
 
 def main():
     # load book data
-    load_data("vob.txt")
+    load_data("book.csv")
     
     # Create the main tkinter window
     global root

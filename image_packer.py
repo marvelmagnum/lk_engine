@@ -6,6 +6,7 @@ import csv
 
 book_title = ""
 book_data = {}
+data_file_name = "book.csv"
 
 class BookIndex:
     content = ""
@@ -98,7 +99,9 @@ def image_viewer(root):
 
         if current_index == len(photo_references):
             # Write the data file and quit program
-            with open("test.txt", 'w', encoding='utf-8') as outfile:
+            full_path = os.path.realpath(__file__)
+            data_path = os.path.dirname(full_path) + "\\data\\" + data_file_name
+            with open(data_path, 'w', encoding='utf-8') as outfile:
                 outfile.write(book_title + '\n')
                 for data in book_data:
                     entry = data + ',"' + book_data[data].content + '",' + str(len(book_data[data].links))
@@ -159,7 +162,7 @@ def main():
     root.title("JPEG Image Viewer")
     root.resizable(False, False)
 
-    load_data("vob.txt")
+    load_data(data_file_name)
 
     # Initialize ImageViewer with the selected folder
     image_viewer(root)
