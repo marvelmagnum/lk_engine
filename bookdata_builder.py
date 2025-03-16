@@ -1,4 +1,5 @@
 import re
+import os
 
 def parse_section(section_text):
     # Extract the section number (it appears at the start of the section)
@@ -45,7 +46,10 @@ def extract_book_name(section_text):
     return None
 
 def convert_to_csv(input_file, output_file):
-    with open(input_file, 'r', encoding='utf-8') as infile:
+    full_path = os.path.realpath(__file__)
+    input_path = os.path.dirname(full_path) + "\\output\\" + input_file
+    output_path = os.path.dirname(full_path) + "\\data\\" + output_file
+    with open(input_path, 'r', encoding='utf-8') as infile:
         content = infile.read()
     
     # Split the content into sections based on the section number pattern
@@ -61,7 +65,7 @@ def convert_to_csv(input_file, output_file):
     sections = [(sections[i], sections[i+1]) for i in range(1, len(sections)-1, 2)]
     
     # Open the output file
-    with open(output_file, 'w', encoding='utf-8') as outfile:
+    with open(output_path, 'w', encoding='utf-8') as outfile:
         if book_name:
             outfile.write(f"{book_name}\n")  # Write only the book name
         
@@ -88,7 +92,7 @@ def convert_to_csv(input_file, output_file):
 
 # Input and output file paths
 input_file = 'extracted_text.txt'
-output_file = 'data.txt'
+output_file = 'book.csv'
 
 # Convert the input file to the desired CSV format
 convert_to_csv(input_file, output_file)

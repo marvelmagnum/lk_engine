@@ -1,10 +1,16 @@
 import os
 import re
 import fitz  # PyMuPDF
+from tkinter import Tk
+from tkinter.filedialog import askopenfilename
 
-def extract_text_and_images(pdf_path, output_folder="output"):
+def extract_text_and_images(pdf_path):
+    full_path = os.path.realpath(__file__)
+    output_path = os.path.dirname(full_path) + "\\output"
+    image_path = os.path.dirname(full_path) + "\\data"
+
     # Create output folder if it doesn't exist
-    os.makedirs(output_folder, exist_ok=True)
+    os.makedirs(output_path, exist_ok=True)
     
     # Open the PDF file
     doc = fitz.open(pdf_path)
@@ -45,7 +51,7 @@ def extract_text_and_images(pdf_path, output_folder="output"):
             image_count += 1
 
             # Save the image
-            image_filename = f"{output_folder}/image_{page_num + 1}_{image_count}.{image_ext}"
+            image_filename = f"{image_path}/image_{page_num + 1}_{image_count}.{image_ext}"
             with open(image_filename, "wb") as img_file:
                 img_file.write(image_data)
     
@@ -57,11 +63,11 @@ def extract_text_and_images(pdf_path, output_folder="output"):
     #extracted_text = break_midline_tabs(extracted_text)
     
     # Save the extracted text to a file
-    text_file_path = os.path.join(output_folder, "extracted_text.txt")
+    text_file_path = os.path.join(output_path, "extracted_text.txt")
     with open(text_file_path, "w", encoding="utf-8") as text_file:
         text_file.write(extracted_text)
     
-    print(f"Extraction completed! {image_count} images and text saved in '{output_folder}'.")
+    print(f"Extraction completed! {image_count} images and text saved in '{output_path}'.")
 
 
 def remove_header_footer(text):
@@ -178,5 +184,25 @@ def join_text(text):
 
     return processed
 
+def select_pdf_from_folder():
+    # Hide the root window
+    Tk().withdraw()
+    
+    # Open a file dialog and allow only PDF files
+    file_path = askopenfilename(
+        initialdir="path/to/your/folder",
+        title="Select a PDF file",
+        filetypes=[("PDF Files", "*.pdf")]
+    )
+    
+    if file_path:
+        print(f"You selected: {file_path}")
+        return file_path
+    else:
+        print("No file selected.")
+        return None
+
+
+
 # Example usage
-extract_text_and_images("sample1.pdf")
+extract_text_and_images(select_pdf_from_folder())
