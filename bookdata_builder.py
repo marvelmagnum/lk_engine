@@ -12,8 +12,8 @@ def parse_section(section_text):
     # Extract the text content (everything after the section number)
     text_content = '\n'.join(section_text.split('\n')[1:]).strip()
     
-    # Find all "Turn to <number>" references
-    references = re.findall(r'Turn to (\d+)', text_content)
+    # Find all "Turn to/ turn to <number>" references
+    references = re.findall(r'[Tt]urn to <b>(\d+)[.,]?</b>', text_content)
     
     # Adjust the references by subtracting the offset
     references = [str(int(ref)) for ref in references]
@@ -24,10 +24,10 @@ def parse_section(section_text):
     # Prepare the output row
     output_row = [
         section_number,
-        text_content.replace('\n', ' ').replace('\t', ' ').replace('"', '""'),  # Escape double quotes
+        '"' + text_content + '"', 
         str(num_references),
         *references,
-        ""
+        '""'
     ]
     
     return output_row
@@ -50,7 +50,7 @@ def convert_to_csv(input_file, output_file):
     
     # Split the content into sections based on the section number pattern
     # Each section starts with a number followed by a newline
-    sections = re.split(r'\n(\d+)\s*\n', content)
+    sections = re.split(r'\n(<b>\d+<\/b>)\s*\n', content)
     
     # Extract the book name from the first section
     if sections:
@@ -69,6 +69,7 @@ def convert_to_csv(input_file, output_file):
         # The second section in the input file is the first section of the book, so we use an offset of 1
         expected_section_number = 1  # The first section of the book is 1
         for section_number, section_content in sections[:]:
+            section_number = section_number[3:-4]
             # Check if the section number matches the expected sequence
             if int(section_number) == expected_section_number:
                 # Combine the section number and content for parsing
