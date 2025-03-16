@@ -1,5 +1,4 @@
 import tkinter as tk
-import textwrap
 import csv
 import os
 import re
@@ -221,12 +220,19 @@ def link_item(index):
                 col_widths = [max(len(row[i]) for row in rows) for i in range(4)]
                 
                 # Insert table rows
+
                 for idx, row in enumerate(rows):
-                    formatted_row = "  ".join(f"{col.ljust(col_widths[i])}" for i, col in enumerate(row))
-                    if idx == 0:  # Make the header italic
+                    if idx == 0:
+                        formatted_row = ""
+                        items = []
+                        for i, col in enumerate(row):
+                            items.append(col[3:-4].rstrip('\t').ljust(col_widths[i]))
+                        formatted_row = " ".join(items)
                         text_widget.insert(tk.END, '\n' + formatted_row + '\n', "italic_tag")
                     else:
+                        formatted_row = "  ".join(f"{col.ljust(col_widths[i])}" for i, col in enumerate(row))
                         text_widget.insert(tk.END, formatted_row + '\n', "table_tag")
+                      
             else:
                 # Insert formatted text for bold or italic
                 formatted_text = next_match.group(1)
