@@ -53,7 +53,8 @@ def extract_text_and_images(pdf_path, output_folder="output"):
 
     extracted_text = remove_header_footer(extracted_text)
     extracted_text = find_tables(extracted_text)
-    extracted_text = join_text(extracted_text)
+    #extracted_text = join_text(extracted_text)
+    #extracted_text = break_midline_tabs(extracted_text)
     
     # Save the extracted text to a file
     text_file_path = os.path.join(output_folder, "extracted_text.txt")
@@ -61,6 +62,7 @@ def extract_text_and_images(pdf_path, output_folder="output"):
         text_file.write(extracted_text)
     
     print(f"Extraction completed! {image_count} images and text saved in '{output_folder}'.")
+
 
 def remove_header_footer(text):
     lines = text.split('\n')
@@ -71,7 +73,14 @@ def remove_header_footer(text):
     for index, line in enumerate(lines):
         # add the header/footer at the top of the file once
         # add any lines that are not that afterwards
-        if index < 2  or (line != header and line != footer):
+        if index < 2:
+            if ("<b>" in line and "</b>" in line):
+                line = line.replace("<b>", "")
+                line = line.replace("</b>", "")
+            processed +=  line.title() + '\n'
+            continue
+
+        if (line != header and line != footer):
             processed += line + '\n'
       
     return processed
@@ -105,7 +114,16 @@ def find_tables(text):
     
     return processed
 
-                
+def break_midline_tabs(text):
+    result = []
+    i = 0
+    while i < len(text):
+        if text[i] == '\t' and (i + 1 >= len(text) or (text[i + 1] != '\n' and text[i + 1] != '<')):
+            result.append('\n')
+        else:
+            result.append(text[i])
+        i += 1
+    return ''.join(result)
 
 def join_text(text):
     lines = text.split('\n')
@@ -160,6 +178,5 @@ def join_text(text):
 
     return processed
 
-
 # Example usage
-extract_text_and_images("sample.pdf")
+extract_text_and_images("sample1.pdf")
