@@ -14,7 +14,7 @@ def parse_section(section_text):
     text_content = '\n'.join(section_text.split('\n')[1:]).strip()
     
     # Find all "Turn to/ turn to <number>" references
-    references = re.findall(r'[Tt]urn to <b>(\d+)[.,]?</b>', text_content)
+    references = re.findall(r'[Tt]urn to[ ]?<b>[ ]?(\d+)[., ]*</b>', text_content)
     
     # Adjust the references by subtracting the offset
     references = [str(int(ref)) for ref in references]
@@ -25,7 +25,7 @@ def parse_section(section_text):
     # Prepare the output row
     output_row = [
         section_number,
-        '"' + text_content + '"', 
+        '"' + text_content + '"',
         str(num_references),
         *references,
         '""'
@@ -76,6 +76,25 @@ def convert_to_csv(input_file, output_file):
         for section_number, section_content in sections[:]:
             # Check if the section number matches the expected sequence
             if int(section_number) == expected_section_number:
+                # Check if the next section number is in this section due to pdf formatting issue.
+                collapsed_section = section_content.find(f"<b>{int(section_number) + 1}</b>\n")
+                if collapsed_section != -1:
+                    # next section found. fix this section and add 
+                    prev_sec = section_content[:collapsed_section]
+                    combined_section = f"{section_number}\n{prev_sec}"
+                    parsed_section = parse_section(combined_section)
+                    if parsed_section:
+                        outfile.write(','.join(parsed_section) + '\n')
+                    # now fix collapsed section and add that too
+                    next_sec = section_content[collapsed_section + 1 + len(f"<b>{int(section_number) + 1}</b>"):]
+                    combined_section = f"{int(section_number) + 1}\n{next_sec}"
+                    parsed_section = parse_section(combined_section)
+                    if parsed_section:
+                        outfile.write(','.join(parsed_section) + '\n')
+
+                    expected_section_number += 2
+                    continue
+
                 # Combine the section number and content for parsing
                 combined_section = f"{section_number}\n{section_content}"
                 parsed_section = parse_section(combined_section)
@@ -84,7 +103,10 @@ def convert_to_csv(input_file, output_file):
                 # Increment the expected section number for the next iteration
                 expected_section_number += 1
             else:
-                # If the section number doesn't match, treat it as part of the current section's content
+                # If the section number doesn't match, there can be 2 things. 
+                # Case 1. The section number is at the end of the last section due to pdf formatting issue. we have already accounted 
+                # for that above so this is  definitely case 2
+                # Case 2. Its a number that is just part of section text. treat it as part of the current section's content
                 # Append it to the current section's content without disrupting the structure
                 if outfile.tell() > 0:  # Check if the file is not empty
                     outfile.seek(outfile.tell() - 1)  # Move the file pointer to the end of the last line
