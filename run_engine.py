@@ -77,6 +77,21 @@ def load_image(image_path, image_label, text_widget):
     except Exception as e:
         image_label.config(text=f"Failed to load image: {e}")
 
+def save_game():
+    full_path = os.path.realpath(__file__)
+    save_path = os.path.dirname(full_path) + "\\data"
+    game_file_path = os.path.join(save_path, "game.sav")
+    with open(game_file_path, "w", encoding="utf-8") as text_file:
+        text_file.write(read_head)
+
+def load_game():
+    full_path = os.path.realpath(__file__)
+    load_path = os.path.dirname(full_path) + "\\data"
+    game_file_path = os.path.join(load_path, "game.sav")
+    with open(game_file_path, 'r', encoding='utf-8') as infile:
+        section = infile.read()
+    link_item(section)
+
 def main():
     # load book data
     load_data("book.csv")
@@ -93,14 +108,22 @@ def main():
     main_frame.pack(fill=tk.BOTH, expand=True)
 
      # Create a frame for the title section (Top, Non-Scrollable)
-    title_frame = tk.Frame(main_frame)
+    title_frame = tk.Frame(main_frame, bg="gray")
     title_frame.pack(fill=tk.X)
+
+    # Add "Load" button to the left of the title
+    load_button = tk.Button(title_frame, text="Load", font=("Impact", 12), command=load_game)
+    load_button.pack(side=tk.LEFT, padx=10, pady=10)
 
     # Create the Text widget for displaying the title (Non-Scrollable)
     global title_widget
     title_widget = tk.Label(title_frame, text="Title Placeholder", font=("Impact", 16), 
                             bg=bg_color, fg=fg_color, padx=10, pady=10)
-    title_widget.pack(fill=tk.X)
+    title_widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+    # Add "Save" button to the right of the title
+    save_button = tk.Button(title_frame, text="Save", font=("Impact", 12), command=save_game)
+    save_button.pack(side=tk.RIGHT, padx=10, pady=10)
 
     # Load and display a placeholder image
     global image_frame
@@ -137,7 +160,6 @@ def main():
     button.pack(side=tk.RIGHT, padx=10, pady=10)
 
     link_item(read_head)
-    #show_buttons([214, 45, 654])
 
     # Run the application
     root.mainloop()
@@ -174,6 +196,8 @@ def link_item(index):
 
     # Update the title widget with the current index
     title_widget.config(text=index)
+    global read_head
+    read_head = index  # undate current read_head (for save/load)
 
     # Prepare the text widget for content display
     text_widget.config(state=tk.NORMAL)
