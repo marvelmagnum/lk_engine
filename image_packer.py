@@ -130,9 +130,17 @@ def image_viewer(root):
         else:
             print("No images to display.")
 
-    # Create a frame to group the textbox and button
-    control_frame = tk.Frame(root)
-    control_frame.pack(pady=10)  # Add some padding
+    # Create a frame to group the image name label and control_frame
+    bottom_frame = tk.Frame(root)
+    bottom_frame.pack(side=tk.BOTTOM, fill=tk.X, padx=10, pady=10)  # Place at the bottom
+
+    # Add a label to display the image name at the bottom left
+    image_name_label = tk.Label(bottom_frame, text=f"{photo_references[current_index][1]}", font=("Arial", 12), anchor="w")
+    image_name_label.pack(side=tk.LEFT, padx=5)  # Place on the left side of the bottom_frame
+
+    # Create a frame to group the image count label, textbox, and button
+    control_frame = tk.Frame(bottom_frame)
+    control_frame.pack(side=tk.RIGHT, padx=5)  # Place on the right side of the bottom_frame
 
     # Add a label to show the image count
     image_count_label = tk.Label(control_frame, text=f"0/{len(photo_references)}", font=("Arial", 12))
@@ -146,13 +154,13 @@ def image_viewer(root):
         validatecommand=(validate_cmd, "%P"),
         justify="center",  # Center-align the text
         font=("Impact", 12),  # Set font to Impact with size 12
-        width=6  # Number of characters
+        width=10  # Reduce the size of the textbox (default is typically 20 characters)
     )
-    textbox.pack(side=tk.LEFT, padx=5)  # Place the textbox to the left
+    textbox.pack(side=tk.LEFT, padx=5)  # Place the textbox to the right of the label
 
     # Create a button to show the next image
-    next_button = tk.Button(control_frame, text="Next", command=save_img_link)
-    next_button.pack(side=tk.LEFT)  # Place the button to the right of the textbox.pack()
+    next_button = tk.Button(control_frame, text="Next", command=show_next_image)
+    next_button.pack(side=tk.LEFT)  # Place the button to the right of the textbox
 
     # Show the first image initially
     show_next_image()
