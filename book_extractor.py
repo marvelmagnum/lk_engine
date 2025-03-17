@@ -11,12 +11,13 @@ def extract_text_and_images(pdf_path):
 
     # Create output folder if it doesn't exist
     os.makedirs(output_path, exist_ok=True)
+    os.makedirs(image_path, exist_ok=True)
     
     # Open the PDF file
     doc = fitz.open(pdf_path)
     extracted_text = ""
     image_count = 0
-
+    
     for page_num in range(len(doc)):
         page = doc.load_page(page_num)
         
@@ -51,7 +52,7 @@ def extract_text_and_images(pdf_path):
             image_count += 1
 
             # Save the image
-            image_filename = f"{image_path}/image_{page_num + 1}_{image_count}.{image_ext}"
+            image_filename = f"{image_path}/image_{image_count}_p{page_num + 1}_.{image_ext}"
             with open(image_filename, "wb") as img_file:
                 img_file.write(image_data)
     
@@ -110,7 +111,7 @@ def find_tables(text):
               processed += line + '\n'
               continue
           else:
-            if line == '\t':  # Tables end with a tab on a line
+            if line == '\t' or len(line) > 20:  # Tables end with a tab on a line or the line after the table is a full line (assuming over 20 chars)
                 table_line_count = 0
                 in_table = False
                 processed += "</td>\n" + line
