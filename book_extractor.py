@@ -52,7 +52,7 @@ def extract_text_and_images(pdf_path):
             image_count += 1
 
             # Save the image
-            image_filename = f"{image_path}/image_{image_count}_p{page_num + 1}_.{image_ext}"
+            image_filename = f"{image_path}/image_{image_count:03}_p{page_num + 1}_.{image_ext}"
             with open(image_filename, "wb") as img_file:
                 img_file.write(image_data)
     
