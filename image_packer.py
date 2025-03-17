@@ -121,8 +121,9 @@ def image_viewer(root):
                 label.config(image=photo_references[current_index][0])
                 current_index += 1
 
-                # Update the image count label
+                # Update the image count and label
                 image_count_label.config(text=f"{current_index}/{len(photo_references)}")
+                image_name_label.config(text=f"{photo_references[current_index][1]}")
 
                 # If this is the last image, change the button text to "Quit"
                 if current_index == len(photo_references):
@@ -135,7 +136,7 @@ def image_viewer(root):
     bottom_frame.pack(side=tk.BOTTOM, fill=tk.X, padx=10, pady=10)  # Place at the bottom
 
     # Add a label to display the image name at the bottom left
-    image_name_label = tk.Label(bottom_frame, text=f"{photo_references[current_index][1]}", font=("Arial", 12), anchor="w")
+    image_name_label = tk.Label(bottom_frame, text=f"image_name.ext", font=("Arial", 12), anchor="w")
     image_name_label.pack(side=tk.LEFT, padx=5)  # Place on the left side of the bottom_frame
 
     # Create a frame to group the image count label, textbox, and button
@@ -159,7 +160,7 @@ def image_viewer(root):
     textbox.pack(side=tk.LEFT, padx=5)  # Place the textbox to the right of the label
 
     # Create a button to show the next image
-    next_button = tk.Button(control_frame, text="Next", command=show_next_image)
+    next_button = tk.Button(control_frame, text="Next", command=save_img_link)
     next_button.pack(side=tk.LEFT)  # Place the button to the right of the textbox
 
     # Show the first image initially
