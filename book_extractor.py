@@ -60,8 +60,6 @@ def extract_text_and_images(pdf_path):
 
     extracted_text = remove_header_footer(extracted_text)
     extracted_text = find_tables(extracted_text)
-    #extracted_text = join_text(extracted_text)
-    #extracted_text = break_midline_tabs(extracted_text)
     
     # Save the extracted text to a file
     text_file_path = os.path.join(output_path, "extracted_text.txt")

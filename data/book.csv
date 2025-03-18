@@ -345,7 +345,7 @@ known as Cape Porta.  It is a famous lair of pirates and
 other ne’er-do-wells.  Roll a die.  On a 1, turn to <b>429</b>. 
 Otherwise you can now sail north towards Clifftop (turn 
 to <b>82</b>), east towards Cursus (turn to<b> 814)</b>, or west towards 
-the Savage Lands (turn to <b>The Savage Lands 75</b>)?",1,429,""
+the Savage Lands (turn to <b>The Savage Lands 75</b>)?",2,429,82,""
 22,"Avoiding Chellar’s room, you still manage to secure a 
 pretty horde of items. You may take any or all of the 
 following:  <b>jewellery box</b>, <b>calligraphy ink</b>, <b>silver idol</b>, 
@@ -1080,7 +1080,7 @@ Paper Dragon
 8
 </td>
 Notes:  You cannot make armour saves against the attacks of these paper opponents.	
-If you win, turn to <b>168</b>.",2,803,168,""
+If you win, turn to <b>168</b>.",3,803,121,168,""
 68,"Akini is delighted as you return her aunt to the family 
 home.  She thanks you profusely.  “I do not understand 
 why strangers would perform such a kindness for me, but 
@@ -1713,7 +1713,7 @@ Dulcimer
 </td>
 If you win, the family reluctantly release Akini’s aunt, bidding you never to darken their doorstep again (turn 
 to <b>68</b>).  If Sar Jessica is slain you may take her equipment 
-before leaving the house in disgrace, turn to <b>468</b>.",1,468,""
+before leaving the house in disgrace, turn to <b>468</b>.",2,68,468,""
 112,"Your new crew cheer as you come aboard.  The ship is 
 large and shabbily built – but perhaps you can make 
 something of it?   Record the stats of your ship below, 
@@ -2347,7 +2347,7 @@ enter a deep meditation.
 <i>Meditate on your destiny (Individual check)</i>
 <i>Skill and DC:  Lore (4+)</i>
 <i>Successes Required:  2</i>
-If you succeed, turn to <b>683</b>.  If you fail, turn to <b>510</b>.",3,6,683,510,""
+If you succeed, turn to <b>683</b>.  If you fail, turn to <b>510</b>.",4,6,450,683,510,""
 155,"Dulcimer cannot be swayed and throws you out of his 
 house.  Akini thanks you for your efforts but is resigned 
 to a grisly death at the hands of her lover.  You cannot stay 
@@ -2674,7 +2674,7 @@ reputation for nothing!
 If you succeed, you manage to steer past the rocks 
 and into the harbour (make a note that your ship is in 
 Mordain Harbour and turn to <b>662</b>).  If you fail, turn 
-to <b>836</b>.",1,662,""
+to <b>836</b>.",2,662,836,""
 176,"“We are emissaries sent by the Everchild,” you say 
 confidently.  “She wishes to discuss an important matter 
 with the God King.”
@@ -2714,7 +2714,7 @@ behind you as you leave.  Turn to <b>46</b>.",1,46,""
 179,"It will be difficult indeed to track down the local thieves’ 
 guild without a contact.  If you have the code A5, turn 
 to <b>216</b>.  Otherwise your enquiries are met with nothing 
-but blank stares and snarls.  Turn to <b>75</b>.",1,75,""
+but blank stares and snarls.  Turn to <b>75</b>.",2,216,75,""
 180,"You are in a long corridor, the remains of the barricade 
 you dismantled spread thinly along its length.  To the 
 west, stone steps descend further into the complex.  
@@ -2812,7 +2812,7 @@ turn to <b>484</b>.  If not, read on.
 	
 You manage to avoid the worst of the dreadful 
 weather, despite some damage to the ship.  Relieved at 
-your good fortune you resolutely sail on.  Turn to <b>240</b>.",2,484,240,""
+your good fortune you resolutely sail on.  Turn to <b>240</b>.",3,892,484,240,""
 187,"The rogues react with surprise and alarm as you stand 
 up and make your way down the ladder that links the 
 balcony to the ground floor.  Evidently they have never 
@@ -3348,7 +3348,7 @@ door and who is staying behind.  You can send your
 whole party in if you wish, or change your mind and 
 close off the shadow door.  Once you have decided, turn 
 to <b>903 </b>if at least one person enters the room, or <b>717</b> if 
-you close the shadow door.",0,""
+you close the shadow door.",1,903,""
 225,"You have a most pleasant stroll through the centre of 
 Chalice.  The streets are peaceful and the people orderly. 
 You have a cup of rice wine by the river to relax and 
@@ -4012,7 +4012,7 @@ to <b>212</b>)?
 	
 Attempt to side with the men, to ensure you get 
 something (turn to <b>282</b>)?	
-Wait your turn to get something to eat (turn to <b>118</b>)?",2,282,118,""
+Wait your turn to get something to eat (turn to <b>118</b>)?",3,212,282,118,""
 272,"Even the smaller temples to Cursus are fantastic in their 
 ornamentation.  Gold ornaments lustre against the deep 
 black stone, and haunting choral odes echo through the 
@@ -4170,7 +4170,7 @@ test below, or return to the main floor by turning to <b>574</b>.
 <i>Successes Required:  4</i>
 If you succeed, turn to <b>183</b>.  If you fail, you, and any 
 companions outside, are caught by the guards.  Turn 
-to <b>55</b>.",2,327,183,""
+to <b>55</b>.",3,327,183,55,""
 282,"You attempt to get the violent-looking slaves on side, 
 offering to join their gang and share the spoils of the 
 goat evenly.
@@ -4225,7 +4225,7 @@ appeal, but you say you will do what you can.  <i>Gain </i>
 287,"If you have a <b>silver idol</b>, turn to <b>675</b>.  If you do not have 
 a silver idol, but have achieved Enlightenment turn to 
 <b>241</b>. If you have neither of these things, then Honnu
-has nothing more to say to you.  Turn to <b>450</b>.",2,675,450,""
+has nothing more to say to you.  Turn to <b>450</b>.",3,675,241,450,""
 288,"The symbols on the calendar are rather representational. 
 Perhaps you can infer their meaning?
 <i>Translate the calendar (Team check)</i>
@@ -4271,7 +4271,7 @@ Gaining the God King’s support has been quite an
 endeavour.  <i>Gain the code A20</i>.  Choose a party member 
 and roll two dice.  If the result is higher than their 
 Charisma score, raise their Charisma by 1 point.  Turn 
-to <b>450</b> when you are finished here.",0,""
+to <b>450</b> when you are finished here.",1,450,""
 291,"Tommul replies with a punch to your jaw, which sends 
 you crashing to the ground.  This is followed by savage 
 kicks from his companion.  Lose 3 Health points.  They 
@@ -4370,7 +4370,7 @@ treasure from the magically darkened chamber as you
 can.  If you have a spellcaster in your team, turn to 
 <b>810</b>. If not, you manage to grasp <b>15 silver coins</b> before
 groping your way to the chamber exit and making your
-way further into the temple.  Turn to <b>93</b>.",1,93,""
+way further into the temple.  Turn to <b>93</b>.",2,810,93,""
 299,"You follow the scholars and Emlyn Pass-Ross up the 
 steps of the pyramid.  They are astonished by their 
 discovery, chattering to themselves excitedly about the 
@@ -4582,7 +4582,7 @@ food are consumed in great amounts, and songs are
 sung across the city.  You can restore the health scores 
 of your party to maximum.	
 If you have Amelia Pass-Dayne in your party, turn 
-to <b>181</b>.  If not, turn to <b>280</b>.",1,280,"image_013_p58_.jpeg"
+to <b>181</b>.  If not, turn to <b>280</b>.",2,181,280,"image_013_p58_.jpeg"
 310,"You have reached a crossroads, with the corridor 
 splitting off into four directions.  To the north you make 
 out a door in the eastern wall.  The western branch of 
@@ -4759,7 +4759,7 @@ administration, specifically the religious tithes paid by
 other cities.  He is a fat, wealthy priest, who eyes you 
 lazily as you enter.  If you have an <b>iron sceptre</b>, turn 
 to <b>153</b>.  If not, the keeper has no time for you, and has 
-you pushed out of his office.  Turn to <b>574</b>.",1,574,""
+you pushed out of his office.  Turn to <b>574</b>.",2,153,574,""
 324,"The textureless sands swirl like dust on your boots. 
 You feel cold and drained.  
 Choose a party member to lose 1 Health.	
@@ -5235,7 +5235,7 @@ end of the corridor (turn to <b>717</b>).
 Open the door mid-corridor, also in the south wall, 
 from which pleasant smells emerge (turn to <b>551</b>).
 Open the door in the far west end of the corridor (turn 
-to <b>821</b>)?",2,717,551,""
+to <b>821</b>)?",3,717,551,821,""
 367,"You draw your weapons.  “We will not let you harm 
 grieving people,” you say sharply.  The kensai bow to you 
 and draw their swords as one.  This will be a tough fight.
@@ -5428,7 +5428,7 @@ Support:  Peasant Levies – Strength 1, Morale 1
 <b>Right Flank</b>
 Front:  Mercenary Swords – Strength 3, Morale 2
 Support:  None
-If you win the battle, turn to <b>214</b>.  If you lose, turn to <b>670</b>.",2,214,670,""
+If you win the battle, turn to <b>214</b>.  If you lose, turn to <b>670</b>.",3,300,214,670,""
 377,"The thief reluctantly hands over <b>100 silver coins</b>.  When 
 the rest of your party climb through the window, he also 
 decides to throw in a <b>handsome brooch (Charisma +1)</b> 
@@ -5519,7 +5519,7 @@ incense into the firepit.  If you have a <b>magical weave</b> turn
 to <b>767</b>.  Otherwise, after a full search of your packs the 
 shaman shrugs and you are escorted back to your ship.  
 You get the impression your audience with the Bando 
-has come to an end.  Turn to <b>144</b>.",1,144,""
+has come to an end.  Turn to <b>144</b>.",2,767,144,""
 382,"If you have the code A1, turn to <b>128</b>.  If not, read on.
 	
 The Temple of Kalu is nothing more than a pile 
@@ -6679,7 +6679,7 @@ are worthy.”
 You snarl, your hand dropping to your weapon, but 
 the spirit is already gone, dissolving into the cold wind 
 like scattered rice paper.  In sombre silence, you return 
-to the tent.  Turn to <b>840</b>.",2,613,840,""
+to the tent.  Turn to <b>840</b>.",3,613,500,840,""
 471,"If you have the code A1, turn to <b>64</b>.
 If you have the code A7 and you do not have the code 
 A13, turn to <b>520</b>.
@@ -6820,7 +6820,7 @@ If you succeed, you take the other guard’s weapon,
 also an <b>iron shortword (Fighting +1)</b>.  They wear 
 armour, but there is not enough time to undress them. 
 You hurry to the gatehouse and unlock the door.  Turn 
-to <b>611</b>.",1,292,""
+to <b>611</b>.",2,292,611,""
 484,"You have arrived at Unbraaki’s teleport circle, deep inside 
 his palace.  If you have the Teleport Circle spell and wish 
 to cast it, turn to <b>859</b>.  If not, there is nothing you can do 
@@ -7337,7 +7337,7 @@ Head east, across the desert towards Cursus
 516,"The wind fills your sails as you glide in the straits 
 between the shores of the valley and the jungle-filled 
 island of Viaan.  Roll a die.  If you roll a 1 or 2, turn to 
-<b>679</b>. If not, turn to <b>144</b>.",1,144,""
+<b>679</b>. If not, turn to <b>144</b>.",2,679,144,""
 517,"The Temple of the Unbroken collapses into a pile of 
 broken stones behind you, great clouds of dust bursting 
 from the shattered chambers.  You think yourselves lucky 
@@ -7395,7 +7395,7 @@ introspection.
 Clearly, only a native of this land could master such 
 intricacies.  If you have Akihiro in your party, turn to 
 <b>856</b>. If not, besides wondering at the strangeness of it
-all, you can gain no benefit here.  Turn to <b>450</b>.",1,450,""
+all, you can gain no benefit here.  Turn to <b>450</b>.",2,856,450,""
 523,"You emerge into a large chamber, filled with cobwebs 
 which incinerate at the touch of your torches.  The 
 floor of this chamber has half collapsed, and in a small 
@@ -7510,7 +7510,7 @@ duel that defines your family’s fate forever.  When you
 have slain it, return to me.”	
 You stand and bow, pondering where to begin your 
 search.  <i>Cross off the code A50 and record the code A51</i>.  Turn 
-to <b>450</b>.",0,""
+to <b>450</b>.",1,450,""
 531,"You have been sold to a rice farmer in the city of Cursus, 
 and work knee-deep in muck along the Cold River. 
 Your surroundings are suitably dramatic; huge black 
@@ -7772,7 +7772,7 @@ loses that many Health points.  The rest of the party
 quickly come to your rescue, hauling you back into the 
 jollyboat.  If you wish to make another attempt, turn to 
 <b>583</b>. Otherwise you can abandon the attempt for the
-moment.  Turn to<b> 82</b>.",1,82,""
+moment.  Turn to<b> 82</b>.",2,583,82,""
 550,"There is no point in provoking anything.  You would 
 rather deal with wounded and exhausted opponents than 
 arena champions.  You cast your eyes warily across the 
@@ -8086,7 +8086,7 @@ Go through the door in the west tunnel
 567,"With your missions assigned the Everchild wishes you 
 good luck as you vanish under the cover of night.  If you 
 have assigned anyone to the assassination mission, turn 
-to <b>880</b>.  If not, turn to <b>639</b>.",1,639,""
+to <b>880</b>.  If not, turn to <b>639</b>.",2,880,639,""
 568,"You have returned to the chamber of Skallos, the dark 
 knight.  This champion of evil has been destroyed, and 
 you have no wish to remain in his haunted chamber any 
@@ -8656,7 +8656,7 @@ Support:  Slave Levies – Strength 1, Morale 1
 Front:  Clifftop Infantry – Strength 3, Morale 3
 Support:  Thalsian Mercenaries – Strength 2, Morale 3
 If you win, turn to <b>342</b>.  
-If you lose, turn to <b>48</b>.",2,342,48,"image_028_p111_.jpeg"
+If you lose, turn to <b>48</b>.",3,300,342,48,"image_028_p111_.jpeg"
 611,"The gatehouse’s weapon store is open to you. 
 You may take any of the following items:	
 <b>Hide armour (Armour +1)	</b>
@@ -9126,7 +9126,7 @@ the city centre.  Turn to <b>19</b>.",1,19,""
 643,"You have been asked by the harbourmaster of Clifftop 
 to retrieve the cargo crane's missing cogwheel from the 
 seabed.  Would you like to attend to this now (turn to 
-<b>583</b>), or is it too risky (turn to <b>82</b>)?",1,82,""
+<b>583</b>), or is it too risky (turn to <b>82</b>)?",2,583,82,""
 644,"The <b>golden candlestick</b> looks valuable, but ordinary.  
 You can add it to your equipment.	
 Examine the bookcase, if you haven’t already 	
@@ -9671,7 +9671,7 @@ the matter to fate, you stroll towards the hill in front of
 you and enter the first cave you come across. Turn to <b>24</b>.",1,24,""
 684,"The Everchild asked you to poison the Bronzeguard in 
 their compound. If you would like to do this now, turn to 
-<b>847</b>. Otherwise, you'd better be on your way (turn to <b>75</b>).",1,75,""
+<b>847</b>. Otherwise, you'd better be on your way (turn to <b>75</b>).",2,847,75,""
 685,"You have returned to the room with the magic circle.  
 It will require <b>quicksilver</b> in order to operate.	
 Pour some <b>quicksilver</b> into the circle	
@@ -10164,7 +10164,7 @@ peaceful intentions.
 <i>Reassure the Bando (Team check)</i>
 <i>Skill and DC:  Charisma (4+)</i>
 <i>Successes Required:  5</i>
-If you are successful turn to <b>339</b>.  If you fail, turn to <b>52</b>.",2,339,52,"image_031_p131_.jpeg"
+If you are successful turn to <b>339</b>.  If you fail, turn to <b>52</b>.",3,206,339,52,"image_031_p131_.jpeg"
 717,"This plain looking room is empty.  There is a door in the 
 north and south walls.	
 Cast the <i>shadow door</i> spell (turn to <b>351</b>)?	
@@ -10790,7 +10790,7 @@ worst of the sun.  If you fail, each party member loses
 1 Health from heatstroke.
 	
 Roll a die.  On a 1 or 2, turn to <b>108</b>.  On a 3, turn 
-to <b>534</b>.  On a 4 or more, turn to <b>840</b>.",2,108,840,""
+to <b>534</b>.  On a 4 or more, turn to <b>840</b>.",3,108,534,840,""
 753,"The arena is a swirl of swords and axe blades, the crowd 
 jeering as blood is spilt and bodies fall.  In the centre 
 the greatest fighters have gathered into a spectacular 
