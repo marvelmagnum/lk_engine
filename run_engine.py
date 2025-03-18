@@ -28,8 +28,9 @@ class BookIndex:
 # index, text_content, link_count, link1_index, link2_index, ... , image_filename
 def load_data(file):
 
-    full_path = os.path.realpath(__file__)
-    data_path = os.path.dirname(full_path) + "\\data\\" + file
+    full_path = os.path.dirname(__file__)
+    data_path = os.path.join(full_path, "data", file)
+
     with open(data_path, mode ='r', encoding="utf-8") as file:
         data_set = csv.reader(file)
         for data in data_set:
@@ -78,16 +79,14 @@ def load_image(image_path, image_label, text_widget):
         image_label.config(text=f"Failed to load image: {e}")
 
 def save_game():
-    full_path = os.path.realpath(__file__)
-    save_path = os.path.dirname(full_path) + "\\data"
-    game_file_path = os.path.join(save_path, "game.sav")
+    full_path = os.path.dirname(__file__)
+    game_file_path = os.path.join(full_path, "data", "game.sav")
     with open(game_file_path, "w", encoding="utf-8") as text_file:
         text_file.write(read_head)
 
 def load_game():
-    full_path = os.path.realpath(__file__)
-    load_path = os.path.dirname(full_path) + "\\data"
-    game_file_path = os.path.join(load_path, "game.sav")
+    full_path = os.path.dirname(__file__)
+    game_file_path = os.path.join(full_path, "data", "game.sav")
     with open(game_file_path, 'r', encoding='utf-8') as infile:
         section = infile.read()
     link_item(section)
