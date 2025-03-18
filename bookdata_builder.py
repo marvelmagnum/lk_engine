@@ -12,9 +12,10 @@ def parse_section(section_text):
     
     # Extract the text content (everything after the section number)
     text_content = '\n'.join(section_text.split('\n')[1:]).strip()
+    ref_text = "".join(text_content.split('\n'))
     
     # Find all "Turn to/ turn to <number>" references
-    references = re.findall(r'[Tt]urn to[ ]?<b>[ ]?(\d+)[., ]*</b>', text_content)
+    references = re.findall(r'[Tt]urn to[ ]?<b>[ ]?(\d+)[., ]*</b>', ref_text)
     
     # Adjust the references by subtracting the offset
     references = [str(int(ref)) for ref in references]
