@@ -7,6 +7,7 @@ import csv
 book_title = ""
 book_data = {}
 data_file_name = "book.csv"
+img_data_file = "images.csv"
 
 class BookIndex:
     content = ""
@@ -16,8 +17,8 @@ class BookIndex:
 # book data is in this format:
 # index, text_content, link_count, link1_index, link2_index, ... , image_filename
 def load_data(file):
-    full_path = os.path.realpath(__file__)
-    data_path = os.path.dirname(full_path) + "\\data\\" + file
+    full_path = os.path.dirname(__file__)
+    data_path = os.path.join(full_path, "data", file)
     with open(data_path, mode ='r', encoding="utf-8") as file:
         data_set = csv.reader(file)
         for data in data_set:
@@ -59,8 +60,8 @@ def validate_input(new_value):
         return False
 
 def image_viewer(root):
-    full_path = os.path.realpath(__file__)
-    folder_path = os.path.dirname(full_path) + "\\data"
+    full_path = os.path.dirname(__file__)
+    folder_path = os.path.join(full_path, "data")
 
     images = [f for f in os.listdir(folder_path) if f.lower().endswith((".jpg", ".jpeg"))]
     current_index = 0
@@ -69,6 +70,15 @@ def image_viewer(root):
     if not images:
         print("No JPEG images found in the folder.")
         root.quit()
+
+    # # for generating the initial image data file (commented)
+    # full_path = os.path.dirname(__file__)
+    # data_path = os.path.join(full_path, "data", img_data_file)
+
+    # # fetch the img data and update book data
+    # with open(data_path, mode ='w', encoding="utf-8") as file:
+    #     for img in images:
+    #         file.write(img + ',\n')
 
     photo_references = []
     for img in images:
@@ -99,8 +109,8 @@ def image_viewer(root):
 
         if current_index == len(photo_references):
             # Write the data file and quit program
-            full_path = os.path.realpath(__file__)
-            data_path = os.path.dirname(full_path) + "\\data\\" + data_file_name
+            full_path = os.path.dirname(__file__)
+            data_path = os.path.join(full_path, "data", data_file_name)
             with open(data_path, 'w', encoding='utf-8') as outfile:
                 outfile.write(book_title + '\n')
                 for data in book_data:
@@ -166,18 +176,47 @@ def image_viewer(root):
     # Show the first image initially
     show_next_image()
 
+def add_image_data(filename):
+    full_path = os.path.dirname(__file__)
+    data_path = os.path.join(full_path, "data", filename)
+
+    # fetch the img data and update book data
+    with open(data_path, mode ='r', encoding="utf-8") as file:
+        data_set = csv.reader(file)
+        for img_data in data_set:
+            if img_data[1] in book_data.keys():
+                book_data[img_data[1]].img = img_data[0]
+
+    # Write the data file and quit program
+    full_path = os.path.dirname(__file__)
+    data_path = os.path.join(full_path, "data", data_file_name)
+
+    with open(data_path, 'w', encoding='utf-8') as outfile:
+        outfile.write(book_title + '\n')
+        for data in book_data:
+            entry = data + ',"' + book_data[data].content + '",' + str(len(book_data[data].links))
+            for link in book_data[data].links:
+                entry += ',' + link
+            entry += ',"' + book_data[data].img + '"'
+            outfile.write(entry + '\n')
+
 def main():
     root = tk.Tk()
     root.title("JPEG Image Viewer")
     root.resizable(False, False)
 
+    interactive_mode = False
+
     load_data(data_file_name)
 
-    # Initialize ImageViewer with the selected folder
-    image_viewer(root)
-        
-    # Start the Tkinter event loop
-    root.mainloop()
+    if interactive_mode:
+        # Initialize ImageViewer with the selected folder
+        image_viewer(root)
+        # Start the Tkinter event loop
+        root.mainloop()
+    else:
+        add_image_data(img_data_file)
+    
 
 if __name__ == "__main__":
     main()
