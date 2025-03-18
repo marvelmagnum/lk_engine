@@ -85,7 +85,7 @@ def remove_header_footer(text):
             processed +=  line.title() + '\n'
             continue
 
-        if (line != header and line != footer):
+        if (not header in line and not footer in line):
             processed += line + '\n'
       
     return processed
