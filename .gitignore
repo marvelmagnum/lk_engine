@@ -1,0 +1,4 @@
+﻿build
+pyinstaller com.txt
+run_engine.spec
+dist
