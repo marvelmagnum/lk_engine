@@ -1,6 +1,8 @@
 import re
 import os
 
+book = ""
+
 def parse_section(section_text):
     # Extract the section number (it appears at the start of the section)
     section_number_match = re.search(r'^(\d+)\s*$', section_text.split('\n')[0].strip())
@@ -13,6 +15,13 @@ def parse_section(section_text):
     # Extract the text content (everything after the section number)
     text_content = '\n'.join(section_text.split('\n')[1:]).strip()
     ref_text = "".join(text_content.split('\n'))
+
+    # correct book specific errors
+    if "valley of bones" in book.lower():
+        if section_number == "488":
+            text_content = text_content.replace('"', '“')
+        if section_number == "550":
+            text_content = text_content.replace("<i>Healt</i>h", "<i>Health</i>")
     
     # Find all "Turn to/ turn to <number>" references
     references = re.findall(r'[Tt]urn to[ ]?<b>[ ]?(\d+)[., ]*</b>', ref_text)
@@ -43,6 +52,8 @@ def extract_book_name(section_text):
     if len(book_name_parts) >= 2:
         # Combine the two parts with a hyphen and convert the second part to Title Case
         book_name = f"{book_name_parts[0]} - {book_name_parts[1].title()}"
+        global book
+        book = book_name
         return book_name
     return None
 
