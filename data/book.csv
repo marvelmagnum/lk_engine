@@ -477,7 +477,7 @@ Zealot Healer
 Note:  The Zealot Healer will only attack if he is the last opponent standing.  Otherwise he will heal each zealot 
 2 Health points.  These additional points can take them 
 over their starting health.	
-If you win, turn to <b>63.</b>",1,63,""
+If you win, turn to <b>63.</b>",2,657,63,""
 29,"You curse as the thief fades from view.  You cannot face 
 the owner of the house for shame, and instead slip away 
 into the city.  Turn to <b>450</b>.",1,450,""
@@ -487,7 +487,7 @@ by the woes of a nomadic life.
 	
 If you have the code A1, and you do not have the 
 code A37, turn to <b>737</b>.  Otherwise you have nothing of 
-importance to discuss with him.  Turn back to <b>473.</b>",1,737,""
+importance to discuss with him.  Turn back to <b>473.</b>",2,737,473,""
 31,"If you have the code A56, turn to <b>788</b>.  If not, read on.
 	
 As you approach the door you do not see the orcs 
@@ -3075,7 +3075,7 @@ weight on it and then reset immediately afterwards.
 You curse the ingenuity of the trap maker as your 
 companions quickly come to your rescue, bending down 
 to offer you their hands.  You scrabble out of the pit.  	
-Turn back to <b>761</b>.",0,""
+Turn back to <b>761</b>.",1,761,""
 209,"You return to the excavated cavern dug out by the 
 invading orcs.  The short tunnels lead to nothing but 
 dead ends.  After giving the chamber one last look, you 
@@ -4514,7 +4514,7 @@ Note:  You can cast any number of spells before combat starts, as the chained ho
 the door.
 	
 If you win, turn to <b>816</b>.  You can flee at the start of 
-any combat round by turning to <b>736</b>.",1,816,""
+any combat round by turning to <b>736</b>.",2,736,816,""
 307,"Finally, after days of wandering you collapse, helpless, 
 into the dry sands.  You fear death will take you. 
 What happens later is scarcely much better.  A patrol 
@@ -8326,7 +8326,7 @@ If you win, turn to <b>606</b>.",1,606,""
 or perhaps you are just not the guards' type?  Your offer 
 is rudely rejected, and is accompanied by a cruel beating. 
 Each member of the distraction team must lose 2 Health 
-points.  Turn back to <b>169</b> and choose something else.",0,""
+points.  Turn back to <b>169</b> and choose something else.",1,169,""
 589,"You are walking through a dreary land, without people 
 or landmarks.  The chill penetrates your bones.  Choose 
 a party member to lose 1 Health.	
@@ -8699,7 +8699,7 @@ weakness, come what may!”
 The bear lunges at you, swiping you to the floor with 
 his heavy paw.  Lose 3 Health points.  It seems you have 
 no choice but to fight with the bear.  	
-Turn back to <b>425 </b>and take the skill check!",0,""
+Turn back to <b>425 </b>and take the skill check!",1,425,""
 616,"You know when to take a hint.  You carefully back away.  
 As you walk through an alleyway you hear the sounds 
 of shouting and drawn swords.  Blood is being spilt and 
@@ -9817,7 +9817,7 @@ idol in the Caves of Uranu.  However, he has been
 instructed to search for the idol alone.  If Akihiro wants 
 to undertake this quest now, turn to <b>154</b>.  If you would 
 rather stay together for the moment, turn back to <b>493</b> 
-and read on.",1,154,""
+and read on.",2,154,493,""
 700,"You bend to help the injured Milagros, who tells you 
 not to worry.  “I’ve had much worse, but you are gracious 
 to help,” she says, wincing as she smiles.  “Perhaps 
@@ -11045,7 +11045,7 @@ from ruined temples and lifted from rich travellers.
 <b>Handsome brooch (Charisma +1)</b>	
 500	
 250
-When you are done here, turn back to <b>473</b>.",0,""
+When you are done here, turn back to <b>473</b>.",1,473,""
 769,"It only takes the slightest misstep, and the blades activate. 
 There is a bloodcurdling scream as blades and spears 
 descend as one upon your party member’s defenceless 
@@ -12552,7 +12552,7 @@ this one.  If Brash is in the distraction team, turn to <b>35</b>.
 If not, the guards flatly refuse to believe you. You are 
 given the customary harsh beating and sent on your way. 
 Each member of the distraction team must lose 2 Health 
-points.  Turn back to <b>169</b> and choose something else.",1,35,""
+points.  Turn back to <b>169</b> and choose something else.",2,35,169,""
 876,"Cautiously you poke a hung-up skeleton.  It falls to the 
 ground and shatters.  It appears to be inanimate.  	
 Examine the coffin (turn to <b>414)</b>?	
