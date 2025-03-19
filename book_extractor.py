@@ -94,93 +94,59 @@ def find_tables(text):
     lines = text.split('\n')
 
     processed = ""
-    in_table = False
+    in_combat_table = False
+    in_market_table = False
+    skip_lines = 0
     table_line_count = 0
     for index, line in enumerate(lines):
+        # Process combat tables
         if line.startswith("<i>") and line.endswith("</i>") and "Opponent" in line:
-            processed += "<td>\n" + line + '\n'
-            in_table = True
+            processed += "<tc>\n" + line + '\n'
+            in_combat_table = True
             table_line_count += 1
             continue
         
-        if in_table:
-          if table_line_count % 4 == 0: # table entries are always 4 lines. so the 1st line after a set of 4 is the one to watch for
+        if in_combat_table:
+          if table_line_count % 4 == 0: # combat table entries are always 4 lines. so the 1st line after a set of 4 is the one to watch for
               table_line_count += 1
               processed += line + '\n'
               continue
           else:
             if line == '\t' or len(line) > 20:  # Tables end with a tab on a line or the line after the table is a full line (assuming over 20 chars)
                 table_line_count = 0
-                in_table = False
-                processed += "</td>\n" + line
+                in_combat_table = False
+                processed += "</tc>\n" + line
+                continue
+
+        # Process market tables
+        if skip_lines > 0:
+            skip_lines -= 1
+            continue
+
+        if line.startswith("<i>") and line.endswith("</i>") and "Item" in line:
+            if not in_market_table: # new table - mark it up
+                processed += "<tm>\n" + line + '\n'
+                in_market_table = True
+                table_line_count += 1
+                continue
+            else: # same table with inset headers - remove it (don't write)
+                skip_lines = 2  # mark the next 2 lines to be skipped
+                continue
+        
+        if in_market_table:
+          if table_line_count % 3 == 0: # market table entries are always 3 lines. so the 1st line after a set of 3 is the one to watch for
+              table_line_count += 1
+              processed += line + '\n'
+              continue
+          else:
+            if line == '\t' or len(line) > 40:  # Tables end with a tab on a line or the line after the table is a full line (assuming over 20 chars)
+                table_line_count = 0
+                in_market_table = False
+                processed += "</tm>\n" + line
                 continue
         
         processed += line + '\n'
     
-    return processed
-
-def break_midline_tabs(text):
-    result = []
-    i = 0
-    while i < len(text):
-        if text[i] == '\t' and (i + 1 >= len(text) or (text[i + 1] != '\n' and text[i + 1] != '<')):
-            result.append('\n')
-        else:
-            result.append(text[i])
-        i += 1
-    return ''.join(result)
-
-def join_text(text):
-    lines = text.split('\n')
-    
-    processed = ""
-    section = ""
-    in_table = False
-
-    for index, line in enumerate(lines):
-        
-        if index < 2:
-            processed += line + '\n'
-            continue
-        
-        if line.startswith("<b>") and line.endswith("</b>"):
-            if section != "":
-              processed += section + '\n'
-              section = ""
-            processed += line + '\n'
-            continue
-        
-        if line == "<td>":
-            if section != "":
-              processed += section + '\n'
-              section = ""
-            in_table = True
-            processed += line + '\n'
-            continue
-        
-        if in_table:
-            processed += line + '\n'
-            if line == "</td>":
-                in_table = False
-            continue
-
-        if line.startswith("<i>") and line.endswith("</i>"):
-            if section != "":
-              processed += section + '\n'
-              section = ""
-            processed += line + '\n'
-            continue
-        
-        if line == '\t':
-            processed += section + '\n'
-            section = ""
-            continue
-        
-        section += line
-
-    if section != "":
-        processed += section + '\n'
-
     return processed
 
 def select_pdf_from_folder():
