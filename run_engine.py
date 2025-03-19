@@ -206,7 +206,8 @@ def link_item(index):
     patterns = [
         (r"<b>(.*?)</b>", "bold_tag"),
         (r"<i>(.*?)</i>", "italic_tag"),
-        (r"<td>(.*?)</td>", "table_tag")
+        (r"<tc>(.*?)</tc>", "combat_table_tag"),
+        (r"<tm>(.*?)</tm>", "market_table_tag")
     ]
 
     # Track the current position in the text
@@ -229,7 +230,7 @@ def link_item(index):
             normal_text = book_data[index].content[pos:pos + next_match.start()]
             text_widget.insert(tk.END, normal_text)
 
-            if tag_name == "table_tag":
+            if tag_name == "combat_table_tag":
                 # Process table content
                 table_text = next_match.group(1).strip()
                 
@@ -245,17 +246,54 @@ def link_item(index):
                 # Insert table rows
 
                 for idx, row in enumerate(rows):
+                    formatted_row = ""
+                    items = []
                     if idx == 0:
-                        formatted_row = ""
-                        items = []
                         for i, col in enumerate(row):
                             items.append(col[3:-4].rstrip('\t').ljust(col_widths[i]))
                         formatted_row = " ".join(items)
                         text_widget.insert(tk.END, '\n' + formatted_row + '\n', "italic_tag")
                     else:
-                        formatted_row = "  ".join(f"{col.ljust(col_widths[i])}" for i, col in enumerate(row))
+                        for j, col in enumerate(row):
+                            if j == 0:
+                                text_widget.insert(tk.END, col.ljust(col_widths[j]), "bold_tag")
+                            else:
+                                items.append(col.ljust(col_widths[j]))
+
+                        formatted_row = "  ".join(items)
                         text_widget.insert(tk.END, formatted_row + '\n', "table_tag")
-                      
+            elif tag_name == "market_table_tag":
+                # Process table content
+                table_text = next_match.group(1).strip()
+                
+                # Split table cells by lines
+                table_cells = [line.strip() for line in table_text.split('\n') if line.strip()]
+                
+                # Break cells into rows of 4 items each
+                rows = [table_cells[i:i+3] for i in range(0, len(table_cells), 3)]
+                
+                # Determine max column widths for alignment
+                col_widths = [max(len(row[i]) for row in rows) for i in range(3)]
+                
+                # Insert table rows
+
+                for idx, row in enumerate(rows):
+                    formatted_row = ""
+                    items = []
+                    if idx == 0:
+                        for i, col in enumerate(row):
+                            items.append(col[3:-4].rstrip('\t').ljust(col_widths[i]))
+                        formatted_row = " ".join(items)
+                        text_widget.insert(tk.END, '\n' + formatted_row + '\n', "italic_tag")
+                    else:
+                        for j, col in enumerate(row):
+                            if j == 0:
+                                text_widget.insert(tk.END, col[3:-4].rstrip('\t').ljust(col_widths[j]), "bold_tag")
+                            else:
+                                items.append(col.rstrip('\t').ljust(col_widths[j]))
+
+                        formatted_row = " ".join(items)
+                        text_widget.insert(tk.END, formatted_row + '\n', "table_tag")          
             else:
                 # Insert formatted text for bold or italic
                 formatted_text = next_match.group(1)
