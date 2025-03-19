@@ -280,15 +280,15 @@ def link_item(index):
 # show a button for each item. Items is a list containing indexes
 def show_buttons(items):
     count = len(items)
-    # can hold max 10 buttons
+    # can hold max 12 buttons
     # Adjust for best fit buttons (Optimal specs: width 5 chars, pad= 10 px)
     final_width = 5 # each char takes 15px approx. so 75
     final_pad = 10
     optimal_space = count * 75 + (count - 1) * 10
-    if optimal_space > 650:
+    if optimal_space > 615:
         final_pad = 0
         while final_pad < 2:
-            space = 650 - (final_width * count * 15)
+            space = 615 - (final_width * count * 15)
             final_pad = min(int(space / (count - 1)), 10)
             if final_pad < 2:
                 final_width -= 1
