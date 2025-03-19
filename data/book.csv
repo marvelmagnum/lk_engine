@@ -33,7 +33,7 @@ you will regain your freedom and start your lives anew.
 But first, you must survive the horrors of slavery.	
 Turn to <b>631.</b>",1,631,""
 2,"The orcs snarl as they see you, lurching to attack. 
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -46,7 +46,7 @@ Turn to <b>631.</b>",1,631,""
 4 (4+)	
 3+	
 9
-</td>
+</tc>
 	If you win, turn to <b>478.</b>  You can flee at the start of 
 your round if you wish.  If you do, the orcs will chase 
 you out of the dungeon.  Turn to <b>515.</b>",2,478,515,""
@@ -224,7 +224,7 @@ horde.  Pleased to have survived you make your way
 onwards.  Turn to <b>395.</b>",1,395,""
 16,"You have chosen to battle one of the dark knights of 
 Abraxas.  Good luck!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -237,7 +237,7 @@ Green Skeletons
 8 (4+)	
 3+	
 30
-</td>
+</tc>
 Notes: On any round when Skallos does not take damage, he will unleash a roar of black magic.  Each 
 party member must lose 1 point of Health, and Skallos 
 will restore 4 points of Health, up to his maximum of 
@@ -295,7 +295,7 @@ Go to the Church of Cursus (turn to <b>207</b>)?
 Head to the dockyard (turn to <b>703</b>)?	
 Explore the city (turn to <b>354</b>)?	
 Leave the city east, along the road (turn to <b>12</b>)?	
-Leave the city south, into the desert (turn to <b>725</b>)?",9,557,759,152,505,207,703,354,12,725,"image_001_p4_.jpeg"
+Leave the city south, into the desert (turn to <b>725</b>)?",9,557,759,152,505,207,703,354,12,725,""
 20,"The passageway opens up into a long hall, lined with 
 stamped bronze plates.  Torches burn in brackets along 
 the walls, illuminating hideous murals of serpents 
@@ -323,7 +323,7 @@ of sorcery.  Suddenly the temple walls begin to crack,
 and blocks of stone rain down upon you.  Even as the 
 temple collapses the snakeman priest advances towards 
 you, brandishing his staff.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -332,7 +332,7 @@ Snakeman Priest
 4 (4+)	
 3+	
 16
-</td>
+</tc>
 Note:  At the end of each of the Snakeman Priest’s turns, blocks of stone come raining down from the walls.  
 The priest and each party member loses 1 Health.  
 This continues each round until the priest has been slain. 
@@ -345,7 +345,7 @@ known as Cape Porta.  It is a famous lair of pirates and
 other ne’er-do-wells.  Roll a die.  On a 1, turn to <b>429</b>. 
 Otherwise you can now sail north towards Clifftop (turn 
 to <b>82</b>), east towards Cursus (turn to<b> 814)</b>, or west towards 
-the Savage Lands (turn to <b>The Savage Lands 75</b>)?",2,429,82,""
+the Savage Lands (turn to <b>The Savage Lands 75</b>)?",3,429,82,814,""
 22,"Avoiding Chellar’s room, you still manage to secure a 
 pretty horde of items. You may take any or all of the 
 following:  <b>jewellery box</b>, <b>calligraphy ink</b>, <b>silver idol</b>, 
@@ -400,7 +400,7 @@ Accept the mission to hunt the troglodytes (turn to <b>681</b>)?
 Sell him some <b>troglodyte heads</b> (turn to <b>233</b>)?	
 Express interest in buying salt for your ships (turn to <b>575</b>)?	
 Apologise for wasting the mine master’s time	
-and leave (turn to <b>722</b>)",5,532,681,233,575,722,"image_002_p6_.jpeg"
+and leave (turn to <b>722</b>)",5,532,681,233,575,722,""
 26,"Cross the <b>quicksilver</b> off your adventure sheet.  You 
 pour the liquid metal into the well and cross your fingers. 
 Soon, the runes around the circle blaze into light, 
@@ -452,7 +452,7 @@ If you are successful the zealots reluctantly let you go.
 Turn back to <b>657</b> and choose a destination.  Otherwise 
 your heretical ignorance drives them into a killer frenzy 
 and you must fight.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -473,7 +473,7 @@ Zealot Healer
 3 (4+)	
 4+	
 15
-</td>
+</tc>
 Note:  The Zealot Healer will only attack if he is the last opponent standing.  Otherwise he will heal each zealot 
 2 Health points.  These additional points can take them 
 over their starting health.	
@@ -902,7 +902,7 @@ freedom.  You make it to one of the squat towers that
 line the walls, but alas, three Bronzeguard soldiers stand 
 alert in the room.  Barricading the door behind you, the 
 team grimly draw their weapons and prepare to fight!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -919,7 +919,7 @@ team grimly draw their weapons and prepare to fight!
 7 (4+)	
 5+	
 11	
-</td>
+</tc>
 If you win, turn to <b>623.</b>",1,623,""
 59,"You knock the guards down into the dirt and surge 
 forwards.  There is nowhere to hide but in the city itself so 
@@ -933,7 +933,7 @@ only to find himself in a dead-end alley.  He curses and
 draws his sword.  “You’ve bitten off more than you can 
 chew, foreigners!” he spits.  Only party members still in 
 the chase can fight in this battle.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -942,7 +942,7 @@ Thief of Royce
 5 (4+)	
 4+	
 14
-</td>
+</tc>
 	If you win, turn to <b>391</b>.  If you fail, all party 
 members that fought the thief have died.  The thief will 
 take their possessions (cross off all items of equipment).  
@@ -1012,7 +1012,7 @@ Where will you travel now?
 North, towards the Temple of the Unbroken	
 (turn to <b>535</b>)?	
 East, towards the city of Cursus (turn to <b>340)</b>?	
-West, towards the Mordain ruins (turn to <b>515</b>)?",2,535,515,""
+West, towards the Mordain ruins (turn to <b>515</b>)?",3,535,340,515,""
 64,"With the ascendancy of the Everchild the streets have 
 become safer and justice more accessible to the common 
 people.  Good news for the city, but it makes for a dull 
@@ -1061,7 +1061,7 @@ If you have a spellcaster with the spell Orb of
 Annihilation or Maelstrom, and wish to cast it, turn to 
 <b>121</b>. Otherwise you must defend yourselves against
 these weird opponents.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -1078,7 +1078,7 @@ Paper Dragon
 6 (4+)	
 4+	
 8
-</td>
+</tc>
 Notes:  You cannot make armour saves against the attacks of these paper opponents.	
 If you win, turn to <b>168</b>.",3,803,121,168,""
 68,"Akini is delighted as you return her aunt to the family 
@@ -1175,7 +1175,7 @@ as if you were not real.  Choose a party member to lose
 Go through the Shaded Gate (turn to <b>56</b>)?	
 West (turn to <b>273)</b>?	
 South (turn to<b> 886)</b>?	
-East (turn to <b>537</b>)?",2,56,537,""
+East (turn to <b>537</b>)?",4,56,273,886,537,""
 74,"You inform the guard that you wish to see Unbraaki 
 again.  You are escorted into his presence, though he 
 seems surprised to see you.  “I have already given you my 
@@ -1212,7 +1212,6 @@ Find an inn (turn to <b>172</b>)?
 Go to the marketplace (turn to <b>798</b>)?	
 Go to the slave market (turn to <b>326)</b>?	
 Visit the palace (turn to <b>633</b>)?	
-(continued...)
 Head to the barracks of the Bronzeguard 	
 (turn to <b>390</b>)?	
 Track down the local thieves guild (turn to <b>179</b>)?	
@@ -1221,7 +1220,7 @@ Visit the temple of Kalu (turn to <b>382</b>)?
 Explore the city (turn to <b>471</b>)?	
 Head west along the road (turn to <b>511</b>)?	
 Head east along the road (turn to <b>177</b>)?	
-Head south into the desert (turn to <b>858</b>)?",11,172,798,633,390,179,770,382,471,511,177,858,"image_003_p16_.jpeg"
+Head south into the desert (turn to <b>858</b>)?",12,172,798,326,633,390,179,770,382,471,511,177,858,""
 76,"This must be Garon the Bloody-mouthed, whom you 
 were sent to find.  His father will no doubt grieve to 
 know his fate, but at least it will solve the mystery of his 
@@ -1407,6 +1406,7 @@ your way back to the temple in Chalice.  Turn to <b>856</b>.",1,856,""
 offer you their services.  Their merchants have various 
 odds and ends you might find useful.
 All prices are in <b>silver coins.</b>
+<tm>
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
@@ -1428,8 +1428,8 @@ All prices are in <b>silver coins.</b>
 <b>Talisman of St Elias</b>	
 -	
 150
-	
-If you have a ship docked in Clifftop, you can also 
+</tm>
+	If you have a ship docked in Clifftop, you can also 
 buy up to three cargo units of Salt from the merchants 
 for <b>500 silver coins</b> each.  They will deliver this cargo 
 straight to your ship provided there is room for it.
@@ -1542,12 +1542,12 @@ The Tumblestones (turn to <b>137</b>)?
 The Withered Steppes (turn to <b>115</b>)?",18,450,19,340,590,775,370,614,75,691,346,275,890,515,25,460,535,137,115,""
 101,"Spitting on the blood-stained sands, you stride into the 
 central battle, back to back, swords in hand.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
 <i>Health</i>
-</td>
+</tc>
 Lhasbreth Barbarians	7 (5+)	
 3+	
 17
@@ -1573,7 +1573,7 @@ If you wish you can flee the chamber now – but you
 can never return.  The door will slam shut behind you. 
 Turn to <b>46</b> if you wish to do this.	
 Otherwise you must fight for your treasure.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -1586,7 +1586,7 @@ Otherwise you must fight for your treasure.
 10 (3+)	
 4+	
 25	
-</td>
+</tc>
 If you win, turn to <b>178</b>.",2,46,178,""
 103,"You open the cage and the bird immediately flies onto 
 a low branch.  You are about to move on when the bird 
@@ -1700,7 +1700,7 @@ rapier in his hand.  His family, an endless procession of
 cousins, grandparents, brothers and sisters, gather in a 
 circle to watch the duel.  Only Sar Jessica may engage 
 in this battle.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -1709,7 +1709,7 @@ Dulcimer
 4 (4+)	
 4+	
 8
-</td>
+</tc>
 If you win, the family reluctantly release Akini’s aunt, bidding you never to darken their doorstep again (turn 
 to <b>68</b>).  If Sar Jessica is slain you may take her equipment 
 before leaving the house in disgrace, turn to <b>468</b>.",2,68,468,""
@@ -1758,7 +1758,7 @@ Go south to the Temple of the Unbroken (turn to <b>535</b>)?
 Go east to the Northroad (turn to <b>113</b>)?	
 Go northeast to Luutanesh (turn to <b>614)</b>?	
 Go north to the Westroad (turn to <b>177</b>)?	
-Go northwest towards Saltdad (turn to <b>858</b>)?",8,253,884,275,202,535,113,177,858,"image_004_p23_.jpeg"
+Go northwest towards Saltdad (turn to <b>858</b>)?",9,253,884,275,202,535,113,614,177,858,""
 116,"You creep across the landing, looting rooms as you go. 
 Only members of the wall-climbing team may help 
 with the check.
@@ -1770,7 +1770,7 @@ If you succeed, turn to <b>22</b>.  If you fail, turn to <b>529</b>.",2,22,529,"
 attacks.  Unbeknownst to you, the ogre’s mate, Daisy, 
 is not far away.  After the second round of combat she 
 will join in the fight.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -1783,7 +1783,7 @@ Daisy
 9 (4+)	
 4+	
 13	
-</td>
+</tc>
 If you win, turn to <b>431</b>.",1,431,""
 118,"You try to elbow your way through the crowd, but by 
 the time you have reached the carcass it has been almost 
@@ -1946,7 +1946,7 @@ plan to strike first.  She raises her hands and unleashes
 a terrible blast of power that jolts all the giant spiders 
 clinging to the roof.  They come tumbling down, but 
 quickly regain their feet and rush to an attack.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -1967,7 +1967,7 @@ Red Spider
 4 (5+)	
 4+	
 4	
-</td>
+</tc>
 If you win, turn to <b>790</b>.",1,790,""
 134,"You manage to find one fellow, a young and dynamic 
 looking man, who claims he can arrange an appointment 
@@ -2023,7 +2023,7 @@ the spell if you are clever enough to puzzle it out.
 <i>Rebuild the spell mural (Team check)</i>
 <i>Skill and DC:  Lore (4+)</i>
 <i>Successes Required:  4</i>
-If you succeed, turn to <b>603</b>.  If you fail, turn to <b>368</b>.",3,14,603,368,"image_005_p26_.jpeg"
+If you succeed, turn to <b>603</b>.  If you fail, turn to <b>368</b>.",3,14,603,368,""
 138,"You make your way to the Expeditionary Guild but find 
 the area empty.  The blue tents of House Ross have been 
 packed away and there is no sign of Sir Lawrence or 
@@ -2091,6 +2091,7 @@ carefully as you go from shop to shop.  The finest
 weapons in the valley are forged in this place, with 
 techniques that rival those of Longport, although the 
 very best swords are not available for foreigners.
+<tm>
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
@@ -2116,7 +2117,8 @@ very best swords are not available for foreigners.
 <b>Masterwork Blade (Fighting +3)</b>	
 -	
 900
-<b>Masterwork Greatsword (Fighting +4)*</b>	 -	
+<b>Masterwork Greatsword (Fighting +4)*</b>	 
+-	
 1250
 <b>Shield (Armour +2)</b>	
 50	
@@ -2163,6 +2165,7 @@ very best swords are not available for foreigners.
 <b>Lizard Hide</b>	
 -	
 50
+</tm>
 When you have finished here, turn to <b>450</b>.",1,450,""
 143,"You spend a full month with Che Long training up 
 the Bronzeguard.  They are a formidable sight in 
@@ -2238,7 +2241,7 @@ Or do you not feel ready to risk the jungle just yet
 (turn to <b>775</b>)?",2,5,775,""
 149,"The bull stands seven feet tall at the shoulder.  
 This will not be an easy battle.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -2247,13 +2250,13 @@ Dragonyak Bull
  6 (3+)	
 4+	
 15
-</td>
+</tc>
 	If you win, the dragonyak herd disperses in panic. 
 You can take a <b>dragonyak horn</b> as a reward for your 
 battle, if you wish.  There is nothing else to see in this 
 canyon, turn to <b>115</b>.",1,115,""
 150,"You must fight!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -2274,7 +2277,7 @@ canyon, turn to <b>115</b>.",1,115,""
 3 (4+)	
 3+	
 5
-</td>
+</tc>
 Note:  If you have a <b>hygliph flower</b>, the snakemen are put off by its pungent odour and require a 5+ on their 
 attack rolls to inflict damage during this battle.	
 If you win, turn to <b>579</b>.",1,579,""
@@ -2367,6 +2370,7 @@ based around a stone amphitheatre and bedecked with
 brightly coloured tents.  Monkeys and birds chitter in 
 the cool shadows, darting away as people approach, 
 only to return to steal a loose berry or fruit.
+<tm>
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
@@ -2437,6 +2441,7 @@ only to return to steal a loose berry or fruit.
 <b>Lizard Hide</b>	
 -	
 25
+</tm>
 When you are finished here, turn to <b>775</b>.",1,775,""
 159,"If you have the code A42, turn to <b>257</b>.  If not, read on.
 	
@@ -2564,7 +2569,7 @@ The sand shifts beneath your feet.  Bursting from
 the desert come three giant desert scorpions, each as 
 large as a war hound.  They scuttle forwards, their 
 stingers tensing and claws open to catch you.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -2581,7 +2586,7 @@ stingers tensing and claws open to catch you.
 4 (4+)	
 4+	
 3
-</td>
+</tc>
 	If you win, you can extract a single <b>vial of poison </b>
 from their stingers.  Turn to <b>804</b>.",2,636,804,""
 167,"You have returned to the funeral chamber of Imopposh 
@@ -2612,7 +2617,7 @@ swallow as a pair of shaggy-haired desert lions come
 snarling out of the gate.  Their manes are stained red 
 with the blood of other victims, and they roar at you 
 with filthy yellow teeth.  You must fight for your lives.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -2625,9 +2630,9 @@ Second Lion
 3 (4+)	
 4+	
 10
-</td>
+</tc>
 Note:  You cannot use spells in this fight, under threat of mutilation!	
-If you win, turn to <b>236</b>.",1,236,"image_006_p33_.jpeg"
+If you win, turn to <b>236</b>.",1,236,""
 171,"The young man takes you to a small side room and asks 
 you to wait while he organises introductions.  You take 
 a seat anxiously, hoping the young man is not some 
@@ -2760,7 +2765,7 @@ If you succeed, turn to <b>498</b>.  If you fail, each party
 member loses 1 Health point from the strain.  You can 
 try again until you succeed, losing 1 Health point each 
 time you fail, or give up and return to the main floor 
-(turn to <b>574</b>).",2,498,574,"image_007_p35_.jpeg"
+(turn to <b>574</b>).",2,498,574,""
 184,"You are almost sad as Yu Yan sprawls to the ground. 
 The woman fought well, and it was a shame such talent 
 should go to waste.  You search her, her <b>stonecutter </b>
@@ -3091,7 +3096,7 @@ across the floor.  It seems as if you are free to explore the
 house.  Where will you go?	
 To Unbraaki’s study (turn to <b>659</b>)?	
 To the library (turn to <b>459</b>)?	
-To the basement (turn to <b>67</b>)?",3,659,459,67,"image_008_p40_.jpeg"
+To the basement (turn to <b>67</b>)?",3,659,459,67,""
 211,"You are in the room with the open coffin. 
 Shattered skeletons surround you.	
 Go through the north door (turn to <b>717</b>)?	
@@ -3110,7 +3115,7 @@ If you fail, turn to<b> 572</b>.",2,526,572,""
 You are pleased to see the slaves, who realise that this is 
 their best chance of escape, turn on their masters with 
 their picks and shovels.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -3139,7 +3144,7 @@ Orc Leader
 7 (4+)	
 4+	
 14
-</td>
+</tc>
 Notes:  The slaves will assist you in this battle.  After all your party members have attacked, the slaves will inflict 
 1 point of Health damage on each orc, except the orc 
 leader – they are too terrified to strike him!	
@@ -3173,7 +3178,7 @@ present.
 	
 If you have the code A13 Malronac the Deathengine 
 is not present.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -3182,7 +3187,7 @@ The Iron King
 6 (4+)	
 4+	
 15
-</td>
+</tc>
 Malronac the Deathengine	 6 (3+)*	4+	
 30
 Bronzeguard	
@@ -3321,7 +3326,7 @@ and pushed out to face the current arena champions.
 The crowd roar – they recognise you from your 
 previous battles and know that this should prove an 
 entertaining fight.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -3338,7 +3343,7 @@ Agile Gladiator
 6 (3+)	
 5+	
 6	
-</td>
+</tc>
 If you win, turn to <b>161</b>.",1,161,""
 224,"Perhaps it would be wiser if only a few people entered 
 the room?  Decide who is passing through the shadow 
@@ -3400,7 +3405,7 @@ of the more <b>precious tomes</b> as well.
 	
 Snatch the golden candlestick, if you haven’t already 
 (turn to <b>644)</b>?	
-Head upstairs to help the climbing team (turn to <b>92</b>)?",1,92,""
+Head upstairs to help the climbing team (turn to <b>92</b>)?",2,644,92,""
 231,"Choose a party member to sneak into the chamber and 
 make the following check:
 <i>Sneak into the chamber (Individual check)</i>
@@ -3474,7 +3479,7 @@ whip to punish her further.
 Dash to her defence (turn to <b>812</b>)?	
 Keep well out of it (turn to <b>319</b>)?",2,812,319,""
 237,"A terrible battle begins!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -3496,18 +3501,18 @@ Red Spider
 4 (5+)	
 4+	
 5
-</td>
+</tc>
 Special:  At the end of each combat round, after the spiders have made their attacks, each party member 
 loses 1 Health from being bitten by the swarms of tiny 
 spiders at their feet.	
-If you manage to survive, turn to <b>197</b>.",1,197,"image_009_p44_.jpeg"
+If you manage to survive, turn to <b>197</b>.",1,197,""
 238,"You must fend them off!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
 <i>Health</i>
-</td>
+</tc>
 Lhasbreath Barbarians 	9 (5+)	
 3+	
 16
@@ -3521,7 +3526,7 @@ bodies before moving on.  Turn to <b>840</b>.",1,840,""
 239,"You’ll not back down in front of a knave like Tommul.  
 You must fight this battle alone.  Since you have no 
 weapon you must reduce your Fighting score by 1 point.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -3534,7 +3539,7 @@ Brute
 2 (5+)	
 3+	
 6
-</td>
+</tc>
 After three rounds of combat the guards will arrive and pull you away to your cell.  If you defeat Tommul 
 before this time roll a die and compare the result to your 
 Fighting skill.  If the die roll is higher, improve your 
@@ -3747,7 +3752,7 @@ shoulders.  A large bag is thrown on the bed, glittering
 treasures peeking out of the top.
 Try and sneak up on the man (turn to <b>91</b>)?	
 Demand the man tell you what he is doing (turn to <b>724</b>)?	
-Quickly depart before the man sees you (turn to <b>450</b>)?",3,91,724,450,"image_010_p48_.jpeg"
+Quickly depart before the man sees you (turn to <b>450</b>)?",3,91,724,450,""
 256,"You have entered a small, cramped library, with 
 bookshelves lining the walls and standing in rows before 
 you.  Several books are on the floor, apparently hacked 
@@ -3761,7 +3766,7 @@ come a pair of giant sand lizards.  These beasts alternate
 between lazily sitting in the sun or hunting prey with 
 energetic intensity.  These ones are obviously hungry, 
 and scuttle forwards, their mouths as wide as crocodiles.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -3774,7 +3779,7 @@ and scuttle forwards, their mouths as wide as crocodiles.
 4 (3+)	
 4+	
 9
-</td>
+</tc>
 If you win, you can take some <b>lizard hide</b> if you wish. 	Turn to <b>125</b>.",1,125,""
 258,"There is a strange sound in the room to the south, and 
 you instinctively draw your weapons.  Fortunately, it is 
@@ -3867,7 +3872,7 @@ Speak with the Everchild (turn to <b>898</b>)?
 Order the attack on Saltdad to begin (turn to <b>376</b>)?	
 Leave Luutanesh (turn to <b>194</b>)?",4,66,898,376,194,""
 264,"This will be a fraught battle.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -3880,7 +3885,7 @@ Skeleton Archers
 Special	
 4+	
 13
-</td>
+</tc>
 Note:  The skeleton archers do not attack in hand-to-hand combat, but will try and shoot party members if 
 they are not kept busy.  If, at the end of the combat turn, 
 the skeleton archers have not taken any damage, they 
@@ -4057,7 +4062,7 @@ Go southeast, into the desert (turn to <b>202</b>)?
 Go south towards Lhasbreath Oasis (turn to <b>590</b>)?
 (continued...)
 Go southwest towards Lhasbreath (turn to <b>752</b>)?	
-Go west to the Tumblestones (turn to <b>137</b>)?",8,688,691,858,115,202,590,752,137,"image_011_p52_.jpeg"
+Go west to the Tumblestones (turn to <b>137</b>)?",8,688,691,858,115,202,590,752,137,""
 276,"The inns are a little unusual in Lhasbreath.  Rather 
 than being solid structures, they are vast canvas tents 
 without separate rooms.  Here you rub shoulders with 
@@ -4114,7 +4119,7 @@ Rising from his crude mattress comes a Dragonyakman,
 a scaly, bull headed man, some nine feet tall, hefting a 
 great iron axe.	
 You nod to Yu Yan to flank, as you go in for the kill.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -4123,7 +4128,7 @@ Dragonyakman
  6 (5+)	
 3+	
 15
-</td>
+</tc>
 Note:  After you attack, Yu Yan will also make an attack using 5 attack dice.  She is very agile, so the 
 dragonyakman will focus all his attacks just on you.	
 If you win, turn to <b>635</b>.",1,635,""
@@ -4201,7 +4206,7 @@ refilled from the blasted sandstorms as quickly as we
 could dig them,” he grumbles.  “I’m certain there are 
 amazing discoveries to be made, but I’ll be blowed if it’s 
 worth all the hassle of finding them!”	
-When you are finished here, turn to <b>614</b>.",2,562,614,"image_012_p53_.jpeg"
+When you are finished here, turn to <b>614</b>.",2,562,614,""
 285,"You turn a corner to see Tommul, one of the thugs you 
 bullied in the dungeon on your very first day.  He is 
 accompanied by another muscular man, armed with a 
@@ -4307,7 +4312,7 @@ side.”  It seems diplomacy is over ... turn to <b>117</b>.",1,117,""
 intercept you.  There are five of them... fierce odds, 
 given the accuracy of their snatching claws.  You gird 
 yourselves for battle.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -4332,7 +4337,7 @@ yourselves for battle.
 2 (3+)	
 4+	
 5
-</td>
+</tc>
 	If you win, you can take up to five <b>troglodyte heads</b>. 
 In addition, the leader possessed a <b>shield (Armour +2)</b>, 
 a block of <b>incense</b> and <b>40 silver coins</b>.  Pleased with 
@@ -4343,12 +4348,12 @@ no bows.  Your spellcasters can make an extra attack
 in the first round of combat, as long as that attack is 
 used to cast some sort of spell.  After the extra attacks, 
 resolve the battle as normal.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
 <i>Health</i>
-</td>
+</tc>
 Lhasbreath Barbarians 	9 (5+)	
 3+	
 16
@@ -4492,7 +4497,7 @@ rein to attack intruders.  They bark and snarl at you, but
 with their masters dead you have little to fear from the 
 noise.  If you want the supplies you will have to deal 
 with the hounds…
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -4509,7 +4514,7 @@ with the hounds…
 4 (4+)	
 4+	
 6
-</td>
+</tc>
 Note:  You can cast any number of spells before combat starts, as the chained hounds cannot reach you through 
 the door.
 	
@@ -4529,7 +4534,7 @@ apologises the tallest.  “But we’ve been paid three
 hundred silver coins to ensure you come to a sticky end.  
 No offence.  It’s just business.”	
 “None taken,” you snarl, drawing your own weapons.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -4542,7 +4547,7 @@ Barbarian Leader
 4 (4+)	
 3+	
 8
-</td>
+</tc>
 	If you win, you can take the barbarian leader’s <b>iron </b>
 <b>greataxe (Fighting +2)*</b> and the <b>300 silver coins</b> the 
 barbarians were bribed with.  Not wishing to be found 
@@ -4578,7 +4583,7 @@ food are consumed in great amounts, and songs are
 sung across the city.  You can restore the health scores 
 of your party to maximum.	
 If you have Amelia Pass-Dayne in your party, turn 
-to <b>181</b>.  If not, turn to <b>280</b>.",2,181,280,"image_013_p58_.jpeg"
+to <b>181</b>.  If not, turn to <b>280</b>.",2,181,280,""
 310,"You have reached a crossroads, with the corridor 
 splitting off into four directions.  To the north you make 
 out a door in the eastern wall.  The western branch of 
@@ -4590,7 +4595,7 @@ Go north, past the door, down the tunnel
 (turn to <b>634)</b>?	
 Go through the door in the west tunnel (turn to <b>247</b>)?	
 Go south (turn to <b>196</b>)?	
-Go east (turn to <b>23</b>)?",4,361,247,196,23,""
+Go east (turn to <b>23</b>)?",5,361,634,247,196,23,""
 311,"Imopposh gives an unearthly howl before collapsing 
 into piles of dust.  You are relieved that the foul sorcerer 
 has finally met his end.  <i>Record the code A39</i>.
@@ -4718,7 +4723,7 @@ where the water-filled one leads?” muses the Everchild.
 Will you offer to scout out the watery arch 	
 (turn to <b>438</b>)?	
 Or suggest you head through the safer, drier archway	
-(turn to <b>523</b>)?",2,438,523,"image_014_p60_.jpeg"
+(turn to <b>523</b>)?",2,438,523,""
 318,"You have returned to the door you forced open earlier. 
 You can now either head north into the room beyond 
 (turn to <b>494</b>), or south to the junction (turn to <b>350</b>).",2,494,350,""
@@ -4927,7 +4932,7 @@ Explore the city (turn to <b>369</b>)?
 Follow the Northroad out of the city (turn to <b>822</b>)?	
 Go northeast, following the eastern bank of the river	
 (turn to <b>625</b>)?	
-Go west, into the desert (turn to <b>657</b>)?",10,201,375,595,110,272,33,369,822,625,657,"image_015_p63_.jpeg"
+Go west, into the desert (turn to <b>657</b>)?",10,201,375,595,110,272,33,369,822,625,657,""
 341,"<i>Gain the code A58</i>.  You sheathe your weapons and search 
 through the coffin, somewhat gingerly given the amount 
 of oozing fluid puddling at the bottom.
@@ -4975,7 +4980,7 @@ contain hordes of vicious monsters.
 These are the infamous Caves of Uranu, named after 
 the valley-god of the underworld.	
 Explore the caves (turn to <b>493</b>)?	
-Skirt around the caves and move on (turn to <b>445</b>)?",2,493,445,"image_016_p64_.jpeg"
+Skirt around the caves and move on (turn to <b>445</b>)?",2,493,445,""
 347,"You emerge into a tunnel that soon splits in two.  One 
 route leads down slightly, the other slopes up.  Ancient 
 writing crosses the walls, and the Everchild calls for 
@@ -5071,7 +5076,7 @@ which plunges the tunnel beyond into darkness.
 Lighting your lanterns, you illuminate a pack of giant 
 sand lizards shielding themselves from the noonday sun. 
 With alien speed they bolt at you, eager for a good meal.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -5088,7 +5093,7 @@ With alien speed they bolt at you, eager for a good meal.
 5 (3+)	
 4+	
 10
-</td>
+</tc>
 	If you win, you may take some <b>lizard hide</b> from the 
 bodies as a reward.  Turn to <b>395</b>.",1,395,""
 357,"The old father is tearful with gratitude.  “I have no money 
@@ -5233,7 +5238,7 @@ to <b>821</b>)?",3,717,551,821,""
 367,"You draw your weapons.  “We will not let you harm 
 grieving people,” you say sharply.  The kensai bow to you 
 and draw their swords as one.  This will be a tough fight.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -5258,7 +5263,7 @@ Kensai Master
 8 (3+)	
 5+	
 11	
-</td>
+</tc>
 If you succeed, turn to <b>874</b>.",1,874,""
 368,"The stone blocks are so withered and aged it is 
 impossible to get an exact fit between the blocks.  After 
@@ -5298,7 +5303,7 @@ what you discover:
 5-6 turn to <b>343</b>.	
 7 turn to <b>598</b>.	
 8-9 turn to <b>449</b>.	
-10-12 turn to <b>547</b>.",5,701,343,598,449,547,"image_017_p68_.jpeg"
+10-12 turn to <b>547</b>.",5,701,343,598,449,547,""
 371,"You look around the chamber, attempting to puzzle 
 out what the orcs were doing here.  The tunnels they 
 have cut lead in all directions, but end in disappointing 
@@ -5326,6 +5331,7 @@ the goods the further to the exterior of the market
 can be found the stall.  Priests of Cursus occupy each 
 stall, each uttering a solemn praise to their god before 
 welcoming you curtly.  All prices are in silver coins.
+<tm>
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
@@ -5392,6 +5398,7 @@ welcoming you curtly.  All prices are in silver coins.
 <b>Lizard Hide</b>	
 -	
 25
+</tm>
 When you are done here, turn to <b>340</b>.",1,340,""
 376,"You feel that you have done all you can to prepare the 
 Everchild’s forces for battle.  You go into council with 
@@ -5575,7 +5582,7 @@ add any Fighting bonus a weapon can give you.
 However, because you are familiar with the unarmed 
 combat style of the monks, you do not lose a point of 
 Fighting for having no weapon.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -5584,8 +5591,8 @@ Monks
 5 (4+)	
 4+	
 8	
-</td>
-If you win, turn to <b>9</b>.  If you are beaten, turn to <b>596</b>.",2,9,596,"image_018_p72_.jpeg"
+</tc>
+If you win, turn to <b>9</b>.  If you are beaten, turn to <b>596</b>.",2,9,596,""
 387,"As soon as you show the ring, the guards become 
 humble.  “Forgive us, great ones, we did not know!” 
 they whisper.  “Naturally, you may pass!”
@@ -5610,7 +5617,7 @@ you leave the thirteenth floor (turn to <b>135</b>).",3,817,446,135,""
 389,"You curse as three of the goblins bolt past you out of 
 the south door.  The other three goblins bear their 
 teeth and lunge at you.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -5627,7 +5634,7 @@ teeth and lunge at you.
 2 (4+)	
 4+	
 4	
-</td>
+</tc>
 If you win, turn to <b>650</b>.",1,650,""
 390,"The Bronzeguard live in a large, low compound with 
 reinforced walls, just adjacent to the palace. 
@@ -5903,7 +5910,7 @@ If you fail, you still manage to force open the door,
 but not before a pair of guards, attracted by the noise, 
 interrupt you!  Only members of the weapon stealing 
 team may help in this combat.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -5916,7 +5923,7 @@ Second Guard
 3 (4+)	
 4+	
 7
-</td>
+</tc>
 Note:  Since you are currently unarmed, each party member’s Fighting score is reduced by 1.  Once you 
 have defeated one of the guards, you may take the <b>iron </b>
 <b>shortsword (Fighting +1)</b> that they are wielding and 
@@ -5971,7 +5978,7 @@ If you have a <b>wayfinder rod</b>, turn to <b>481</b>.
 Go south (turn to <b>886</b>)?	
 Go west (turn to <b>676)</b>?	
 Go east (turn to <b>589</b>)?	
-Go north through the Shaded Gate (turn to <b>140</b>)?",4,481,886,589,140,""
+Go north through the Shaded Gate (turn to <b>140</b>)?",5,481,886,676,589,140,""
 411,"The Tower of Oneness is not the tallest structure in 
 Chalice, but it is the grandest.  Intricately carved from 
 the living rock, and decorated in flecked red and gold 
@@ -6025,7 +6032,7 @@ used to sharing.  And I am here to treasure hunt.”
 You frown.  You do not seek conflict with this 
 woman, but nor can you just leave without the statue.  	
 Offer to work together with Yu Yan (turn to <b>454</b>)?	
-Or insist on searching her bags (turn to <b>506</b>)?",2,454,506,"image_019_p77_.jpeg"
+Or insist on searching her bags (turn to <b>506</b>)?",2,454,506,""
 416,"You rub your hands together with glee as you behold 
 the stores of treasure.  It’s time to get looting!  
 The following items are in the vault:	
@@ -6102,7 +6109,7 @@ but you do find trouble.  Vicious Sand Drakes, tawny-
 brown reptilian horrors that stand some ten feet high 
 on two scally legs, take an interest in you.  You have 
 little option but to fend them off.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -6115,7 +6122,7 @@ little option but to fend them off.
 5 (5+)	
 4+	
 11	
-</td>
+</tc>
 If you win, turn to <b>115</b> to try and get your bearings.",1,115,""
 423,"You have returned to the goblin kitchen. The goblins 
 greet you with friendly chitters and offer you some 
@@ -6156,7 +6163,7 @@ Go northeast into the Withered Steppes (turn to <b>115</b>)?
 Go southeast, into desert (turn to <b>202</b>)?	
 Go south towards Lhasbreath Oasis (turn to <b>590)</b>?	
 Go southwest towards Lhasbreath (turn to <b>752</b>)?	
-Go west to the Tumblestones (turn to <b>137</b>)?",6,691,858,115,202,752,137,""
+Go west to the Tumblestones (turn to <b>137</b>)?",7,691,858,115,202,590,752,137,""
 427,"You had hoped you might be able to take another suit 
 of bronze armour here, but alas no spare suits appear 
 to be present.  Cursing your luck, you sneak onwards 
@@ -6353,7 +6360,7 @@ If you succeed, turn to <b>395</b>.  If not, turn to <b>846</b>.",2,395,846,""
 446,"It was not easy to find them, but finally you discover a 
 band of troglodytes in their lair.  They hiss at you and 
 leap to the attack.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -6374,7 +6381,7 @@ leap to the attack.
 3 (3+)	
 4+	
 4
-</td>
+</tc>
 	If you win, you can take up to four <b>troglodyte heads</b>. 
 In addition you find a <b>handsome brooch (Charisma +1)</b>, 
 <b>10 silver coins</b>, and a <b>grey talisman</b> here.  Take what you 
@@ -6407,7 +6414,7 @@ continue with your journey.  Turn to <b>51</b>.",1,51,""
 449,"Tramping through the jungle you have attracted attention 
 to yourselves.  A pair of jungle panthers have been 
 stalking you.  They leap upon you, quite unexpectedly.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -6420,7 +6427,7 @@ stalking you.  They leap upon you, quite unexpectedly.
 4 (4+)	
 4+	
 7
-</td>
+</tc>
 Note:  The panthers have ambushed you!  They get the first turn.
 	
 If you win, you quickly make your way out of the 
@@ -6451,7 +6458,7 @@ Explore the city (turn to <b>270</b>)?
 Leave the city west, over the bridge 	
 (you do not need to pay on this side, turn to <b>614</b>)?	
 Leave the city south, along the Cold River 	
-(turn to <b>346)</b>?",6,142,665,522,411,270,614,"image_020_p83_.jpeg"
+(turn to <b>346)</b>?",7,142,665,522,411,270,614,346,""
 451,"The caravan guards sense the uncertainty in your voice as 
 the nomads crash upon them.  The line breaks and soon 
 there is chaos.  In the fighting and looting that follows 
@@ -6521,7 +6528,7 @@ animate, but you are unable to bind them to your control.
 They seem to resent being awoken from their rest and 
 make their feelings clear as they try to gouge your eyes 
 out with their bony claws.  You must fight!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -6530,7 +6537,7 @@ Skeletons
 5 (5+)	
 4+	
 24
-</td>
+</tc>
 Note:  The skeletons will attack twice each round.  You must assign the damage of the second attack to a 
 different character from the first.	
 If you win, turn to <b>345</b>.",1,345,""
@@ -6551,7 +6558,7 @@ drain your water supplies.
 <i>Survive the Salt Plains (Team check)</i>
 <i>Skill and DC:  Survival (4+)</i>
 <i>Successes Required:  6</i>
-If you succeed, turn to <b>436</b>.  If you fail, turn to <b>864</b>.",2,436,864,"image_021_p84_.jpeg"
+If you succeed, turn to <b>436</b>.  If you fail, turn to <b>864</b>.",2,436,864,""
 461,"The spiders seem unsure about attacking such large, 
 fire-wielding prey, especially those that are respecting 
 the integrity of their nests.  Heart in your mouth, you 
@@ -6685,7 +6692,7 @@ The heartless folk of Saltdad ignore her, some going so
 far as to cross to the other side of street to avoid her. 
 <i>Gain the code A14</i>.	
 Ask her what is wrong (turn to <b>829</b>)?	
-Ignore the pitiful waif (turn to <b>75</b>)?",5,64,520,668,829,75,"image_022_p86_.jpeg"
+Ignore the pitiful waif (turn to <b>75</b>)?",5,64,520,668,829,75,""
 472,"If you have Brash in your party, turn to <b>513</b>.
 If not, read on.
 	
@@ -6787,7 +6794,7 @@ If you succeed, turn to <b>136</b>.  If you fail, turn to <b>467</b>.",2,136,467
 shock as you stroll right in front of a pair of armed 
 guards.  Any party members in the weapon stealing 
 team can leap to your defence.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -6800,7 +6807,7 @@ Second Guard
 3 (4+)	
 4+	
 7
-</td>
+</tc>
 Note:  Since you are currently unarmed, each party member’s Fighting score is reduced by 1.  Once you 
 have defeated one of the guards, you may take the <b>iron </b>
 <b>shortsword (Fighting +1)</b> that they are wielding and 
@@ -6986,7 +6993,7 @@ weapons drawn, in the corners of the room.  Though they
 are blind like you, they can smell you with their tongues 
 and feel an impression of your body heat.  You cannot be 
 certain of where the exit is and must fight to the death!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -6999,7 +7006,7 @@ certain of where the exit is and must fight to the death!
 4 (5+)	
 6+	
 5
-</td>
+</tc>
 Note:  The snakemen strike first in this battle because they are ambushing you.  If you have a <b>hygliph flower</b>,<b> </b>
 the snakemen are put off by its pungent odour and 
 require a 6+ on their attack rolls to inflict damage 
@@ -7054,7 +7061,7 @@ for our family.  Face the blade of a true kensai, father.”
 	
 The revenant draws his weapon, and so begins the 
 ultimate duel between father and son.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -7063,7 +7070,7 @@ Revenant
  6 (3+)	
 5+	
 8
-</td>
+</tc>
 Note:  If Akihiro has achieved Enlightenment, the revenant only hits on a 4+, and its defence drops to 4+. 	
 If Akihiro wins, turn to <b>882</b>.  If he loses, turn to <b>320</b>.",2,882,320,""
 501,"Making your way through the jungle is tiring work.  
@@ -7071,7 +7078,7 @@ The area is particularly thick with vegetation, and
 you must hack and hew your way through the dense 
 rainforest to make any progress at all.  Treat the jungle 
 as if it were an opponent:
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -7080,7 +7087,7 @@ Jungle
 None	
 4+	
 25
-</td>
+</tc>
 Note:  The jungle does not attack, as such.  Instead, each party member takes 1 point of Health damage each time 
 they attack the jungle.  This is from scrapes, exhaustion, 
 etc, and you cannot use armour to save against this 
@@ -7164,7 +7171,7 @@ When you have finished resting, turn to <b>19</b>.",1,19,""
 “A pity,” she says.  “So be it.”  She draws a long green 
 blade, and goes into a crouch, her sword held high.  
 The duel is on.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -7173,7 +7180,7 @@ Yu Yan
 5 (4+)	
 4+	
 9	
-</td>
+</tc>
 If you win, turn to <b>184</b>.",1,184,""
 507,"If you have the code A71, turn to <b>474</b>.  If not, read on.
 You open the door into a musty library, the air thick 
@@ -7324,7 +7331,7 @@ Head west, across the desert toward Lhasbreath
 (turn to <b>752</b>)?	
 Head north, into the desert (turn to <b>202</b>)?	
 Head east, across the desert towards Cursus	
-(turn to <b>657</b>)?",6,432,79,243,752,202,657,"image_023_p94_.jpeg"
+(turn to <b>657</b>)?",6,432,79,243,752,202,657,""
 516,"The wind fills your sails as you glide in the straits 
 between the shores of the valley and the jungle-filled 
 island of Viaan.  Roll a die.  If you roll a 1 or 2, turn to 
@@ -7341,7 +7348,7 @@ on.  Turn to <b>860</b>.",1,860,""
 can crush dozens of beetles with each stamp you will 
 be quickly swarmed.  Their nasty, biting mandibles can 
 sheer off flesh like tiny razors.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -7350,7 +7357,7 @@ Beetle Swarm
 Special	
 3+	
 25
-</td>
+</tc>
 Notes:  You cannot add the Fighting bonus from your weapons in this fight – they are less effective than simply 
 brushing off and standing on the beetles.  The beetles 
 will not roll for an attack.  Instead each round they 
@@ -7462,7 +7469,7 @@ up upon you.  You draw your swords and, back to back
 with Brekken’s team, you prepare to fight to the death to 
 defend your loot.  Only members of the wall-climbing 
 team may help in this fight.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -7479,7 +7486,7 @@ team may help in this fight.
 5 (5+)	
 4+	
 11
-</td>
+</tc>
 If you win, you break out of the house and into the cover of the streets (turn to <b>833</b>).  If you lose then all members 
 of the wall-climbing team are dead, cross off all their 
 items.  If you still have any surviving party members, 
@@ -7572,7 +7579,7 @@ Go north, into the Withered Steppes (turn to <b>115</b>)?
 (continued...)
 West, into the desert (turn to <b>202</b>)?	
 South, towards the coast (turn to <b>657</b>)?	
-East, towards the Northroad (turn to <b>822</b>)?",4,115,202,657,822,"image_024_p98_.jpeg"
+East, towards the Northroad (turn to <b>822</b>)?",5,708,115,202,657,822,""
 536,"If you have the code A99, turn to <b>186</b>.  If not, read on.
 As you sail along the coast you come upon the sight 
 of a colossal wreck.  A Drakehallow greatship, a four-
@@ -7601,7 +7608,7 @@ snakemen appear to be at worship by a flat black altar.
 They hiss in alarm as you enter, reaching for their wickedly 
 curved swords. You narrow your eyes in concentration as 
 their swaying bodies slither towards you.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -7626,7 +7633,7 @@ Snakeman Champion
 6 (4+)	
 3+	
 12
-</td>
+</tc>
 	Note:  If you have a <b>hygliph flower</b> the snakemen are 
 put off by its pungent odour and require a 5+ on their 
 attack rolls to inflict damage during this battle.	
@@ -7772,7 +7779,7 @@ An arrow thudding into the ground near you, launched
 from one the arena guards, spurs you back into action. 
 Clearly you must fight hard or be executed.  Hurriedly 
 you engage with the dregs of the fight to keep busy.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -7781,7 +7788,7 @@ Saltdad Slaves
 6 (5+)	
 3+	
 20	
-</td>
+</tc>
 If you win, turn to <b>71</b>.",2,718,71,""
 551,"If you have the code A61, turn to <b>809</b>.  
 If you have the code A62, turn to <b>423</b>.  If not, read on.
@@ -7811,7 +7818,7 @@ Turn to <b>162</b>.",1,162,""
 554,"“Death to the Iron King!” you snarl, drawing your 
 weapons.  The soldiers look horrified to see such 
 disciplined warriors before them.
-<td>
+<tc>
 <i>Opponent		</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -7832,7 +7839,7 @@ disciplined warriors before them.
 3 (4+)	
 4+	
 8
-</td>
+</tc>
 You can flee from the battle at the start of any round by turning to <b>75</b>.  If you win, turn to<b> 357</b>.",1,357,""
 555,"This battle has taught you much about combat strategy.  
 Choose a party member and roll a die.  If the number 
@@ -7966,7 +7973,7 @@ struggle hard to locate it.”
 Well, the directions are vague, but it’s something to 
 go on.  You thank Unbraaki for his time and promise 
 to return with the prism.  You are escorted out of the 
-palace.  Turn to <b>265</b>.",2,818,265,"image_025_p102_.jpeg"
+palace.  Turn to <b>265</b>.",2,818,265,""
 560,"Mannus is clearly troubled at the brazen way you are 
 attempting to bribe him.  Suspecting that you might be 
 a plant from one of his opponents he calls the guards 
@@ -7978,7 +7985,7 @@ to the corridor.  Turn to <b>350</b>.",1,350,""
 562,"If you have the code A7, turn to <b>263</b>.  If not, turn to <b>750</b>.",2,263,750,""
 563,"This unnatural monster cannot be allowed to live. 
 Drawing your weapons with a grimace, you advance.  
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -7987,7 +7994,7 @@ Imopposh the Mad
 3 (4+)	
 4+	
 30
-</td>
+</tc>
 Note: Imopposh, instead of attacking, will cast the following spells each turn, as long as he is still alive:	
 1st turn:  Imopposh casts a Thunderbolt spell.  	
 He makes two 10 dice attacks.	
@@ -8003,7 +8010,7 @@ him hard to see as he commands his monkeys to attack.
 To your horror the monkeys do not attack with teeth and 
 nails, but with blasts of magic.  You are not just fighting 
 one sorcerer – but a whole pack of them!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -8028,7 +8035,7 @@ Special
 Special	
 5+	
 5
-</td>
+</tc>
 Notes:  Unbraaki fights with blasts of black flames from his hands.  These flames leech your life into his.  For 
 every Health point you lose, Unbraaki gains a Health 
 point, even if this takes him over his starting Health.
@@ -8197,7 +8204,7 @@ At the far end of the room you can see a pedestal, on
 which sits a black prism of some kind.	
 Close the door on this room of horrors (turn to <b>310</b>)?	
 Have someone attempt to navigate the room 	
-(turn to<b> 44</b>)?",3,729,310,44,"image_026_p105_.jpeg"
+(turn to<b> 44</b>)?",3,729,310,44,""
 579,"In the aftermath of the battle you enter the step 
 pyramid to see if any more horrors lurk within.  
 Fortunately the pyramid is not large, and you seem to 
@@ -8221,7 +8228,7 @@ If you succeed, turn to <b>49</b>.  If you fail, turn to <b>90</b>.",2,49,90,""
 580,"You have entered the cave of a terrible naga, a spirit snake 
 of fearsome magical power.  The ghastly creature splits 
 itself into six identical copies before lunging for you.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -8230,7 +8237,7 @@ Naga
 5 (3+)	
 6+	
 10
-</td>
+</tc>
 Note:  Attacks from the naga penetrate armour.  You cannot make any armour saves in this battle.
 	
 You can flee from the naga at the start of a combat 
@@ -8292,7 +8299,7 @@ and gasping you stagger from the cave, vowing to never
 return.  Turn to <b>395</b>.",1,395,""
 587,"The barbarians square up to you.  Behind you, the knife-
 wielding assassin prepares to strike.
-<td>
+<tc>
 <i>Opponent		</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -8317,7 +8324,7 @@ Cursite Assassin
 4 (4+)	
 3+	
 8
-</td>
+</tc>
 Notes:  In any round where the Cursite Assassin is not injured he will backstab a party member.  When 
 backstabbing, the Assassin does not need to roll to hit 
 but inflicts 4 points of damage.	
@@ -8356,7 +8363,7 @@ North, to the Granite Hills (turn to <b>275</b>)?
 East, into the desert (turn to <b>202</b>)?	
 South, to the Mordain ruins (turn to <b>515</b>)?	
 West, across the desert towards Lhasbreath 	
-(turn to <b>752</b>)?",6,448,349,275,202,515,752,"image_027_p107_.jpeg"
+(turn to <b>752</b>)?",6,448,349,275,202,515,752,""
 591,"The Everchild’s camp is on high alert, and her followers 
 will give their lives to protect her.  Chances are good 
 that she will be alright even without your help.  Roll a 
@@ -8506,7 +8513,7 @@ and a number of straw pallets.  You are just getting
 comfortable when the door opposite you opens and five 
 burly looking orcs emerge.  They do not hesitate to give 
 a great roar and leap to the attack.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -8531,7 +8538,7 @@ a great roar and leap to the attack.
 4 (4+)	
 4+	
 7
-</td>
+</tc>
 	If you win, turn to <b>734</b>.  You can only escape if you 
 have a ship in Mordain harbour.  If so, you can flee back 
 to the harbour, get aboard your ship, and sail off.  Your 
@@ -8644,7 +8651,7 @@ Support:  Slave Levies – Strength 1, Morale 1
 Front:  Clifftop Infantry – Strength 3, Morale 3
 Support:  Thalsian Mercenaries – Strength 2, Morale 3
 If you win, turn to <b>342</b>.  
-If you lose, turn to <b>48</b>.",3,300,342,48,"image_028_p111_.jpeg"
+If you lose, turn to <b>48</b>.",3,300,342,48,""
 611,"The gatehouse’s weapon store is open to you. 
 You may take any of the following items:	
 <b>Hide armour (Armour +1)	</b>
@@ -8805,7 +8812,7 @@ they do so on the far side of the bank.  The notorious
 Caves of Uranu lie to the north, and no trader will risk 
 their stocks in that foul wasteland.	
 Go north, to the Caves of Uranu (turn to <b>346)</b>?	
-Go south, to the city of Cursus (turn to <b>340</b>)?",1,340,""
+Go south, to the city of Cursus (turn to <b>340</b>)?",2,346,340,""
 626,"The next morning the surviving landlords and masters 
 of Clifftop fill the King’s Hall to kneel before the 
 Everchild.  Resplendent in her yellow and blue silks 
@@ -8899,7 +8906,7 @@ rubble onto one side of the tunnel to allow easy access.
 Past the ruins of the barricade the tunnel continues 
 east for a while before ending at a wooden door.	
 Go east, through the door (turn to <b>821)</b>?	
-Go west, back down the stairs (turn to <b>23</b>)?",1,23,""
+Go west, back down the stairs (turn to <b>23</b>)?",2,821,23,""
 631,"The slavers have sold you to the dreaded Saltdad Arena, 
 a grim place where the poor and criminals alike fight 
 to the death for the savage entertainment of the crowd.	
@@ -8980,7 +8987,7 @@ stench of sorcery about him.  “Heretics!” he hisses.  “Your
 damned queen will never rule the hearts of the virtuous. 
 Death to the Everchild and her apostate followers!”  
 A battle is inevitable.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -9001,7 +9008,7 @@ Sorcerer
 3 (5+)	
 4+	
 11
-</td>
+</tc>
 Note:  The Sorcerer, instead of attacking, will cast the following spells each turn, as long as he is still alive:
 	
 1st turn:  The sorcerer casts an Ice Bolt spell.  He 
@@ -9163,7 +9170,7 @@ He is indecently close before you realise that you don’t
 recognise his face.  Acting on your gut instinct you shove 
 the fellow away.  He immediately draws a knife and tries 
 to make for the queen.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -9172,7 +9179,7 @@ Assassin
  4 (4+)	
 4+	
 7
-</td>
+</tc>
 Note:  If at the end of any round you fail to inflict even a single point of damage on the Assassin, turn to<b> 254</b>.  	
 If you win, turn to <b>95</b>.",2,254,95,""
 649,"It won’t be easy to talk these brutes down.  If your 
@@ -9224,7 +9231,7 @@ quite taken with their game, but it would still be rather
 difficult to sneak up on them in such a tiny room.	
 Attack the orcs (turn to <b>2</b>)?	
 Try to sneak up on one of them (turn to <b>383)</b>?	
-Leave them to their game and move on (turn to <b>350</b>)?",3,561,2,350,""
+Leave them to their game and move on (turn to <b>350</b>)?",4,561,2,383,350,""
 655,"You slit the wizard’s throat.  He silently drops to the 
 ground, obligingly dead.  <i>Gain the code A95</i>.  Not wanting 
 to delay and end up captured, you slip away, back to the 
@@ -9321,7 +9328,7 @@ tongue extending grotesquely from its mouth.  All
 around you the inanimate skeletons suddenly snap to 
 attention, drawing the poles they were hung upon to 
 use as quarterstaffs.  You are surrounded and must fight.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -9334,7 +9341,7 @@ Skeletons
 6 (5+)	
 4+	
 12	
-</td>
+</tc>
 If you win, turn to <b>341</b>.",1,341,""
 661,"Almost casually you empty in the <b>vial of poison</b> (cross it 
 off your sheet) as if it were nothing more than another 
@@ -9381,7 +9388,7 @@ Transfer your crew to the orc hulk
 (only if you have a ship here, turn to <b>894)</b>?	
 Board your ship	
 (only if you have a ship here, turn to <b>851</b>)?	
-Enter the wide tunnel (turn to <b>593</b>)?",4,13,738,851,593,""
+Enter the wide tunnel (turn to <b>593</b>)?",5,13,738,894,851,593,""
 663,"You chat with your old partner in crime about your 
 many adventures.  If you have the code A11, turn to <b>820</b>. 
 Otherwise, after spending a splendid evening together, 
@@ -9461,7 +9468,7 @@ to interpret (turn to <b>75</b>)?
 Offer to pay the sergeant to release the family	
 (turn to <b>808</b>)?	
 Damn the Iron King! Attack the soldiers! 	
-(turn to <b>554</b>).",4,852,75,808,554,"image_029_p122_.jpeg"
+(turn to <b>554</b>).",4,852,75,808,554,""
 669,"With the orcs dead you move to loot the room and 
 examine their wargear.  The leader has a mighty <b>iron </b>
 <b>greataxe (Fighting +2)*</b> and is wearing a fine suit of 
@@ -9721,7 +9728,7 @@ Walk along the length of the Blackwall (turn to <b>315</b>)?
 Go northeast, into the desert (turn to <b>858)</b>?	
 Go around the wall to the Granite Hills (turn to <b>275</b>)?	
 Go west to the Tumblestones (turn to <b>137</b>)?	
-Go northwest, and join the Westroad (turn to <b>511</b>)?",4,315,275,137,511,"image_030_p125_.jpeg"
+Go northwest, and join the Westroad (turn to <b>511</b>)?",5,315,858,275,137,511,""
 692,"You approach what looks like a building, but as you 
 get closer you realise it is just a web of shadows cast 
 from a lifeless tree.  Your companions appear almost 
@@ -9866,7 +9873,7 @@ will be a fitting tomb for you.”
 Fastilon murmurs, and soon his form splits into six 
 identical copies, which swirl about, constantly changing 
 positions.  You must defeat this master assassin:
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -9875,7 +9882,7 @@ Fastilon
 8 (2+)*	
 6+	
 40
-</td>
+</tc>
 Notes:  The first person to damage Fastilon in a combat round is stunned by a magical bolt.  That party member 
 cannot attack in the next combat round.  If Fastilon 
 takes no damage in a combat round he will cast a spell 
@@ -9953,7 +9960,7 @@ working on now!  Turn to <b>680</b>.",1,680,""
 grabbing you tightly as you attempt to sneak by.  Your 
 cover is blown!  You must slay the guard quickly before 
 reinforcements arrive!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -9962,7 +9969,7 @@ Bronzeguard
 8 (4+)	
 5+	
 12
-</td>
+</tc>
 If you kill the Bronzeguard before the end of the second round you manage to escape, turn to <b>75</b>.  Otherwise 
 you are still fighting when a horde of guardsmen burst 
 through the doors.  You are arrested on charges of 
@@ -10000,7 +10007,7 @@ chamber.  Drawing your weapons, you are startled to
 see a number of hideous snakemen, serpentine creatures 
 with the arms of men and the bodies of giant cobras. 
 There is no escape, you must fight!
-<td>
+<tc>
 <i>Opponent		</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -10021,7 +10028,7 @@ There is no escape, you must fight!
 3 (4+)	
 3+	
 5
-</td>
+</tc>
 	Note:  If you have a <b>hygliph flower</b>, the snakemen 
 are put off by its pungent odour and require a 5+ on their 
 attack rolls to inflict damage during this battle.	
@@ -10150,7 +10157,7 @@ peaceful intentions.
 <i>Reassure the Bando (Team check)</i>
 <i>Skill and DC:  Charisma (4+)</i>
 <i>Successes Required:  5</i>
-If you are successful turn to <b>339</b>.  If you fail, turn to <b>52</b>.",3,206,339,52,"image_031_p131_.jpeg"
+If you are successful turn to <b>339</b>.  If you fail, turn to <b>52</b>.",3,206,339,52,""
 717,"This plain looking room is empty.  There is a door in the 
 north and south walls.	
 Cast the <i>shadow door</i> spell (turn to <b>351</b>)?	
@@ -10213,7 +10220,7 @@ You open the door to a gathering of large orc warriors,
 who turn to look at you sharply as you enter.  The leader, 
 a giant of an orc, gives a drooling snarl and commands 
 his warriors to attack.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -10234,7 +10241,7 @@ Orc Leader
 4 (4+)	
 4+	
 11	
-</td>
+</tc>
 If you win, turn to <b>669</b>.",4,325,114,885,669,""
 724,"The thief turns his head at the sudden noise. As quick 
 as a flash he dashes forwards, long dagger in hand, to 
@@ -10400,12 +10407,12 @@ sword, eyes flashing with power.
 	
 “More traitors to execute!” he growls.  “You merely 
 save me time, fools!”
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
 <i>Health</i>
-</td>
+</tc>
 Malronac the Deathengine	 6 (3+)	
 4+	
 30
@@ -10414,7 +10421,7 @@ assign the damage of the second attack to a different
 character from the first.
 	
 You cannot flee from Malronac, he will chase you 
-until the end of the world.  If you win, turn to <b>777</b>.",1,777,"image_032_p134_.jpeg"
+until the end of the world.  If you win, turn to <b>777</b>.",1,777,""
 734,"You have slain the orcs, their blood weeping into the 
 ancient flagstones.  You can take up to five <b>crude blades </b>
 <b>(Fighting +0)</b> if you need them.  Turning your attention 
@@ -10458,7 +10465,7 @@ Unlock the west door
 (only if you have an <b>iron key</b>, turn to <b>306)</b>?	
 Go through the east door (turn to <b>723</b>)?	
 Go through the north door (turn to <b>551</b>)?	
-Go south to the crossroads (turn to <b>566</b>)?",3,723,551,566,""
+Go south to the crossroads (turn to <b>566</b>)?",4,306,723,551,566,""
 737,"You broach the subject of the queen, and her 
 requirement for more soldiers to prosecute her war 
 against the patriarch of Cursus.  He laughs as you extol 
@@ -10512,7 +10519,7 @@ fleeing miners barge past you, pursued tightly by a gang
 of three scaly troglodytes.  Trapped between the fleeing 
 miners and the aggressive troglodytes you have little 
 option but to fight.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -10529,7 +10536,7 @@ option but to fight.
 2 (3+)	
 4+	
 3
-</td>
+</tc>
 If you win, you take up to three <b>troglodyte heads</b> from the unlucky beasts.  <i>Gain the code A24</i> and turn to <b>135</b>.",2,817,135,""
 740,"Night falls and you make camp in a clearing under 
 the stars.  Emlyn Pass-Ross tends to her scratches and 
@@ -10619,7 +10626,7 @@ oath to the God King.”
 It seems you have little choice. Select one of your 
 party members to duel the kensai. Only that party 
 member may be involved in this battle.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -10628,7 +10635,7 @@ Kensai
 6 (4+)	
 4+	
 9	
-</td>
+</tc>
 If you win, turn to <b>418</b>.  If you lose, turn to <b>502</b>.",2,418,502,""
 745,"The rope is tied.  Now the rest of the party must try to 
 haul it aboard whilst it is guided into place by the diver.  
@@ -10678,7 +10685,7 @@ to face with a hideous female ogre.  She hefts her club
 to attack.  Unknown to you, the ogre’s mate is in a room 
 not far away.  At the end of the second round of combat 
 he will join the attack.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -10691,7 +10698,7 @@ Skullcracker
 8 (4+)	
 4+	
 12	
-</td>
+</tc>
 If you win, turn to <b>431</b>.",3,269,165,431,""
 750,"You encounter Che Long waiting by the inn’s desk. 
 He nods to you and takes you to the back of the inn, 
@@ -10754,7 +10761,7 @@ end him, our victory would be all the more likely.”
 	
 The Everchild rises from her cushions.  
 “Come,” she says.  “Let me show you my soldiers.”	
-<i>Gain the code A7</i> and turn to <b>360</b>.",1,360,"image_033_p138_.jpeg"
+<i>Gain the code A7</i> and turn to <b>360</b>.",1,360,""
 751,"You come upon a curious trapdoor, set into the top 
 of a hillside.  A large red ‘X’ has been painted on it, 
 and yet it contains no lock or bar and opens easily. 
@@ -10843,6 +10850,7 @@ turn to <b>866</b>.",2,631,866,""
 Most stalls are given over to the agricultural goods 
 Clifftop is famous for.  You browse the empty stands, 
 looking for something of interest.
+<tm>
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
@@ -10879,6 +10887,7 @@ looking for something of interest.
 <b>Prybar</b>	
 -	
 50
+</tm>
 When you have finished here, turn to <b>19</b>.",1,19,""
 760,"The temple of Krom is a tall, timber building made 
 to resemble the maw of a mighty beast.  Inside hang 
@@ -10932,7 +10941,7 @@ any of these varieties! We must gather samples at once!”
 Will you ask to check out the pyramid first 	
 (turn to <b>404)</b>?	
 Or guard the scholars as they gather flower samples 	
-(turn to <b>299</b>)?",1,299,""
+(turn to <b>299</b>)?",2,404,299,""
 764,"The nomads pull up their horses as they see you, letting 
 out a cry of friendship.  The caravaners look on uncertainly 
 as several nomads dismount to embrace you.  “Why, it is 
@@ -10958,12 +10967,12 @@ The fat fellow draws his scimitar with overweening
 confidence, spinning the blade in his hands.  “Yield?  
 No!  Death first!” he laughs.  “You have met your 
 match, rogues!”
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
 <i>Health</i>
-</td>
+</tc>
 Lotor the Blademaster 	5 (3+)	
 4+	
 18
@@ -11006,6 +11015,7 @@ you quietly slip back to your ship and weigh anchor.
 Turn to <b>144</b>.",2,704,144,""
 768,"The nomads crowd around you, offering you goods gleaned 
 from ruined temples and lifted from rich travellers.
+<tm>
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
@@ -11045,6 +11055,7 @@ from ruined temples and lifted from rich travellers.
 <b>Handsome brooch (Charisma +1)</b>	
 500	
 250
+</tm>
 When you are done here, turn back to <b>473</b>.",1,473,""
 769,"It only takes the slightest misstep, and the blades activate. 
 There is a bloodcurdling scream as blades and spears 
@@ -11144,7 +11155,7 @@ Explore the city (turn to <b>182</b>)?
 Leave the city north, to the Tumblestones (turn to <b>137</b>)?	
 Leave the city east, into the desert (turn to <b>752</b>)?	
 Go west, into the jungle (turn to <b>370</b>)?	
-Go northwest, to the Palace of Unbraaki (turn <b>890</b>)?",9,158,276,392,640,190,182,137,752,370,"image_034_p143_.jpeg"
+Go northwest, to the Palace of Unbraaki (turn <b>890</b>)?",11,158,276,392,760,656,640,190,182,137,752,370,""
 776,"“I dunno if I should tell you that,” rumbles the ogre.  “I 
 have a responsibility of discretion towards my employers.”	
 “Do you accept bribes?” you ask innocently.	
@@ -11217,7 +11228,7 @@ You back away in horror as it turns to face you, its stern
 face gazing down at you like a disapproving master. 
 It stands ten feet tall, and with heavy steps advances 
 towards you.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -11226,7 +11237,7 @@ Monk Statue
 4 (5+)	
 5+	
 30	
-</td>
+</tc>
 After two rounds of combat, turn to <b>619</b>.",1,619,""
 783,"Although you are tempted to rush to the slave’s defence, 
 you realise it would be wiser to organise a more efficient 
@@ -11267,7 +11278,7 @@ Irritating things, really.”
 You bow and depart.  Turn to <b>450</b>.",1,450,""
 787,"Few mortals dare to face a dragon and live. 
 This will be a most formidable battle:
-<td>
+<tc>
 <i>Opponent		</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -11275,13 +11286,13 @@ This will be a most formidable battle:
 Salt Dragon		
 10 (5+)	 4+	
 40
-</td>
+</tc>
 Note: If ever the Salt Dragon ends a round without inflicting even a single point of Health damage on 
 one of your party members, it will become enraged 
 and breathe a blast of fire.  When this happens, every 
 party member loses 3 Health points, with no armour 
 saves possible.	
-If you win, turn to <b>841</b>.",1,841,"image_035_p145_.jpeg"
+If you win, turn to <b>841</b>.",1,841,""
 788,"If you have the code A57, turn to <b>318</b>.  If not, read on.
 	
 The door in front of you has not seen much use. 
@@ -11476,6 +11487,7 @@ If you are successful, turn to <b>192</b>.  If not, turn to <b>228</b>.",3,395,1
 and is a cacophony of sound.  Merchants flail their arms, 
 sometimes physically grabbing you to look upon their 
 wares.  Items without a buy price are not available here:
+<tm>
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
@@ -11509,9 +11521,6 @@ wares.  Items without a buy price are not available here:
 <b>Bronze Armour (Armour +4)</b>	
 -	
 2000
-<i>Item	</i>
-<i>Buy	</i>
-<i>Sell</i>
 <b>Soft Boots (Stealth +1)</b>	
 500	
 250
@@ -11545,8 +11554,8 @@ wares.  Items without a buy price are not available here:
 <b>Lizard Hide</b>	
 -	
 25
-All prices are in silver coins.  You can only buy an item 
-if it has a listed buy price.  Once you have finished here, 
+</tm>
+All prices are in silver coins.  You can only buy an item if it has a listed buy price.  Once you have finished here, 
 turn to <b>75</b>.",1,75,""
 799,"Your foot crunches on a knuckle bone as you step over 
 a large skeleton.  A skeletal hand suddenly grabs your 
@@ -11684,7 +11693,7 @@ The Azure Deep stretches in all other directions as
 far as the eye can see. Roll a die. 	
 On a 1 or 2, turn to <b>536</b>.	
 Otherwise you may steer the ship west (turn to <b>21</b>)	
-or east (turn to <b>516</b>)?",3,536,21,516,"image_036_p150_.jpeg"
+or east (turn to <b>516</b>)?",3,536,21,516,""
 815,"Your threat about the guards unnerves Tommul.  A 
 distant sound of whipping and the crash of a cell door 
 make him jump.  Swearing to savour his revenge 
@@ -11925,6 +11934,7 @@ skill permanently.  Ignorant of this loss, for the moment,
 you rendezvous in the storm drains of Saltdad with 
 your ill-gotten gains. You lay out your valuables, which 
 Brekken will estimate into a cash value.  
+<tm>
 <i>Item	</i>
 <i>Value</i>
 <b>Bronze Scorpion	</b>
@@ -11941,8 +11951,8 @@ Brekken will estimate into a cash value.
 150
 <b>Silver Idol	</b>
 50
-Brekken’s gang has found 500 silver coins worth 
-of goods.  You are presented with <b>250 silver coins</b>. 
+</tm>
+Brekken’s gang has found 500 silver coins worth of goods.  You are presented with <b>250 silver coins</b>. 
 Now add up the value of all your goods and halve the 
 result, this is how much extra money you have made 
 on the heist.
@@ -11991,7 +12001,7 @@ One team of excitable youths from the gate adjacent
 to you make a sudden rush, hoping to catch you off-
 guard.  The crowd roar in joy – the bloodshed is about 
 to begin.  You must fight.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -12004,8 +12014,8 @@ Leader
 3 (5+)	
 4+	
 5	
-</td>
-If you win, turn to <b>107</b>.",1,107,"image_037_p154_.jpeg"
+</tc>
+If you win, turn to <b>107</b>.",1,107,""
 836,"There is a ghastly scraping sound as the hull of your ship 
 is ripped by the hidden rocks.  Your ship loses 9 Health 
 points.  If this reduces your ship to less than 1 Health 
@@ -12099,7 +12109,7 @@ You return to the crossroads (turn to <b>310</b>).",1,310,""
 long until a large band of them track you down.  
 At least three dozen of the little swines holler down the 
 mountainside, screaming a war cry.  You must fight!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -12120,7 +12130,7 @@ Goblin Archers
 Special	
 4+	
 8
-</td>
+</tc>
 Note:  The goblin archers do not attack in hand-to-hand combat but will try and shoot party members if they 
 are not kept busy.  If, at the end of the combat turn, 
 the goblin archers have not taken any damage, they 
@@ -12324,7 +12334,7 @@ witchlights burning in his eyes.
 Repel the spirit with a <b>Talisman of St Elias</b> 	
 (turn to <b>434</b>)?	
 Engage the undead horror in battle	
-(turn to <b>563</b>)?",2,434,563,"image_038_p159_.jpeg"
+(turn to <b>563</b>)?",2,434,563,""
 863,"It takes a confident explorer to blaze a new trail through 
 an unfamiliar jungle.
 <i>Navigate the jungle (Team check)</i>
@@ -12364,7 +12374,7 @@ is followed by a ‘*’) and the party member wielding it
 cannot use a shield at the same time.	
 All too soon the portcullis opens to a roar from the 
 crowd.  Blinking in the glare of the sun, you emerge into 
-the deadly arena.  Turn to <b>835</b>.",1,835,"image_039_p160_.jpeg"
+the deadly arena.  Turn to <b>835</b>.",1,835,""
 866,"You are labouring on a weed-filled crop farm in Clifftop, 
 the whips of a dozen overseers caressing your backs 
 should you waver in the slightest.  Your treatment is 
@@ -12456,7 +12466,7 @@ If you have the <b>talisman of St Elias</b>, turn to <b>407</b>.
 If not, read on.	
 The ghouls scream in hunger and bound towards 
 you on the stairs.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -12473,7 +12483,7 @@ you on the stairs.
 5 (4+)	
 4+	
 14	
-</td>
+</tc>
 If you win, turn to <b>651</b>.",3,34,407,651,""
 870,"You stroll towards Amelia just in time to swat a soldier’s 
 hand away from her bottom.  “She didn’t ask,” you say 
@@ -12558,7 +12568,7 @@ ground and shatters.  It appears to be inanimate.
 Examine the coffin (turn to <b>414)</b>?	
 Go through the north door (turn to<b> 717</b>)?	
 Go through the south door (turn to <b>18</b>)?	
-Go through the south-west door (turn to <b>127</b>)?",3,717,18,127,""
+Go through the south-west door (turn to <b>127</b>)?",4,414,717,18,127,""
 877,"The wizard’s eyes flick open as you approach.  
 He attempts to yell for aid.  You have only one chance 
 to save the war and yourselves.  
@@ -12645,7 +12655,7 @@ Explore a smaller crevice (turn to <b>689</b>)?",2,605,689,""
 out of your hand.  Orcs and goblins come pouring out, 
 bowling you to the ground in an aggressive ambush.  
 It seems that they were waiting for you!
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -12670,7 +12680,7 @@ Goblins
 7 (5+)	
 4+	
 10
-</td>
+</tc>
 Notes:  For this battle, your opponents attack first.	If you win, turn to <b>669</b>.",1,669,""
 886,"You scan the horizon for landmarks. There are none. 
 The cold... the damnable cold gnaws at you.  
@@ -12694,7 +12704,7 @@ The moment is ruined, so it’s time to move on. Turn to <b>51</b>.",1,51,""
 889,"This will not be an easy battle.  The Everchild and her 
 followers will handle half the thieves, whilst you handle 
 the others.
-<td>
+<tc>
 <i>Opponent	</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -12707,7 +12717,7 @@ Brekken
 5 (4+)	
 4+	
 9	
-</td>
+</tc>
 If you win, turn to <b>328</b>.",1,328,""
 890,"If you have the code A88, turn to <b>710</b>.  If not, read on.
 You have arrived on the outskirts of the Palace of 
@@ -12726,7 +12736,7 @@ Attempt to break into the palace (turn to <b>304</b>)?
 Go north, towards Clifftop (turn to <b>725</b>)?	
 Go east, to the Tumblestones (turn to <b>137</b>)?	
 Go southeast, to Lhasbreath (turn to <b>775</b>)?	
-Head south, into the jungle (turn to <b>370</b>)?",7,710,602,304,725,137,775,370,"image_040_p164_.jpeg"
+Head south, into the jungle (turn to <b>370</b>)?",7,710,602,304,725,137,775,370,""
 891,"You desperately chant, hoping some kind of holy blessing 
 will restore your control.  The stronger willed and most 
 knowledgeable members of the party can resist for a 
@@ -12903,7 +12913,7 @@ Pleased with your new troops, you return to the palace.
 Turn to <b>620</b>.",1,620,""
 901,"You draw your swords and prepare to grimly hold off 
 the nomads.
-<td>
+<tc>
 <i>Opponent		</i>
 <i>Attack	</i>
 <i>Def	</i>
@@ -12920,7 +12930,7 @@ the nomads.
 4 (4+)	
 4+	
 6
-</td>
+</tc>
 If you win, you manage to slip away from the great bulk of the nomad horde, the sounds of caravan guards 
 screaming behind you.  Turn to <b>477</b>.",1,477,""
 902,"You hire a room in a local inn (lose <b>5 silver coins</b>) and 
