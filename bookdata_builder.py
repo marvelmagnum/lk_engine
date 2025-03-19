@@ -18,14 +18,22 @@ def parse_section(section_text):
 
     # correct book specific errors
     if "valley of bones" in book.lower():
-        if section_number == "488":
+        if section_number == "75":  # a stray (continued...) at the end of page
+            text_content = text_content.replace("(continued...)\n","")
+        if section_number == "142": # a market table item has all columns in the same row. no CRLF between columns. 
+            start_idx = text_content.find("<b>Masterwork Greatsword (Fighting +4)*</b>\t ")
+            idx = start_idx + len("<b>Masterwork Greatsword (Fighting +4)*</b>\t ") # Also this item is abnormally big as a result causing an incorrect table end. Fix that.
+            text_content = text_content[:start_idx - len("</tm>\n")] + text_content[start_idx:idx] + '\n' + text_content[idx:idx + 2] + '\n' +  text_content[idx + 2:]
+            end_idx = text_content.find("When you have finished here,")
+            text_content = text_content[:end_idx] + "</tm>\n" + text_content[end_idx:] # Finally mark table end at the correct spot
+        if section_number == "488": # a stray " instead of an opening “ that breaks the csv load
             text_content = text_content.replace('"', '“')
-        if section_number == "550":
+        if section_number == "550": # incorrect italicized "Health" where the last letter got missed
             text_content = text_content.replace("<i>Healt</i>h", "<i>Health</i>")
     
     # Find all "Turn to/ turn to <number>" references
-    references = re.findall(r'[Tt]urn (?:back )?to[ ]?<b>[ ]?(\d+)[., ]*</b>', ref_text)
-    
+    references = re.findall(r'[Tt]urn (?:back )?to[ ]?<b>[ ]?(\d+)[., )]*</b>', ref_text)
+ 
     # Adjust the references by subtracting the offset
     references = [str(int(ref)) for ref in references]
     
