@@ -268,7 +268,7 @@ beyond by turning to <b>350</b>.  If the door is still stuck you
 can keep attempting the skill check above until you 
 succeed, but your selected party member will lose 1 
 Health point each time they fail.  You can consider other 
-exits from the room by turning to <b>494.</b>",1,350,""
+exits from the room by turning to <b>494.</b>",4,350,494,350,494,""
 19,"You are in a dreadful city of poor mud-brick and 
 grass hovels, surrounded by weed-filled cropland. 
 Even the most impressive buildings are little more 
@@ -562,7 +562,7 @@ Cast this spell when you have failed a Lore check.
 You gain 3 automatic successes for this check only.
 <b>Recharge:  75 silver</b>
 When you are ready, return to the crossroads by 
-turning to <b>46</b>.",0,""
+turning to <b>46</b>.",1,46,""
 35,"“You say the captain wishes to see us?  And he mentioned 
 a promotion?” presses the guard.
 	
@@ -4172,7 +4172,7 @@ test below, or return to the main floor by turning to <b>574</b>.
 <i>Successes Required:  4</i>
 If you succeed, turn to <b>183</b>.  If you fail, you, and any 
 companions outside, are caught by the guards.  Turn 
-to <b>55</b>.",3,327,183,55,""
+to <b>55</b>.",4,327,574,183,55,""
 282,"You attempt to get the violent-looking slaves on side, 
 offering to join their gang and share the spoils of the 
 goat evenly.
@@ -4519,7 +4519,7 @@ Note:  You can cast any number of spells before combat starts, as the chained ho
 the door.
 	
 If you win, turn to <b>816</b>.  You can flee at the start of 
-any combat round by turning to <b>736</b>.",2,736,816,""
+any combat round by turning to <b>736</b>.",3,736,816,736,""
 307,"Finally, after days of wandering you collapse, helpless, 
 into the dry sands.  You fear death will take you. 
 What happens later is scarcely much better.  A patrol 
@@ -6155,7 +6155,7 @@ must wrestle with your bare hands (no pun intended).
 Note:  You cannot use any bonuses from your weapon 
 with this check.	
 If you succeed, turn to <b>677</b>.	
-If you fail, turn to <b>742</b>.",2,677,742,""
+If you fail, turn to <b>742</b>.",3,615,677,742,""
 426,"It’s time to move on.  Where will you go from here?	
 Go northwest, to the Blackwall (turn to <b>691</b>)?	
 Go north, towards Saltdad (turn to <b>858</b>)?	
@@ -6449,7 +6449,6 @@ place, quiet and subdued compared with other cities, but
 also less savage and uncivilised.	
 If Akihiro is in your party, you may visit his 	
 house by turning to <b>897</b>.
-(continued...)
 Visit the marketplace (turn to <b>142</b>)?	
 Find an inn in the foreign quarter (turn to <b>665</b>)? 	
 Attend a temple (turn to <b>522</b>)?	
@@ -6458,7 +6457,7 @@ Explore the city (turn to <b>270</b>)?
 Leave the city west, over the bridge 	
 (you do not need to pay on this side, turn to <b>614</b>)?	
 Leave the city south, along the Cold River 	
-(turn to <b>346)</b>?",7,142,665,522,411,270,614,346,"image_020_p83_.jpeg"
+(turn to <b>346)</b>?",8,897,142,665,522,411,270,614,346,"image_020_p83_.jpeg"
 451,"The caravan guards sense the uncertainty in your voice as 
 the nomads crash upon them.  The line breaks and soon 
 there is chaos.  In the fighting and looting that follows 
@@ -7702,7 +7701,7 @@ is only 4+.
 If you succeed, turn to <b>630</b>.  If you fail you strain 
 yourselves.  Choose a party member to lose 1 Health 
 point.  You can attempt the skill check again, if you wish, 
-or make your way back down the stairs by turning to <b>23</b>.",1,630,""
+or make your way back down the stairs by turning to <b>23</b>.",2,630,23,""
 542,"Your marshal tone cannot be denied.  You form an 
 impenetrable thicket of soldiers against the cavalry 
 charge.  Your archers pepper the hesitating nomads with 
@@ -7840,7 +7839,7 @@ disciplined warriors before them.
 4+	
 8
 </tc>
-You can flee from the battle at the start of any round by turning to <b>75</b>.  If you win, turn to<b> 357</b>.",1,357,""
+You can flee from the battle at the start of any round by turning to <b>75</b>.  If you win, turn to<b> 357</b>.",2,75,357,""
 555,"This battle has taught you much about combat strategy.  
 Choose a party member and roll a die.  If the number 
 you rolled is higher than that party member’s Fighting 
@@ -8243,7 +8242,7 @@ Note:  Attacks from the naga penetrate armour.  You cannot make any armour saves
 You can flee from the naga at the start of a combat 
 round by turning to <b>395</b>, but the naga will make an 
 attack upon you before you escape.  	
-If you defeat the naga, turn to <b>773</b>.",1,773,""
+If you defeat the naga, turn to <b>773</b>.",2,395,773,""
 581,"If you have some <b>registry papers</b> turn to<b> 70</b>.	
 Otherwise, read on.
 You meet a foreigner from the county of Longport Bay, 
@@ -9773,7 +9772,7 @@ A pillar of energy sizzles into a single foe.
 Choose an opponent to lose 3 Health.
 <b>Recharge:  50 silver</b>
 When you are finished here, you can return to the room 
-outside by turning to <b>821</b>.",0,""
+outside by turning to <b>821</b>.",1,821,""
 696,"If you have the code A55 turn to <b>225</b>.  If not, read on.
 You stroll along the temple districts, expecting to find 
 only peace and tranquillity.  To your surprise you hear 
@@ -11311,7 +11310,7 @@ you get the door open you can explore the room beyond
 by turning to <b>494</b>.  If the door is still stuck you can keep 
 attempting the skill check above until you succeed, but 
 you will lose 1 Health point each time you fail.  You can 
-return to the junction at any time by turning to <b>350</b>.",2,318,350,""
+return to the junction at any time by turning to <b>350</b>.",4,318,350,494,350,""
 789,"You dash across the rooftops, your hair lifting as you leap 
 from roof to roof.  You are gaining on the thief when 
 he leaps into a crowd of worshippers on their way to 
@@ -12977,4 +12976,4 @@ If you open the door before perishing, turn to <b>123</b>.
 	
 If all your party members in the room die, the rest of 
 the party may venture on by turning to <b>717.</b>  You cannot 
-recover the equipment from your dead party members.",1,123,""
+recover the equipment from your dead party members.",2,123,717,""
