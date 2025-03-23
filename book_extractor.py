@@ -59,6 +59,7 @@ def extract_text_and_images(pdf_path):
     doc.close()
 
     extracted_text = remove_header_footer(extracted_text)
+    extracted_text = remove_continued(extracted_text)
     extracted_text = find_tables(extracted_text)
     
     # Save the extracted text to a file
@@ -88,6 +89,18 @@ def remove_header_footer(text):
         if (not header in line and not footer in line):
             processed += line + '\n'
       
+    return processed
+
+def remove_continued(text):
+    lines = text.split('\n')
+
+    processed = ""
+    for index, line in enumerate(lines):
+        if line != '(continued...)':
+            processed += line + '\n'
+        else:
+            test = line
+
     return processed
 
 def find_tables(text):
