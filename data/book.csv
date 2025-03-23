@@ -295,7 +295,7 @@ Go to the Church of Cursus (turn to <b>207</b>)?
 Head to the dockyard (turn to <b>703</b>)?	
 Explore the city (turn to <b>354</b>)?	
 Leave the city east, along the road (turn to <b>12</b>)?	
-Leave the city south, into the desert (turn to <b>725</b>)?",9,557,759,152,505,207,703,354,12,725,""
+Leave the city south, into the desert (turn to <b>725</b>)?",9,557,759,152,505,207,703,354,12,725,"image_001_p4_.jpeg"
 20,"The passageway opens up into a long hall, lined with 
 stamped bronze plates.  Torches burn in brackets along 
 the walls, illuminating hideous murals of serpents 
@@ -400,7 +400,7 @@ Accept the mission to hunt the troglodytes (turn to <b>681</b>)?
 Sell him some <b>troglodyte heads</b> (turn to <b>233</b>)?	
 Express interest in buying salt for your ships (turn to <b>575</b>)?	
 Apologise for wasting the mine master’s time	
-and leave (turn to <b>722</b>)",5,532,681,233,575,722,""
+and leave (turn to <b>722</b>)",5,532,681,233,575,722,"image_002_p6_.jpeg"
 26,"Cross the <b>quicksilver</b> off your adventure sheet.  You 
 pour the liquid metal into the well and cross your fingers. 
 Soon, the runes around the circle blaze into light, 
@@ -1220,7 +1220,7 @@ Visit the temple of Kalu (turn to <b>382</b>)?
 Explore the city (turn to <b>471</b>)?	
 Head west along the road (turn to <b>511</b>)?	
 Head east along the road (turn to <b>177</b>)?	
-Head south into the desert (turn to <b>858</b>)?",12,172,798,326,633,390,179,770,382,471,511,177,858,""
+Head south into the desert (turn to <b>858</b>)?",12,172,798,326,633,390,179,770,382,471,511,177,858,"image_003_p16_.jpeg"
 76,"This must be Garon the Bloody-mouthed, whom you 
 were sent to find.  His father will no doubt grieve to 
 know his fate, but at least it will solve the mystery of his 
@@ -1758,7 +1758,7 @@ Go south to the Temple of the Unbroken (turn to <b>535</b>)?
 Go east to the Northroad (turn to <b>113</b>)?	
 Go northeast to Luutanesh (turn to <b>614)</b>?	
 Go north to the Westroad (turn to <b>177</b>)?	
-Go northwest towards Saltdad (turn to <b>858</b>)?",9,253,884,275,202,535,113,614,177,858,""
+Go northwest towards Saltdad (turn to <b>858</b>)?",9,253,884,275,202,535,113,614,177,858,"image_004_p23_.jpeg"
 116,"You creep across the landing, looting rooms as you go. 
 Only members of the wall-climbing team may help 
 with the check.
@@ -2023,7 +2023,7 @@ the spell if you are clever enough to puzzle it out.
 <i>Rebuild the spell mural (Team check)</i>
 <i>Skill and DC:  Lore (4+)</i>
 <i>Successes Required:  4</i>
-If you succeed, turn to <b>603</b>.  If you fail, turn to <b>368</b>.",3,14,603,368,""
+If you succeed, turn to <b>603</b>.  If you fail, turn to <b>368</b>.",3,14,603,368,"image_005_p26_.jpeg"
 138,"You make your way to the Expeditionary Guild but find 
 the area empty.  The blue tents of House Ross have been 
 packed away and there is no sign of Sir Lawrence or 
@@ -2632,7 +2632,7 @@ Second Lion
 10
 </tc>
 Note:  You cannot use spells in this fight, under threat of mutilation!	
-If you win, turn to <b>236</b>.",1,236,""
+If you win, turn to <b>236</b>.",1,236,"image_006_p33_.jpeg"
 171,"The young man takes you to a small side room and asks 
 you to wait while he organises introductions.  You take 
 a seat anxiously, hoping the young man is not some 
@@ -2765,7 +2765,7 @@ If you succeed, turn to <b>498</b>.  If you fail, each party
 member loses 1 Health point from the strain.  You can 
 try again until you succeed, losing 1 Health point each 
 time you fail, or give up and return to the main floor 
-(turn to <b>574</b>).",2,498,574,""
+(turn to <b>574</b>).",2,498,574,"image_007_p35_.jpeg"
 184,"You are almost sad as Yu Yan sprawls to the ground. 
 The woman fought well, and it was a shame such talent 
 should go to waste.  You search her, her <b>stonecutter </b>
@@ -3096,7 +3096,7 @@ across the floor.  It seems as if you are free to explore the
 house.  Where will you go?	
 To Unbraaki’s study (turn to <b>659</b>)?	
 To the library (turn to <b>459</b>)?	
-To the basement (turn to <b>67</b>)?",3,659,459,67,""
+To the basement (turn to <b>67</b>)?",3,659,459,67,"image_008_p40_.jpeg"
 211,"You are in the room with the open coffin. 
 Shattered skeletons surround you.	
 Go through the north door (turn to <b>717</b>)?	
@@ -3505,7 +3505,7 @@ Red Spider
 Special:  At the end of each combat round, after the spiders have made their attacks, each party member 
 loses 1 Health from being bitten by the swarms of tiny 
 spiders at their feet.	
-If you manage to survive, turn to <b>197</b>.",1,197,""
+If you manage to survive, turn to <b>197</b>.",1,197,"image_009_p44_.jpeg"
 238,"You must fend them off!
 <tc>
 <i>Opponent	</i>
@@ -3752,7 +3752,7 @@ shoulders.  A large bag is thrown on the bed, glittering
 treasures peeking out of the top.
 Try and sneak up on the man (turn to <b>91</b>)?	
 Demand the man tell you what he is doing (turn to <b>724</b>)?	
-Quickly depart before the man sees you (turn to <b>450</b>)?",3,91,724,450,""
+Quickly depart before the man sees you (turn to <b>450</b>)?",3,91,724,450,"image_010_p48_.jpeg"
 256,"You have entered a small, cramped library, with 
 bookshelves lining the walls and standing in rows before 
 you.  Several books are on the floor, apparently hacked 
@@ -4062,7 +4062,7 @@ Go southeast, into the desert (turn to <b>202</b>)?
 Go south towards Lhasbreath Oasis (turn to <b>590</b>)?
 (continued...)
 Go southwest towards Lhasbreath (turn to <b>752</b>)?	
-Go west to the Tumblestones (turn to <b>137</b>)?",8,688,691,858,115,202,590,752,137,""
+Go west to the Tumblestones (turn to <b>137</b>)?",8,688,691,858,115,202,590,752,137,"image_011_p52_.jpeg"
 276,"The inns are a little unusual in Lhasbreath.  Rather 
 than being solid structures, they are vast canvas tents 
 without separate rooms.  Here you rub shoulders with 
@@ -4206,7 +4206,7 @@ refilled from the blasted sandstorms as quickly as we
 could dig them,” he grumbles.  “I’m certain there are 
 amazing discoveries to be made, but I’ll be blowed if it’s 
 worth all the hassle of finding them!”	
-When you are finished here, turn to <b>614</b>.",2,562,614,""
+When you are finished here, turn to <b>614</b>.",2,562,614,"image_012_p53_.jpeg"
 285,"You turn a corner to see Tommul, one of the thugs you 
 bullied in the dungeon on your very first day.  He is 
 accompanied by another muscular man, armed with a 
@@ -4583,7 +4583,7 @@ food are consumed in great amounts, and songs are
 sung across the city.  You can restore the health scores 
 of your party to maximum.	
 If you have Amelia Pass-Dayne in your party, turn 
-to <b>181</b>.  If not, turn to <b>280</b>.",2,181,280,""
+to <b>181</b>.  If not, turn to <b>280</b>.",2,181,280,"image_013_p58_.jpeg"
 310,"You have reached a crossroads, with the corridor 
 splitting off into four directions.  To the north you make 
 out a door in the eastern wall.  The western branch of 
@@ -4723,7 +4723,7 @@ where the water-filled one leads?” muses the Everchild.
 Will you offer to scout out the watery arch 	
 (turn to <b>438</b>)?	
 Or suggest you head through the safer, drier archway	
-(turn to <b>523</b>)?",2,438,523,""
+(turn to <b>523</b>)?",2,438,523,"image_014_p60_.jpeg"
 318,"You have returned to the door you forced open earlier. 
 You can now either head north into the room beyond 
 (turn to <b>494</b>), or south to the junction (turn to <b>350</b>).",2,494,350,""
@@ -4932,7 +4932,7 @@ Explore the city (turn to <b>369</b>)?
 Follow the Northroad out of the city (turn to <b>822</b>)?	
 Go northeast, following the eastern bank of the river	
 (turn to <b>625</b>)?	
-Go west, into the desert (turn to <b>657</b>)?",10,201,375,595,110,272,33,369,822,625,657,""
+Go west, into the desert (turn to <b>657</b>)?",10,201,375,595,110,272,33,369,822,625,657,"image_015_p63_.jpeg"
 341,"<i>Gain the code A58</i>.  You sheathe your weapons and search 
 through the coffin, somewhat gingerly given the amount 
 of oozing fluid puddling at the bottom.
@@ -4980,7 +4980,7 @@ contain hordes of vicious monsters.
 These are the infamous Caves of Uranu, named after 
 the valley-god of the underworld.	
 Explore the caves (turn to <b>493</b>)?	
-Skirt around the caves and move on (turn to <b>445</b>)?",2,493,445,""
+Skirt around the caves and move on (turn to <b>445</b>)?",2,493,445,"image_016_p64_.jpeg"
 347,"You emerge into a tunnel that soon splits in two.  One 
 route leads down slightly, the other slopes up.  Ancient 
 writing crosses the walls, and the Everchild calls for 
@@ -5303,7 +5303,7 @@ what you discover:
 5-6 turn to <b>343</b>.	
 7 turn to <b>598</b>.	
 8-9 turn to <b>449</b>.	
-10-12 turn to <b>547</b>.",5,701,343,598,449,547,""
+10-12 turn to <b>547</b>.",5,701,343,598,449,547,"image_017_p68_.jpeg"
 371,"You look around the chamber, attempting to puzzle 
 out what the orcs were doing here.  The tunnels they 
 have cut lead in all directions, but end in disappointing 
@@ -5592,7 +5592,7 @@ Monks
 4+	
 8	
 </tc>
-If you win, turn to <b>9</b>.  If you are beaten, turn to <b>596</b>.",2,9,596,""
+If you win, turn to <b>9</b>.  If you are beaten, turn to <b>596</b>.",2,9,596,"image_018_p72_.jpeg"
 387,"As soon as you show the ring, the guards become 
 humble.  “Forgive us, great ones, we did not know!” 
 they whisper.  “Naturally, you may pass!”
@@ -6032,7 +6032,7 @@ used to sharing.  And I am here to treasure hunt.”
 You frown.  You do not seek conflict with this 
 woman, but nor can you just leave without the statue.  	
 Offer to work together with Yu Yan (turn to <b>454</b>)?	
-Or insist on searching her bags (turn to <b>506</b>)?",2,454,506,""
+Or insist on searching her bags (turn to <b>506</b>)?",2,454,506,"image_019_p77_.jpeg"
 416,"You rub your hands together with glee as you behold 
 the stores of treasure.  It’s time to get looting!  
 The following items are in the vault:	
@@ -6458,7 +6458,7 @@ Explore the city (turn to <b>270</b>)?
 Leave the city west, over the bridge 	
 (you do not need to pay on this side, turn to <b>614</b>)?	
 Leave the city south, along the Cold River 	
-(turn to <b>346)</b>?",7,142,665,522,411,270,614,346,""
+(turn to <b>346)</b>?",7,142,665,522,411,270,614,346,"image_020_p83_.jpeg"
 451,"The caravan guards sense the uncertainty in your voice as 
 the nomads crash upon them.  The line breaks and soon 
 there is chaos.  In the fighting and looting that follows 
@@ -6558,7 +6558,7 @@ drain your water supplies.
 <i>Survive the Salt Plains (Team check)</i>
 <i>Skill and DC:  Survival (4+)</i>
 <i>Successes Required:  6</i>
-If you succeed, turn to <b>436</b>.  If you fail, turn to <b>864</b>.",2,436,864,""
+If you succeed, turn to <b>436</b>.  If you fail, turn to <b>864</b>.",2,436,864,"image_021_p84_.jpeg"
 461,"The spiders seem unsure about attacking such large, 
 fire-wielding prey, especially those that are respecting 
 the integrity of their nests.  Heart in your mouth, you 
@@ -6692,7 +6692,7 @@ The heartless folk of Saltdad ignore her, some going so
 far as to cross to the other side of street to avoid her. 
 <i>Gain the code A14</i>.	
 Ask her what is wrong (turn to <b>829</b>)?	
-Ignore the pitiful waif (turn to <b>75</b>)?",5,64,520,668,829,75,""
+Ignore the pitiful waif (turn to <b>75</b>)?",5,64,520,668,829,75,"image_022_p86_.jpeg"
 472,"If you have Brash in your party, turn to <b>513</b>.
 If not, read on.
 	
@@ -7331,7 +7331,7 @@ Head west, across the desert toward Lhasbreath
 (turn to <b>752</b>)?	
 Head north, into the desert (turn to <b>202</b>)?	
 Head east, across the desert towards Cursus	
-(turn to <b>657</b>)?",6,432,79,243,752,202,657,""
+(turn to <b>657</b>)?",6,432,79,243,752,202,657,"image_023_p94_.jpeg"
 516,"The wind fills your sails as you glide in the straits 
 between the shores of the valley and the jungle-filled 
 island of Viaan.  Roll a die.  If you roll a 1 or 2, turn to 
@@ -7579,7 +7579,7 @@ Go north, into the Withered Steppes (turn to <b>115</b>)?
 (continued...)
 West, into the desert (turn to <b>202</b>)?	
 South, towards the coast (turn to <b>657</b>)?	
-East, towards the Northroad (turn to <b>822</b>)?",5,708,115,202,657,822,""
+East, towards the Northroad (turn to <b>822</b>)?",5,708,115,202,657,822,"image_024_p98_.jpeg"
 536,"If you have the code A99, turn to <b>186</b>.  If not, read on.
 As you sail along the coast you come upon the sight 
 of a colossal wreck.  A Drakehallow greatship, a four-
@@ -7973,7 +7973,7 @@ struggle hard to locate it.”
 Well, the directions are vague, but it’s something to 
 go on.  You thank Unbraaki for his time and promise 
 to return with the prism.  You are escorted out of the 
-palace.  Turn to <b>265</b>.",2,818,265,""
+palace.  Turn to <b>265</b>.",2,818,265,"image_025_p102_.jpeg"
 560,"Mannus is clearly troubled at the brazen way you are 
 attempting to bribe him.  Suspecting that you might be 
 a plant from one of his opponents he calls the guards 
@@ -8204,7 +8204,7 @@ At the far end of the room you can see a pedestal, on
 which sits a black prism of some kind.	
 Close the door on this room of horrors (turn to <b>310</b>)?	
 Have someone attempt to navigate the room 	
-(turn to<b> 44</b>)?",3,729,310,44,""
+(turn to<b> 44</b>)?",3,729,310,44,"image_026_p105_.jpeg"
 579,"In the aftermath of the battle you enter the step 
 pyramid to see if any more horrors lurk within.  
 Fortunately the pyramid is not large, and you seem to 
@@ -8363,7 +8363,7 @@ North, to the Granite Hills (turn to <b>275</b>)?
 East, into the desert (turn to <b>202</b>)?	
 South, to the Mordain ruins (turn to <b>515</b>)?	
 West, across the desert towards Lhasbreath 	
-(turn to <b>752</b>)?",6,448,349,275,202,515,752,""
+(turn to <b>752</b>)?",6,448,349,275,202,515,752,"image_027_p107_.jpeg"
 591,"The Everchild’s camp is on high alert, and her followers 
 will give their lives to protect her.  Chances are good 
 that she will be alright even without your help.  Roll a 
@@ -8651,7 +8651,7 @@ Support:  Slave Levies – Strength 1, Morale 1
 Front:  Clifftop Infantry – Strength 3, Morale 3
 Support:  Thalsian Mercenaries – Strength 2, Morale 3
 If you win, turn to <b>342</b>.  
-If you lose, turn to <b>48</b>.",3,300,342,48,""
+If you lose, turn to <b>48</b>.",3,300,342,48,"image_028_p111_.jpeg"
 611,"The gatehouse’s weapon store is open to you. 
 You may take any of the following items:	
 <b>Hide armour (Armour +1)	</b>
@@ -9468,7 +9468,7 @@ to interpret (turn to <b>75</b>)?
 Offer to pay the sergeant to release the family	
 (turn to <b>808</b>)?	
 Damn the Iron King! Attack the soldiers! 	
-(turn to <b>554</b>).",4,852,75,808,554,""
+(turn to <b>554</b>).",4,852,75,808,554,"image_029_p122_.jpeg"
 669,"With the orcs dead you move to loot the room and 
 examine their wargear.  The leader has a mighty <b>iron </b>
 <b>greataxe (Fighting +2)*</b> and is wearing a fine suit of 
@@ -9728,7 +9728,7 @@ Walk along the length of the Blackwall (turn to <b>315</b>)?
 Go northeast, into the desert (turn to <b>858)</b>?	
 Go around the wall to the Granite Hills (turn to <b>275</b>)?	
 Go west to the Tumblestones (turn to <b>137</b>)?	
-Go northwest, and join the Westroad (turn to <b>511</b>)?",5,315,858,275,137,511,""
+Go northwest, and join the Westroad (turn to <b>511</b>)?",5,315,858,275,137,511,"image_030_p125_.jpeg"
 692,"You approach what looks like a building, but as you 
 get closer you realise it is just a web of shadows cast 
 from a lifeless tree.  Your companions appear almost 
@@ -10157,7 +10157,7 @@ peaceful intentions.
 <i>Reassure the Bando (Team check)</i>
 <i>Skill and DC:  Charisma (4+)</i>
 <i>Successes Required:  5</i>
-If you are successful turn to <b>339</b>.  If you fail, turn to <b>52</b>.",3,206,339,52,""
+If you are successful turn to <b>339</b>.  If you fail, turn to <b>52</b>.",3,206,339,52,"image_031_p131_.jpeg"
 717,"This plain looking room is empty.  There is a door in the 
 north and south walls.	
 Cast the <i>shadow door</i> spell (turn to <b>351</b>)?	
@@ -10421,7 +10421,7 @@ assign the damage of the second attack to a different
 character from the first.
 	
 You cannot flee from Malronac, he will chase you 
-until the end of the world.  If you win, turn to <b>777</b>.",1,777,""
+until the end of the world.  If you win, turn to <b>777</b>.",1,777,"image_032_p134_.jpeg"
 734,"You have slain the orcs, their blood weeping into the 
 ancient flagstones.  You can take up to five <b>crude blades </b>
 <b>(Fighting +0)</b> if you need them.  Turning your attention 
@@ -10761,7 +10761,7 @@ end him, our victory would be all the more likely.”
 	
 The Everchild rises from her cushions.  
 “Come,” she says.  “Let me show you my soldiers.”	
-<i>Gain the code A7</i> and turn to <b>360</b>.",1,360,""
+<i>Gain the code A7</i> and turn to <b>360</b>.",1,360,"image_033_p138_.jpeg"
 751,"You come upon a curious trapdoor, set into the top 
 of a hillside.  A large red ‘X’ has been painted on it, 
 and yet it contains no lock or bar and opens easily. 
@@ -11155,7 +11155,7 @@ Explore the city (turn to <b>182</b>)?
 Leave the city north, to the Tumblestones (turn to <b>137</b>)?	
 Leave the city east, into the desert (turn to <b>752</b>)?	
 Go west, into the jungle (turn to <b>370</b>)?	
-Go northwest, to the Palace of Unbraaki (turn <b>890</b>)?",11,158,276,392,760,656,640,190,182,137,752,370,""
+Go northwest, to the Palace of Unbraaki (turn <b>890</b>)?",11,158,276,392,760,656,640,190,182,137,752,370,"image_034_p143_.jpeg"
 776,"“I dunno if I should tell you that,” rumbles the ogre.  “I 
 have a responsibility of discretion towards my employers.”	
 “Do you accept bribes?” you ask innocently.	
@@ -11292,7 +11292,7 @@ one of your party members, it will become enraged
 and breathe a blast of fire.  When this happens, every 
 party member loses 3 Health points, with no armour 
 saves possible.	
-If you win, turn to <b>841</b>.",1,841,""
+If you win, turn to <b>841</b>.",1,841,"image_035_p145_.jpeg"
 788,"If you have the code A57, turn to <b>318</b>.  If not, read on.
 	
 The door in front of you has not seen much use. 
@@ -11693,7 +11693,7 @@ The Azure Deep stretches in all other directions as
 far as the eye can see. Roll a die. 	
 On a 1 or 2, turn to <b>536</b>.	
 Otherwise you may steer the ship west (turn to <b>21</b>)	
-or east (turn to <b>516</b>)?",3,536,21,516,""
+or east (turn to <b>516</b>)?",3,536,21,516,"image_036_p150_.jpeg"
 815,"Your threat about the guards unnerves Tommul.  A 
 distant sound of whipping and the crash of a cell door 
 make him jump.  Swearing to savour his revenge 
@@ -12015,7 +12015,7 @@ Leader
 4+	
 5	
 </tc>
-If you win, turn to <b>107</b>.",1,107,""
+If you win, turn to <b>107</b>.",1,107,"image_037_p154_.jpeg"
 836,"There is a ghastly scraping sound as the hull of your ship 
 is ripped by the hidden rocks.  Your ship loses 9 Health 
 points.  If this reduces your ship to less than 1 Health 
@@ -12334,7 +12334,7 @@ witchlights burning in his eyes.
 Repel the spirit with a <b>Talisman of St Elias</b> 	
 (turn to <b>434</b>)?	
 Engage the undead horror in battle	
-(turn to <b>563</b>)?",2,434,563,""
+(turn to <b>563</b>)?",2,434,563,"image_038_p159_.jpeg"
 863,"It takes a confident explorer to blaze a new trail through 
 an unfamiliar jungle.
 <i>Navigate the jungle (Team check)</i>
@@ -12374,7 +12374,7 @@ is followed by a ‘*’) and the party member wielding it
 cannot use a shield at the same time.	
 All too soon the portcullis opens to a roar from the 
 crowd.  Blinking in the glare of the sun, you emerge into 
-the deadly arena.  Turn to <b>835</b>.",1,835,""
+the deadly arena.  Turn to <b>835</b>.",1,835,"image_039_p160_.jpeg"
 866,"You are labouring on a weed-filled crop farm in Clifftop, 
 the whips of a dozen overseers caressing your backs 
 should you waver in the slightest.  Your treatment is 
@@ -12736,7 +12736,7 @@ Attempt to break into the palace (turn to <b>304</b>)?
 Go north, towards Clifftop (turn to <b>725</b>)?	
 Go east, to the Tumblestones (turn to <b>137</b>)?	
 Go southeast, to Lhasbreath (turn to <b>775</b>)?	
-Head south, into the jungle (turn to <b>370</b>)?",7,710,602,304,725,137,775,370,""
+Head south, into the jungle (turn to <b>370</b>)?",7,710,602,304,725,137,775,370,"image_040_p164_.jpeg"
 891,"You desperately chant, hoping some kind of holy blessing 
 will restore your control.  The stronger willed and most 
 knowledgeable members of the party can resist for a 
