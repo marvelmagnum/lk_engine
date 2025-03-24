@@ -99,7 +99,7 @@ def main():
     global root
     root = tk.Tk()
     root.title(book_title)
-    root.geometry("600x800")
+    root.geometry("606x800")
     root.resizable(False, False)
 
     # Create a main frame to hold the text section and the buttons section

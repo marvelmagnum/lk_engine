@@ -120,6 +120,8 @@ def image_viewer(root):
                     entry += ',"' + book_data[data].img + '"'
                     outfile.write(entry + '\n')
             root.destroy()
+
+            print(f"Process complete. {current_index} images packed in {data_file_name}")
         else:
             show_next_image()
 
@@ -180,12 +182,15 @@ def add_image_data(filename):
     full_path = os.path.dirname(__file__)
     data_path = os.path.join(full_path, "data", filename)
 
+    packed = count = 0
     # fetch the img data and update book data
     with open(data_path, mode ='r', encoding="utf-8") as file:
         data_set = csv.reader(file)
         for img_data in data_set:
+            count += 1
             if img_data[1] in book_data.keys():
                 book_data[img_data[1]].img = img_data[0]
+                packed += 1
 
     # Write the data file and quit program
     full_path = os.path.dirname(__file__)
@@ -199,6 +204,8 @@ def add_image_data(filename):
                 entry += ',' + link
             entry += ',"' + book_data[data].img + '"'
             outfile.write(entry + '\n')
+
+    print(f"Process complete. {packed}/{count} images from {img_data_file} packed in {data_file_name}")
 
 def main():
     root = tk.Tk()

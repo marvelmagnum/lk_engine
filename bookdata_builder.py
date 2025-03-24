@@ -30,7 +30,7 @@ def parse_section(section_text):
             text_content = text_content.replace("<i>Healt</i>h", "<i>Health</i>")
     
     # Find all "Turn to/ turn to <number>" references
-    references = re.findall(r'[Tt]urn(?:ing)? (?:back )?to[ ]?<b>[ ]?(\d+)[., )]*</b>', ref_text)
+    references = re.findall(r'[Tt]urn(?:ing)? (?:back )?(?:to)?[ ]?<b>[ ]?(\d+)[., )]*</b>', ref_text)
  
     # Adjust the references by subtracting the offset
     references = [str(int(ref)) for ref in references]
