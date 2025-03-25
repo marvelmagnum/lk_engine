@@ -317,7 +317,13 @@ def link_item(index):
 
 # show a button for each item. Items is a list containing indexes
 def show_buttons(items):
-    count = len(items)
+    uniques = [] 
+    # remove duplicate links
+    for item in items:
+        if item not in uniques:
+            uniques.append(item)
+    
+    count = len(uniques)
     # can hold max 12 buttons
     # Adjust for best fit buttons (Optimal specs: width 5 chars, pad= 10 px)
     final_width = 5 # each char takes 15px approx. so 75
@@ -332,7 +338,7 @@ def show_buttons(items):
                 final_width -= 1
 
     # Create some buttons and add them to the button_frame
-    for item in items:
+    for item in uniques:
         button = tk.Button(button_frame, text=item, width=final_width, command=partial(link_item, item), font=("Impact", 12))
         button.pack(side=tk.LEFT, padx=final_pad, pady=10)
         buttons.append(button)
