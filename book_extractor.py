@@ -152,7 +152,7 @@ def find_tables(text):
               processed += line + '\n'
               continue
           else:
-            if line == '\t' or len(line) > 40:  # Tables end with a tab on a line or the line after the table is a full line (assuming over 20 chars)
+            if line == '\t' or len(line) > 40:  # Tables end with a tab on a line or the line after the table is a full line (assuming over 40 chars)
                 table_line_count = 0
                 in_market_table = False
                 processed += "</tm>\n" + line

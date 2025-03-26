@@ -24,6 +24,9 @@ def parse_section(section_text):
             text_content = text_content[:start_idx - len("</tm>\n")] + text_content[start_idx:idx] + '\n' + text_content[idx:idx + 2] + '\n' +  text_content[idx + 2:]
             end_idx = text_content.find("When you have finished here,")
             text_content = text_content[:end_idx] + "</tm>\n" + text_content[end_idx:] # Finally mark table end at the correct spot
+        if section_number == "238": # a really long opponent name breaks the table markup
+            text_content = text_content.replace("</tc>\n", "")
+            text_content = text_content.replace("\n\t\n", "\n</tc>\n")
         if section_number == "488": # a stray " instead of an opening “ that breaks the csv load
             text_content = text_content.replace('"', '“')
         if section_number == "550": # incorrect italicized "Health" where the last letter got missed
