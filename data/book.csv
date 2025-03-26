@@ -3509,7 +3509,6 @@ If you manage to survive, turn to <b>197</b>.",1,197,"image_009_p44_.jpeg"
 <i>Attack	</i>
 <i>Def	</i>
 <i>Health</i>
-</tc>
 Lhasbreath Barbarians 	9 (5+)	
 3+	
 16
@@ -3517,7 +3516,7 @@ Barbarian Leader
 4 (4+)	
 4+	
 7
-	
+</tc>
 If you win, you can loot <b>20 silver coins</b> from their 
 bodies before moving on.  Turn to <b>840</b>.",1,840,""
 239,"You’ll not back down in front of a knave like Tommul.  
