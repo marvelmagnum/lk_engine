@@ -30,6 +30,8 @@ def parse_section(section_text):
             start_idx = text_content.find("Lhasbreath Barbarians \t")   # a table has joined columns. resulting in incorrect table end.
             idx = start_idx + len("Lhasbreath Barbarians \t")
             text_content = text_content[:idx] + "\n" + text_content[idx:] # Split the column
+        if section_number == "403": # the formatting is off for this custom table
+            text_content = text_content.replace("\t\n", "\t")
         if section_number == "488": # a stray " instead of an opening “ that breaks the csv load
             text_content = text_content.replace('"', '“')
         if section_number == "550": # incorrect italicized "Health" where the last letter got missed
