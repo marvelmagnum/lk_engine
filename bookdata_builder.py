@@ -49,9 +49,16 @@ def parse_section(section_text):
     # Find all "Turn to/ turn to <number>" references
     references = re.findall(r'[Tt]urn(?:ing)? (?:back )?(?:to)?[ ]?<b>[ ]?(\d+)[., \t)]*</b>', ref_text)
  
-    # Adjust the references by subtracting the offset
-    references = [str(int(ref)) for ref in references]
-    
+    # Add book references if found
+    book_refs = extract_book_refs(ref_text)
+    if book_refs:
+        references += book_refs
+
+    # correct book specific reference errors 
+    if "valley of bones" in book.lower():
+        if section_number == "841": # unusual section reference
+            references = ["135"] + references
+
     # Count the number of references
     num_references = len(references)
     
@@ -65,6 +72,23 @@ def parse_section(section_text):
     ]
     
     return output_row
+
+def extract_book_refs(section_text):
+    book_ref_names = {}
+    book_ref_names["The Valley of Bones"]             = "VB "
+    book_ref_names["Crown and Tower"]                 = "CT "
+    book_ref_names["Pirates of the Splintered Isles"] = "SI "
+    book_ref_names["The Gilded Throne"]               = "GT "
+    book_ref_names["The Savage Lands"]                = "SL "
+    book_ref_names["Drakehallow"]                     = "DH "
+    
+    processed = []
+    book_refs = re.findall(r'[Tt]urn(?:ing)? (?:back )?(?:to)?[ ]?<b>[ ]?((?:\w+[ ]+)+\d+)[., \t)]*<\/b>', section_text)
+    for ref in book_refs:
+        parts = ref.rsplit(" ", 1)  # Splits the book name and section index
+        res = book_ref_names[parts[0]] + parts[1]
+        processed.append(res)
+    return processed
 
 def extract_book_name(section_text):
     # Extract the book name from the first section

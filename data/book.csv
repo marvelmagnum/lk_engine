@@ -344,7 +344,7 @@ known as Cape Porta.  It is a famous lair of pirates and
 other ne’er-do-wells.  Roll a die.  On a 1, turn to <b>429</b>. 
 Otherwise you can now sail north towards Clifftop (turn 
 to <b>82</b>), east towards Cursus (turn to<b> 814)</b>, or west towards 
-the Savage Lands (turn to <b>The Savage Lands 75</b>)?",3,429,82,814,""
+the Savage Lands (turn to <b>The Savage Lands 75</b>)?",4,429,82,814,SL 75,""
 22,"Avoiding Chellar’s room, you still manage to secure a 
 pretty horde of items. You may take any or all of the 
 following:  <b>jewellery box</b>, <b>calligraphy ink</b>, <b>silver idol</b>, 
@@ -1305,7 +1305,7 @@ Sail west into the Bayswater Channel
 (turn to <b>Crown and Tower 392</b>)?	
 Sail south to Cape Porta (turn to <b>21</b>)?
 Or, if you have the code A32 you can consider doing 
-something else (turn to <b>643</b>)?",3,703,21,643,""
+something else (turn to <b>643</b>)?",5,703,21,643,DH 420,CT 392,""
 83,"You hold out the <b>engagement ring</b>.  “The ring was 
 not sold, it was stolen,” you insist.  “I found this in the 
 hideout of a group of nefarious thieves.  She wants you 
@@ -3457,7 +3457,7 @@ Thalsia (turn to <b>Pirates of the Splintered Isles 108</b>)?
 Ozury (turn to <b>The Gilded Throne 500)</b>?	
 The Hallowed Grove (turn to <b>The Savage Lands 45</b>)?	
 Dagon (turn to <b>Drakehallow 230</b>)?	
-Animus Mast (turn to <b>Drakehallow 600</b>)?",1,484,""
+Animus Mast (turn to <b>Drakehallow 600</b>)?",7,484,CT 321,SI 108,GT 500,SL 45,DH 230,DH 600,""
 236,"The cheers from the crowd resound across the arena as 
 the final lion falls dead.  You cannot help but stifle a tear 
 at the death of the noble beasts, cruelly plucked from the 
@@ -4960,7 +4960,7 @@ You will continue to lose Health until you succeed!",1,618,""
 looted.  The tunnel the dragon made into the lands of 
 Drakehallow is still here.	
 Follow the tunnel (turn to <b>Drakehallow 33</b>)?	
-Go back to the lift (turn to <b>135</b>)?",1,135,""
+Go back to the lift (turn to <b>135</b>)?",2,135,DH 33,""
 345,"The final skeleton shatters into pieces.  With the bodies 
 so damaged it will be impossible to animate them again 
 using the book.  Musing on the inconsistent nature of 
@@ -9704,7 +9704,7 @@ may take the pirates as one unit of Slaves, if you wish.
 Alternatively, you can let the knaves sink to the bottom 
 of the ocean.  Once you have decided it is time to sail 
 on, either north (turn to <b>82</b>), east (turn to <b>814</b>), or west 
-towards the Savage Lands (turn to <b>The Savage Lands 75</b>).",2,82,814,""
+towards the Savage Lands (turn to <b>The Savage Lands 75</b>).",3,82,814,SL 75,""
 691,"Emerging from the swimming haze ahead comes one 
 of the most curious constructions in all the world.  
 A long, unbroken wall of reflective black stone stretches 
@@ -12072,7 +12072,7 @@ all the way to Drakehallow in the north.  If you wish
 to follow this tunnel turn to <b>Drakehallow 33</b>.  
 	
 If you dare not enter that strange land (or do not have 
-the book), you must return to the mine lift at <b>135</b>.",0,""
+the book), you must return to the mine lift at <b>135</b>.",2,135,DH 33,""
 842,"Screaming in anger you wrench the monkeys away, 
 throwing them into bushes or kicking them into the 
 air.  They howl and scratch at you, but do not manage 
@@ -12297,7 +12297,7 @@ to this location.  Where will you travel?
 The Library of Chalice (turn to <b>680</b>)?	
 The city of Longport (turn to <b>Crown and Tower 321</b>)?	
 Dagon (turn to <b>Drakehallow 230</b>)?	
-Animus Mast (turn to <b>Drakehallow 600</b>)?",1,680,""
+Animus Mast (turn to <b>Drakehallow 600</b>)?",4,680,CT 321,DH 230,DH 600,""
 860,"You are not sorry to be leaving the Temple of the 
 Unbroken.  Where will you go now?	
 Go north, into the Withered Steppes (turn to <b>115</b>)?	
