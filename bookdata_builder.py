@@ -18,6 +18,8 @@ def parse_section(section_text):
 
     # correct book specific errors
     if "valley of bones" in book.lower():
+        if section_number == "12":  # fix a stray line break
+            text_content = text_content.replace("3 \t\n", "3 \t")
         if section_number == "142": # a market table item has all columns in the same row. no CRLF between columns. 
             start_idx = text_content.find("<b>Masterwork Greatsword (Fighting +4)*</b>\t ")
             idx = start_idx + len("<b>Masterwork Greatsword (Fighting +4)*</b>\t ") # Also this item is abnormally big as a result causing an incorrect table end. Fix that.
@@ -38,7 +40,7 @@ def parse_section(section_text):
             text_content = text_content.replace("<i>Healt</i>h", "<i>Health</i>")
     
     # Find all "Turn to/ turn to <number>" references
-    references = re.findall(r'[Tt]urn(?:ing)? (?:back )?(?:to)?[ ]?<b>[ ]?(\d+)[., )]*</b>', ref_text)
+    references = re.findall(r'[Tt]urn(?:ing)? (?:back )?(?:to)?[ ]?<b>[ ]?(\d+)[., \t)]*</b>', ref_text)
  
     # Adjust the references by subtracting the offset
     references = [str(int(ref)) for ref in references]
