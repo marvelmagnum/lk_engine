@@ -38,7 +38,14 @@ def parse_section(section_text):
             text_content = text_content.replace('"', '“')
         if section_number == "550": # incorrect italicized "Health" where the last letter got missed
             text_content = text_content.replace("<i>Healt</i>h", "<i>Health</i>")
-    
+        if section_number == "733": 
+            text_content = text_content.replace("</tc>\n", "")  
+            text_content = text_content.replace("30\n", "30\n</tc>\n")
+            start_idx = text_content.find("Malronac the Deathengine\t ")   # a table has joined columns. resulting in incorrect table end.
+            idx = start_idx + len("Malronac the Deathengine\t ")
+            text_content = text_content[:idx] + "\n" + text_content[idx:] # Split the column
+        if section_number == "787": # table has joined columns.
+            text_content = text_content.replace("\t ", "\t\n")
     # Find all "Turn to/ turn to <number>" references
     references = re.findall(r'[Tt]urn(?:ing)? (?:back )?(?:to)?[ ]?<b>[ ]?(\d+)[., \t)]*</b>', ref_text)
  

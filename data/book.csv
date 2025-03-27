@@ -10401,10 +10401,11 @@ save me time, fools!”
 <i>Attack	</i>
 <i>Def	</i>
 <i>Health</i>
-</tc>
-Malronac the Deathengine	 6 (3+)	
+Malronac the Deathengine	 
+6 (3+)	
 4+	
 30
+</tc>
 Note:  Malronac will attack twice each round.  You must 
 assign the damage of the second attack to a different 
 character from the first.
@@ -11273,7 +11274,8 @@ This will be a most formidable battle:
 <i>Def	</i>
 <i>Health</i>
 Salt Dragon		
-10 (5+)	 4+	
+10 (5+)	
+4+	
 40
 </tc>
 Note: If ever the Salt Dragon ends a round without inflicting even a single point of Health damage on 
