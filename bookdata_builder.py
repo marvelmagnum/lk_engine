@@ -26,7 +26,7 @@ def parse_section(section_text):
             text_content = text_content[:start_idx - len("</tm>\n")] + text_content[start_idx:idx] + '\n' + text_content[idx:idx + 2] + '\n' +  text_content[idx + 2:]
             end_idx = text_content.find("When you have finished here,")
             text_content = text_content[:end_idx] + "</tm>\n" + text_content[end_idx:] # Finally mark table end at the correct spot
-        if section_number == "238": 
+        if section_number == "238" or section_number == "297": 
             text_content = text_content.replace("</tc>\n", "")  
             text_content = text_content.replace("\n\t\n", "\n</tc>\n")
             start_idx = text_content.find("Lhasbreath Barbarians \t")   # a table has joined columns. resulting in incorrect table end.
