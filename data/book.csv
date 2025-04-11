@@ -539,18 +539,15 @@ You cannot buy more cargo units than you can store in
 your ship (for instance, a Cog can carry 2 Cargo Units). 
 You can also sell any goods you are carrying in your 
 ships for the same price as well.
-Salt	
-<b>600 silver coins</b>
+Salt	<b>600 silver coins</b>
 Crops	<b> 500 silver coins</b>
-Steel	
-<b>3000 silver coins</b>
+Steel	<b>3000 silver coins</b>
 Spices 	<b> 3300 silver coins</b>
-Wine	
-<b>2100 silver coins</b>
+Wine	<b>2100 silver coins</b>
 Slaves 	<b> 1000 silver coins</b>
 When you have finished your trades, turn to <b>340</b>, to 
 return to the city centre, or <b>499</b> to set sail on one of 
-your ships.",1,340,""
+your ships.",2,340,499,""
 34,"You return to the large burial chamber.  The ghouls are 
 long gone, and there is no more treasure to be found here. 
 If you wish you can scribe the spell on the bronze tablet 
