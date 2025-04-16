@@ -6,5 +6,6 @@ The engine just helps enjoy the story in a digital format without having to jump
 
 Copyright(c) 2025. Ventura Softwares.
 
-![image](https://github.com/user-attachments/assets/e71a1a06-0980-47f6-8fa9-245688d93575)
+![image](https://github.com/user-attachments/assets/2da7e6e8-67ed-4b89-9126-cf7b1b0b14fc)
+
 
