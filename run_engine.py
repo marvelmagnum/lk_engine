@@ -5,6 +5,15 @@ import os
 import re
 from functools import partial
 from PIL import Image, ImageTk
+from datetime import datetime
+import cloudsave_manager
+from cloudsave_manager import CloudSaveManager
+import json
+
+# TODO: CLOUD SAVE STATUS indicator
+# def update_cloud_status(self):
+#     status = "✔️" if self.save_manager.drive else "❌ (Offline)"
+#     self.cloud_label.config(text=f"Cloud Saves: {status}")
 
 root = None
 book_title = ""
@@ -21,6 +30,7 @@ fg_color = "black"
 bg_color = "white"
 world_window = None
 region_window = None
+saveman = None
 
 class BookIndex:
     content = ""
@@ -82,17 +92,25 @@ def load_image(image_path, image_label, text_widget):
         image_label.config(text=f"Failed to load image: {e}")
 
 def save_game():
-    full_path = os.path.dirname(__file__)
-    game_file_path = os.path.join(full_path, "data", "game.sav")
-    with open(game_file_path, "w", encoding="utf-8") as text_file:
-        text_file.write(read_head)
+    # full_path = os.path.dirname(__file__)
+    # game_file_path = os.path.join(full_path, "data", "game.sav")
+    # with open(game_file_path, "w", encoding="utf-8") as text_file:
+    #     text_file.write(read_head)
+    save_data = {
+        "data": read_head,
+        "timestamp": datetime.now().strftime("%c")
+    }
+    saveman.save_game(1, save_data)
 
 def load_game():
-    full_path = os.path.dirname(__file__)
-    game_file_path = os.path.join(full_path, "data", "game.sav")
-    with open(game_file_path, 'r', encoding='utf-8') as infile:
-        section = infile.read()
-    link_item(section)
+    # full_path = os.path.dirname(__file__)
+    # game_file_path = os.path.join(full_path, "data", "game.sav")
+    # with open(game_file_path, 'r', encoding='utf-8') as infile:
+    #     section = infile.read()
+    # link_item(section)
+    if load_data := saveman.load_game(1):
+        link_item(load_data)
+
 
 def show_world():
     global world_window
@@ -208,6 +226,10 @@ def main():
     root.title(book_title)
     root.geometry("606x800")
     root.resizable(False, False)
+    cloudsave_manager.center_window(root)
+
+    # Initialize the save system
+    saveman = CloudSaveManager(root)
 
     # Create a main frame to hold the text section and the buttons section
     main_frame = tk.Frame(root)
