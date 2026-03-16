@@ -1,4 +1,5 @@
 import tkinter as tk
+import tkinter.messagebox
 import csv
 import os
 import re
@@ -18,6 +19,8 @@ book_data = {}
 read_head = "1"
 fg_color = "black"
 bg_color = "white"
+world_window = None
+region_window = None
 
 class BookIndex:
     content = ""
@@ -91,6 +94,110 @@ def load_game():
         section = infile.read()
     link_item(section)
 
+def show_world():
+    global world_window
+
+    # Toggle: close if already open
+    if world_window is not None and tk.Toplevel.winfo_exists(world_window):
+        world_window.destroy()
+        world_window = None
+        return
+
+    full_path = os.path.dirname(os.path.realpath(__file__))
+    img_path = os.path.join(full_path, "data", "world.jpg")
+
+    try:
+        image = Image.open(img_path)
+    except Exception as e:
+        tk.messagebox.showerror("World Map", f"Could not load image:\n{e}")
+        return
+
+    avail_w = root.winfo_screenwidth()
+    avail_h = root.winfo_screenheight() - 70
+
+    img_w, img_h = image.size
+    scale = min(avail_w / img_w, avail_h / img_h, 1.0)  # never upscale
+    if scale < 1.0:
+        new_w = int(img_w * scale)
+        new_h = int(img_h * scale)
+        image = image.resize((new_w, new_h), Image.LANCZOS)
+    else:
+        new_w, new_h = img_w, img_h
+
+    win = tk.Toplevel(root)
+    win.title("World Map")
+    win.resizable(False, False)
+
+    # Center within usable area (screen height - 100)
+    x = (avail_w - new_w) // 2
+    y = (avail_h - new_h) // 2
+    win.geometry(f"{new_w}x{new_h}+{x}+{y}")
+
+    photo = ImageTk.PhotoImage(image)
+    lbl = tk.Label(win, image=photo)
+    lbl.image = photo  # keep reference
+    lbl.pack()
+
+    world_window = win
+    win.protocol("WM_DELETE_WINDOW", lambda: _close_world(win))
+
+def _close_world(win):
+    global world_window
+    win.destroy()
+    world_window = None
+
+def show_region():
+    global region_window
+
+    # Toggle: close if already open
+    if region_window is not None and tk.Toplevel.winfo_exists(region_window):
+        region_window.destroy()
+        region_window = None
+        return
+
+    full_path = os.path.dirname(os.path.realpath(__file__))
+    img_path = os.path.join(full_path, "data", "region.jpg")
+
+    try:
+        image = Image.open(img_path)
+    except Exception as e:
+        tk.messagebox.showerror("Region Map", f"Could not load image:\n{e}")
+        return
+
+    avail_w = root.winfo_screenwidth()
+    avail_h = root.winfo_screenheight() - 100
+
+    img_w, img_h = image.size
+    scale = min(avail_w / img_w, avail_h / img_h, 1.0)  # never upscale
+    if scale < 1.0:
+        new_w = int(img_w * scale)
+        new_h = int(img_h * scale)
+        image = image.resize((new_w, new_h), Image.LANCZOS)
+    else:
+        new_w, new_h = img_w, img_h
+
+    win = tk.Toplevel(root)
+    win.title("Region Map")
+    win.resizable(False, False)
+
+    # Center within usable area (screen height - 100)
+    x = (avail_w - new_w) // 2
+    y = (avail_h - new_h) // 2
+    win.geometry(f"{new_w}x{new_h}+{x}+{y}")
+
+    photo = ImageTk.PhotoImage(image)
+    lbl = tk.Label(win, image=photo)
+    lbl.image = photo  # keep reference
+    lbl.pack()
+
+    region_window = win
+    win.protocol("WM_DELETE_WINDOW", lambda: _close_region(win))
+
+def _close_region(win):
+    global region_window
+    win.destroy()
+    region_window = None
+
 def main():
     # load book data
     load_data("book.csv")
@@ -112,7 +219,11 @@ def main():
 
     # Add "Load" button to the left of the title
     load_button = tk.Button(title_frame, text="Load", font=("Impact", 12), command=load_game)
-    load_button.pack(side=tk.LEFT, padx=10, pady=10)
+    load_button.pack(side=tk.LEFT, padx=(10, 2), pady=10)
+
+    # Add "World" button to the right of "Load"
+    world_button = tk.Button(title_frame, text="World", font=("Impact", 12), command=show_world)
+    world_button.pack(side=tk.LEFT, padx=(2, 10), pady=10)
 
     # Create the Text widget for displaying the title (Non-Scrollable)
     global title_widget
@@ -122,7 +233,11 @@ def main():
 
     # Add "Save" button to the right of the title
     save_button = tk.Button(title_frame, text="Save", font=("Impact", 12), command=save_game)
-    save_button.pack(side=tk.RIGHT, padx=10, pady=10)
+    save_button.pack(side=tk.RIGHT, padx=(2, 10), pady=10)
+
+    # Add "Region" button to the left of "Save"
+    region_button = tk.Button(title_frame, text="Region", font=("Impact", 12), command=show_region)
+    region_button.pack(side=tk.RIGHT, padx=(10, 2), pady=10)
 
     # Load and display a placeholder image
     global image_frame
