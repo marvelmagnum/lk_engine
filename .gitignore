@@ -1,4 +1,15 @@
 ﻿build
 pyinstaller com.txt
-run_engine.spec
 dist
+
+# Save files - managed by cloud save
+save/
+
+# Google OAuth credentials - never commit these
+sys/credentials.json
+sys/gdrive_token.json
+sys/client_secrets.json
+
+# Python cache
+__pycache__/
+*.pyc
