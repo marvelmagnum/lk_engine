@@ -8,9 +8,8 @@ Copyright(c) 2025. Ventura Softwares.
 
 ![image](https://github.com/user-attachments/assets/2da7e6e8-67ed-4b89-9126-cf7b1b0b14fc)
 
+
+
 **DARK MODE**
 
 ![image](https://github.com/user-attachments/assets/f3240f54-8e79-4a3a-9e7a-024aea2fff7d)
-
-
-
