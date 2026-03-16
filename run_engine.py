@@ -3,6 +3,9 @@ import tkinter.messagebox
 import csv
 import os
 import re
+import threading
+import urllib.error
+import urllib.request
 from functools import partial
 from PIL import Image, ImageTk
 from datetime import datetime
@@ -10,10 +13,6 @@ import cloudsave_manager
 from cloudsave_manager import CloudSaveManager
 import json
 
-# TODO: CLOUD SAVE STATUS indicator
-# def update_cloud_status(self):
-#     status = "✔️" if self.save_manager.drive else "❌ (Offline)"
-#     self.cloud_label.config(text=f"Cloud Saves: {status}")
 
 root = None
 book_title = ""
@@ -31,11 +30,62 @@ bg_color = "white"
 world_window = None
 region_window = None
 saveman = None
+cloud_status_label = None
+internet_status_label = None
+cloud_status_tooltip = None
+internet_status_tooltip = None
+cloud_icon_on = None
+cloud_icon_off = None
+internet_icon_on = None
+internet_icon_off = None
+internet_check_in_progress = False
+CLOUD_STATUS_POLL_MS = 10000
+STATUS_ICON_WIDTH = 26
 
 class BookIndex:
     content = ""
     links = []
     img = ""
+
+
+class Tooltip:
+    def __init__(self, widget, text):
+        self.widget = widget
+        self.text = text
+        self.tip_window = None
+        self.widget.bind("<Enter>", self._show)
+        self.widget.bind("<Leave>", self._hide)
+
+    def set_text(self, text):
+        self.text = text
+
+    def _show(self, _event=None):
+        if self.tip_window or not self.text:
+            return
+        x = self.widget.winfo_rootx() + 12
+        y = self.widget.winfo_rooty() + self.widget.winfo_height() + 6
+
+        self.tip_window = tk.Toplevel(self.widget)
+        self.tip_window.wm_overrideredirect(True)
+        self.tip_window.wm_geometry(f"+{x}+{y}")
+
+        label = tk.Label(
+            self.tip_window,
+            text=self.text,
+            justify=tk.LEFT,
+            background="#f7f7e9",
+            relief=tk.SOLID,
+            borderwidth=1,
+            padx=6,
+            pady=2,
+            font=("Arial", 9)
+        )
+        label.pack()
+
+    def _hide(self, _event=None):
+        if self.tip_window:
+            self.tip_window.destroy()
+            self.tip_window = None
 
 # book data is in this format:
 # index, text_content, link_count, link1_index, link2_index, ... , image_filename
@@ -96,11 +146,10 @@ def save_game():
     # game_file_path = os.path.join(full_path, "data", "game.sav")
     # with open(game_file_path, "w", encoding="utf-8") as text_file:
     #     text_file.write(read_head)
-    save_data = {
-        "data": read_head,
-        "timestamp": datetime.now().strftime("%c")
+    save_payload = {
+        "read_head": read_head
     }
-    saveman.save_game(1, save_data)
+    saveman.save_game(1, save_payload)
 
 def load_game():
     # full_path = os.path.dirname(__file__)
@@ -108,8 +157,17 @@ def load_game():
     # with open(game_file_path, 'r', encoding='utf-8') as infile:
     #     section = infile.read()
     # link_item(section)
-    if load_data := saveman.load_game(1):
-        link_item(load_data)
+    if not saveman:
+        return
+
+    loaded = saveman.load_game(1)
+    if not loaded:
+        return
+
+    if isinstance(loaded, dict) and "read_head" in loaded:
+        target = str(loaded["read_head"])
+        if target in book_data:
+            link_item(target)
 
 
 def show_world():
@@ -216,12 +274,110 @@ def _close_region(win):
     win.destroy()
     region_window = None
 
+def on_app_close():
+    if saveman:
+        try:
+            saveman.sync_all_saves()
+        except Exception:
+            pass
+    if root:
+        root.destroy()
+
+def update_cloud_status():
+    global cloud_status_tooltip
+    if cloud_status_label is None:
+        return
+    if cloud_icon_on is None or cloud_icon_off is None:
+        if saveman and saveman.drive:
+            cloud_status_label.config(text="✔️ Cloud", fg="#44cc44", image="")
+            if cloud_status_tooltip:
+                cloud_status_tooltip.set_text("Cloud: connected")
+        else:
+            cloud_status_label.config(text="❌ Cloud", fg="#cc4444", image="")
+            if cloud_status_tooltip:
+                cloud_status_tooltip.set_text("Cloud: disconnected")
+        return
+
+    if saveman and saveman.drive:
+        cloud_status_label.config(image=cloud_icon_on, text="")
+        if cloud_status_tooltip:
+            cloud_status_tooltip.set_text("Cloud: connected")
+    else:
+        cloud_status_label.config(image=cloud_icon_off, text="")
+        if cloud_status_tooltip:
+            cloud_status_tooltip.set_text("Cloud: disconnected")
+
+def update_internet_status(is_online):
+    global internet_status_tooltip
+    if internet_status_label is None:
+        return
+    if internet_icon_on is None or internet_icon_off is None:
+        if is_online:
+            internet_status_label.config(text="✔️ Net", fg="#44cc44", image="")
+            if internet_status_tooltip:
+                internet_status_tooltip.set_text("Internet: online")
+        else:
+            internet_status_label.config(text="❌ Net", fg="#cc4444", image="")
+            if internet_status_tooltip:
+                internet_status_tooltip.set_text("Internet: offline")
+        return
+
+    if is_online:
+        internet_status_label.config(image=internet_icon_on, text="")
+        if internet_status_tooltip:
+            internet_status_tooltip.set_text("Internet: online")
+    else:
+        internet_status_label.config(image=internet_icon_off, text="")
+        if internet_status_tooltip:
+            internet_status_tooltip.set_text("Internet: offline")
+
+def load_status_icon(path, width=32):
+    try:
+        image = Image.open(path)
+        original_width, original_height = image.size
+        aspect_ratio = original_height / original_width
+        height = max(1, int(width * aspect_ratio))
+        resized = image.resize((width, height), Image.LANCZOS)
+        return ImageTk.PhotoImage(resized)
+    except Exception:
+        return None
+
+def _finish_internet_check(is_online):
+    global internet_check_in_progress
+    internet_check_in_progress = False
+    update_internet_status(is_online)
+
+def _internet_check_worker():
+    is_online = False
+    try:
+        with urllib.request.urlopen("https://www.google.com/generate_204", timeout=3):
+            is_online = True
+    except (urllib.error.URLError, TimeoutError, OSError):
+        is_online = False
+
+    if root is not None and root.winfo_exists():
+        root.after(0, lambda: _finish_internet_check(is_online))
+
+def poll_status_indicators():
+    if root is None or not root.winfo_exists():
+        return
+
+    update_cloud_status()
+
+    global internet_check_in_progress
+    if not internet_check_in_progress:
+        internet_check_in_progress = True
+        threading.Thread(target=_internet_check_worker, daemon=True).start()
+
+    root.after(CLOUD_STATUS_POLL_MS, poll_status_indicators)
+
 def main():
     # load book data
     load_data("book.csv")
     
     # Create the main tkinter window
     global root
+    global saveman
     root = tk.Tk()
     root.title(book_title)
     root.geometry("606x800")
@@ -229,7 +385,8 @@ def main():
     cloudsave_manager.center_window(root)
 
     # Initialize the save system
-    saveman = CloudSaveManager(root)
+    saveman = CloudSaveManager(root, status_callback=update_cloud_status)
+    root.protocol("WM_DELETE_WINDOW", on_app_close)
 
     # Create a main frame to hold the text section and the buttons section
     main_frame = tk.Frame(root)
@@ -247,6 +404,32 @@ def main():
     world_button = tk.Button(title_frame, text="World", font=("Impact", 12), command=show_world)
     world_button.pack(side=tk.LEFT, padx=(2, 10), pady=10)
 
+    # Cloud and internet status indicators
+    global cloud_status_label
+    global internet_status_label
+    global cloud_status_tooltip
+    global internet_status_tooltip
+    global cloud_icon_on
+    global cloud_icon_off
+    global internet_icon_on
+    global internet_icon_off
+
+    full_path = os.path.dirname(os.path.realpath(__file__))
+    cloud_icon_on = load_status_icon(os.path.join(full_path, "sys", "clon.png"), width=STATUS_ICON_WIDTH)
+    cloud_icon_off = load_status_icon(os.path.join(full_path, "sys", "cloff.png"), width=STATUS_ICON_WIDTH)
+    internet_icon_on = load_status_icon(os.path.join(full_path, "sys", "neton.png"), width=STATUS_ICON_WIDTH)
+    internet_icon_off = load_status_icon(os.path.join(full_path, "sys", "netoff.png"), width=STATUS_ICON_WIDTH)
+
+    cloud_status_label = tk.Label(title_frame, bg="gray")
+    cloud_status_tooltip = Tooltip(cloud_status_label, "Cloud: disconnected")
+
+    internet_status_label = tk.Label(title_frame, bg="gray")
+    internet_status_tooltip = Tooltip(internet_status_label, "Internet: offline")
+    internet_status_label.pack(side=tk.LEFT, padx=(0, 6), pady=10)
+
+    update_cloud_status()
+    poll_status_indicators()
+
     # Create the Text widget for displaying the title (Non-Scrollable)
     global title_widget
     title_widget = tk.Label(title_frame, text="Title Placeholder", font=("Impact", 16), 
@@ -260,6 +443,9 @@ def main():
     # Add "Region" button to the left of "Save"
     region_button = tk.Button(title_frame, text="Region", font=("Impact", 12), command=show_region)
     region_button.pack(side=tk.RIGHT, padx=(10, 2), pady=10)
+
+    # Keep cloud status on the right side for symmetry with net status on the left.
+    cloud_status_label.pack(side=tk.RIGHT, padx=(6, 2), pady=10)
 
     # Load and display a placeholder image
     global image_frame
@@ -294,6 +480,7 @@ def main():
     button_frame.pack(side=tk.BOTTOM, fill=tk.X)
     button = tk.Button(button_frame, text="☀", command=switch_theme)
     button.pack(side=tk.RIGHT, padx=10, pady=10)
+    Tooltip(button, "Toggle dark mode")
 
     link_item(read_head)
 
