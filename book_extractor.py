@@ -77,11 +77,13 @@ def extend_bold_to_next_whitespace(text):
     - Move </b> backward over trailing whitespace: <b>word </b> -> <b>word</b> 
     - If only whitespace remains on that line after </b>, trim it.
     - Move </b> forward over trailing alphanumerics: <b>word</b>tail -> <b>wordtail</b>
+    - Remove empty inline tags that wrap only whitespace.
     """
     
     text = re.sub(r"([A-Za-z0-9])(\s+)</b>", r"\1</b>\2", text)
     text = re.sub(r"</b>[ \t]+(?=\r?\n|$)", r"</b>", text)
     text = re.sub(r"</b>([A-Za-z0-9]+)", r"\1</b>", text)
+    text = re.sub(r"<(b|i)>\s*</\1>", "", text)
     return text
 
 
