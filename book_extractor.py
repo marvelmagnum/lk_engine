@@ -58,6 +58,7 @@ def extract_text_and_images(pdf_path):
     
     doc.close()
 
+    extracted_text = extend_bold_to_next_whitespace(extracted_text)
     extracted_text = remove_header_footer(extracted_text)
     extracted_text = remove_continued(extracted_text)
     extracted_text = find_tables(extracted_text)
@@ -68,6 +69,20 @@ def extract_text_and_images(pdf_path):
         text_file.write(extracted_text)
     
     print(f"Extraction completed! {image_count} images and text saved in '{output_path}'.")
+
+
+def extend_bold_to_next_whitespace(text):
+    """Normalize </b> position around word boundaries.
+
+    - Move </b> backward over trailing whitespace: <b>word </b> -> <b>word</b> 
+    - If only whitespace remains on that line after </b>, trim it.
+    - Move </b> forward over trailing alphanumerics: <b>word</b>tail -> <b>wordtail</b>
+    """
+    
+    text = re.sub(r"([A-Za-z0-9])(\s+)</b>", r"\1</b>\2", text)
+    text = re.sub(r"</b>[ \t]+(?=\r?\n|$)", r"</b>", text)
+    text = re.sub(r"</b>([A-Za-z0-9]+)", r"\1</b>", text)
+    return text
 
 
 def remove_header_footer(text):

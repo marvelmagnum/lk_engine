@@ -113,7 +113,7 @@ to look again.  If you failed, you will not find another
 here.  Either way, turn to <b>346</b> and choose again.",1,346,""
 7,"If Sar Jessica Dayne or Akihiro is in the distraction team 
 they refuse to comply.  Their sense of personal honour 
-is too strict to attempt such a strategy.  Turn to <b>169 </b>and 
+is too strict to attempt such a strategy.  Turn to <b>169</b> and 
 choose again.  Otherwise, read on.
 	
 The guards have been looking at you with hungry eyes 
@@ -127,7 +127,7 @@ distraction team can contribute to this check.
 If you succeed, turn to <b>364</b>.  If you fail, turn to <b>588</b>.",3,169,364,588,""
 8,"You cast your eye over the book.  It seems to detail 
 instructions about how to prepare skeletons for animation 
-and control.  If you have the code A75, turn to <b>845.</b> 
+and control.  If you have the code A75, turn to <b>845.</b>
 If not, read on.
 	
 It looks like the hard work has been done for you. 
@@ -514,11 +514,11 @@ the more advanced vessels of Royce and Drakehallow.
 A smaller, but more efficient, single-masted cog is also 
 available.  The war galley will cost <b>1500 silver coins</b>, and 
 the cog <b>800 silver coins</b>.
-<b>Cog</b>	
+<b>Cog</b>
 Fighting 4	
 Health 7		
 Cargo 2 units
-<b>Cursite War Galley	</b>
+<b>Cursite War Galley</b>
 Fighting 6	
 Health 9		
 Cargo 1 unit
@@ -529,7 +529,7 @@ You can repair any ship you have in Cursus harbour.
 Each Health point you restore costs <b>50 silver coins</b>. 
 You can restore your ship up to its starting Health value.
 You can sell a cog here for <b>250 silver coins</b>, a Cursite war 
-galley for <b>500 silver coins</b> and a carrack for <b>1500 silver </b>
+galley for <b>500 silver coins</b> and a carrack for <b>1500 silver</b>
 <b>coins</b>.  You cannot sell other kinds of ship here.
 	
 You can buy cargo for your ship here, as well.  These 
@@ -594,7 +594,7 @@ Make the following skill check.
 <i>Skill and DC:  Charisma (5+)</i>
 <i>Successes Required:  3	</i>
 If you succeed, turn to<b> 542</b>.  If you fail, turn to <b>451</b>.",2,542,451,""
-40,"With a dramatic flourish you unroll the <b>dragon head</b> 
+40,"With a dramatic flourish you unroll the <b>dragon head</b>
 from its wrappings (cross off the <b>dragon head</b> from your 
 adventure sheet).  King Scarrenden stands in amazement, 
 and a gasp echoes across the chamber.  His councillors 
@@ -624,7 +624,7 @@ Gaining King Scarrenden’s support has been quite
 an endeavour.  Choose a party member and roll two 
 dice.  If the result is higher than their Survival score, 
 they gain 1 point of Survival.  <i>Gain the code A16</i> and 
-turn to <b>775 </b>when you are finished here.",1,775,""
+turn to <b>775</b> when you are finished here.",1,775,""
 41,"Dazzling sunlight almost blinds you as you emerge 
 into daylight.  You are in a sandy, secluded alleyway, 
 the sounds of marketplace hawkers reaching your ears. 
@@ -689,7 +689,7 @@ end of the combat.  After one use it will teleport back to
 the bookshelf in this room.  Turn to <b>494</b> when you are 
 finished here.",1,494,""
 43,"Janus is overjoyed to see the locket.  You hand it over 
-to him and he cradles it in his hands (cross the <b>bronze </b>
+to him and he cradles it in his hands (cross the <b>bronze</b>
 <b>locket</b> off your adventure sheet).  “Now I can remember 
 Alidale always!” he sighs.  He opens the locket to have 
 a look inside, when suddenly there is a flash and a 
@@ -1406,22 +1406,22 @@ All prices are in <b>silver coins.</b>
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
-<b>Crude Blade (Fighting +0)</b>	
+<b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>	
+<b>Maul (Fighting +1)*</b>
 50	
 20	
-<b>Shield (Armour +2)</b>	
+<b>Shield (Armour +2)</b>
 50	
 25
-<b>Incense</b>	
+<b>Incense</b>
 -	
 90
-<b>Bluestone </b>	
+<b>Bluestone</b>
 -	
 45
-<b>Talisman of St Elias</b>	
+<b>Talisman of St Elias</b>
 -	
 150
 </tm>
@@ -1646,7 +1646,7 @@ has been a well-kept secret.  He offers you this reward
 and asks you to attend him at his palace if you seek 
 further remunerating work.”
 	
-The arena master presents you with <b>200 silver </b>
+The arena master presents you with <b>200 silver</b>
 <b>coins</b>.  Weighing the price of treachery with a smile, 
 you gleefully leave the arena.  <i>Gain the code A4</i>.	
 Now turn to<b> 75</b>.",1,75,""
@@ -1865,7 +1865,7 @@ a small room which contains a bookcase and a broken
 reading chair.  Searching the shelves is an unpleasant 
 experience, as the books are damp and fall to pieces 
 on contact with your fingers.  You do manage to find a 
-magic scroll which seems undamaged.  It is a <b>scroll of </b>
+magic scroll which seems undamaged.  It is a <b>scroll of</b>
 <b>rage</b>.  You can use it in combat to increase the Fighting 
 score of each of your party members by 1 point until the 
 end of the combat.  After one use it will vanish.  	
@@ -1928,7 +1928,7 @@ curse is immediately apparent to anyone who holds it.
 Have your selected character lose 1 Health point 
 for touching the weapon, and then decide if you wish 
 to keep it.  Regardless, you carry on down the tunnel. 
-Turn to <b>64</b>7.",1,64,""
+Turn to <b>647</b>.",1,647,""
 132,"The only item of interest in the tomb is the <b>silver skull</b>, 
 which seems to have stopped chanting.  
 	
@@ -2091,73 +2091,73 @@ very best swords are not available for foreigners.
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
-<b>Crude Blade (Fighting +0)</b>	
+<b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>	
+<b>Maul (Fighting +1)*</b>
 -	
 25
-<b>Iron Shortsword (Fighting +1)</b>	
+<b>Iron Shortsword (Fighting +1)</b>
 200	
 100
-<b>Iron Greataxe (Fighting +2)*</b>	
+<b>Iron Greataxe (Fighting +2)*</b>
 -	
 150
-<b>Steel Longsword (Fighting +2)</b>	
+<b>Steel Longsword (Fighting +2)</b>
 800	
 400
-<b>Steel Greatsword (Fighting +3)*</b>	
+<b>Steel Greatsword (Fighting +3)*</b>
 -	
 450
-<b>Masterwork Blade (Fighting +3)</b>	
+<b>Masterwork Blade (Fighting +3)</b>
 -	
 900
 <b>Masterwork Greatsword (Fighting +4)*</b>	 
 -	
 1250
-<b>Shield (Armour +2)</b>	
+<b>Shield (Armour +2)</b>
 50	
 25
-<b>Hide Armour (Armour +1)</b>	
+<b>Hide Armour (Armour +1)</b>
 -	
 30
-<b>Bone Armour (Armour +2)</b>	
+<b>Bone Armour (Armour +2)</b>
 -	
 150
-<b>Bronze Armour (Armour +4)</b>	
+<b>Bronze Armour (Armour +4)</b>
 -	
 2000
-<b>Soft Boots (Stealth +1)</b>	
+<b>Soft Boots (Stealth +1)</b>
 500	
 250
-<b>Reference Book (Lore +1)</b>	
+<b>Reference Book (Lore +1)</b>
 500	
 250
-<b>Warm Cloak (Survival +1)</b>	
+<b>Warm Cloak (Survival +1)</b>
 -	
 250
-<b>Handsome brooch (Charisma +1)</b>	
+<b>Handsome brooch (Charisma +1)</b>
 -	
 250
-<b>Prybar</b>	
+<b>Prybar</b>
 100	
 50
-<b>Incense</b>	
+<b>Incense</b>
 -	
 90
-<b>Goldwax Candle</b>	
+<b>Goldwax Candle</b>
 -	
 100
-<b>Engagement Ring</b>	
+<b>Engagement Ring</b>
 -	
 65
-<b>Vial of Poison</b>	
+<b>Vial of Poison</b>
 -	
 50
-<b>Dragonyak Horn</b>	
+<b>Dragonyak Horn</b>
 -	
 35
-<b>Lizard Hide</b>	
+<b>Lizard Hide</b>
 -	
 50
 </tm>
@@ -2176,7 +2176,7 @@ You cannot have more than one unit of Bronzeguard
 in existence at any given time as their equipment is 
 irreplaceable.  If the Bronzeguard are ever destroyed, 
 you can train new recruits to use their equipment by 
-spending another two <b>gold bullion </b>bars.  Feeling nigh 
+spending another two <b>gold bullion</b> bars.  Feeling nigh 
 indestructible, you return to the palace.  Turn to <b>620</b>.",1,620,""
 144,"You are mid-way along the south coast of the Valley of 
 Bones.  To the south is Viaan Island, occupied by the 
@@ -2190,7 +2190,7 @@ darkness of this kind, and suddenly your lanterns
 illuminate the room.  Within you can see strange coffers, 
 some of which have loose piles of coin scattered over 
 them.  Opening the coffers you find a good deal more, 
-some <b>200 silver coins</b> in total, and a set of ornate <b>bone </b>
+some <b>200 silver coins</b> in total, and a set of ornate <b>bone</b>
 <b>armour (Armour +2)</b>.  Unsure if your reward was worth 
 the dreadful battle to get it, you move on.  Turn to <b>93</b>.",1,93,""
 146,"Somewhere, deep within your subconscious, you realise 
@@ -2355,7 +2355,7 @@ it down on your adventure sheet.  Pleased with your
 find, you make your way out of the jungle.  Turn to <b>618</b>.",1,618,""
 157,"The sound of drums and crowds roaring echo in your 
 ears as you are once again lined up in the gatehouse in 
-preparation for your latest bout.  Up to four <b>crude blades </b>
+preparation for your latest bout.  Up to four <b>crude blades</b>
 <b>(Fighting +0)</b> are available to your characters.  Again, one 
 character may be armed with a <b>shield (Armour +2</b>), and 
 another with a two-handed <b>maul (Fighting +1)*</b>.	
@@ -2369,70 +2369,70 @@ only to return to steal a loose berry or fruit.
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
-<b>Crude Blade (Fighting +0)</b>	
+<b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>	
+<b>Maul (Fighting +1)*</b>
 50	
 25
-<b>Iron Shortsword (Fighting +1)</b>	
+<b>Iron Shortsword (Fighting +1)</b>
 200	
 100
-<b>Iron Greataxe (Fighting +2)*</b>	
+<b>Iron Greataxe (Fighting +2)*</b>
 300	
 150
-<b>Steel Longsword (Fighting +2)</b>	
+<b>Steel Longsword (Fighting +2)</b>
 -	
 400
-<b>Steel Greatsword (Fighting +3)*</b>	
+<b>Steel Greatsword (Fighting +3)*</b>
 -	
 450	
-<b>Shield (Armour +2)</b>	
+<b>Shield (Armour +2)</b>
 50	
 20
-<b>Hide Armour (Armour +1)</b>	
+<b>Hide Armour (Armour +1)</b>
 70	
 35
-<b>Bone Armour (Armour +2)</b>	
+<b>Bone Armour (Armour +2)</b>
 300	
 150
-<b>Bronze Armour (Armour +4)</b>	
+<b>Bronze Armour (Armour +4)</b>
 -	
 2000
-<b>Soft Boots (Stealth +1)</b>	
+<b>Soft Boots (Stealth +1)</b>
 -	
 250
-<b>Reference Book (Lore +1)</b>	
+<b>Reference Book (Lore +1)</b>
 -	
 250
-<b>Warm Cloak (Survival +1)</b>	
+<b>Warm Cloak (Survival +1)</b>
 500	
 250
-<b>Handsome brooch (Charisma +1)</b>	
+<b>Handsome brooch (Charisma +1)</b>
 -	
 250
-<b>Prybar</b>	
+<b>Prybar</b>
 100	
 50
-<b>Incense</b>	
+<b>Incense</b>
 -	
 90
-<b>Bluestone</b>	
+<b>Bluestone</b>
 -	
 45
-<b>Grey Talisman</b>	
+<b>Grey Talisman</b>
 -	
 100
-<b>Engagement Ring</b>	
+<b>Engagement Ring</b>
 -	
 65
-<b>Vial of Poison</b>	
+<b>Vial of Poison</b>
 -	
 50
-<b>Dragonyak Horn</b>	
+<b>Dragonyak Horn</b>
 -	
 35
-<b>Lizard Hide</b>	
+<b>Lizard Hide</b>
 -	
 25
 </tm>
@@ -2474,7 +2474,7 @@ down the gentle incline towards the city.  You doubt
 the soldiers of Cursus will oblige you by fighting you 
 on the slopes – you will have to go down to meet them.
 	
-Record this reference number (<b>162</b>) and turn to <b>300 </b>
+Record this reference number (<b>162</b>) and turn to <b>300</b>
 to see the rules for mass combat.  The Cursite forces are 
 arrayed below.  You may choose a maximum of six units 
 from the Saltdad barracks to commit to this battle.
@@ -2581,7 +2581,7 @@ stingers tensing and claws open to catch you.
 4+	
 3
 </tc>
-	If you win, you can extract a single <b>vial of poison </b>
+	If you win, you can extract a single <b>vial of poison</b>
 from their stingers.  Turn to <b>804</b>.",2,636,804,""
 167,"You have returned to the funeral chamber of Imopposh 
 the Mad.  However, you have already defeated this vile 
@@ -2702,7 +2702,7 @@ Talk to the caravan drivers (turn to <b>781</b>)?",5,75,614,25,115,781,""
 178,"The final giant skeleton topples with a mighty crash. 
 The treasures of the ancients are now yours to seize!  
 There are <b>2250 silver coins</b> to take.  You also find a 
-<b>goldwax candle</b>, a bar of <b>gold bullion</b> and a <b>cloak of </b>
+<b>goldwax candle</b>, a bar of <b>gold bullion</b> and a <b>cloak of</b>
 <b>protection (Survival +3)</b>.  In the coffin of the king, you 
 prise a <b>magical shortsword (Fighting +4)</b> from his grasp.  
 Pleased with your finds you stride out of the chamber 
@@ -2762,7 +2762,7 @@ time you fail, or give up and return to the main floor
 (turn to <b>574</b>).",2,498,574,"image_007_p35_.jpeg"
 184,"You are almost sad as Yu Yan sprawls to the ground. 
 The woman fought well, and it was a shame such talent 
-should go to waste.  You search her, her <b>stonecutter </b>
+should go to waste.  You search her, her <b>stonecutter</b>
 <b>sword (Fighting +2)</b> is the most interesting possession 
 she has.  This weapon inflicts two points of Health 
 damage for each success you score against rocky or stony 
@@ -3315,7 +3315,7 @@ flick open, and it puffs sharply, trying to scare you off.
 Will you fight the dragon (turn to <b>787</b>)?	
 Or carefully back away to the lift (turn to <b>135</b>)?",3,344,787,135,""
 223,"Soon it is time for another bloody battle in the arena. 
-Each character is given a <b>crude blade (Fighting +0)</b> 
+Each character is given a <b>crude blade (Fighting +0)</b>
 and pushed out to face the current arena champions. 
 The crowd roar – they recognise you from your 
 previous battles and know that this should prove an 
@@ -3344,7 +3344,7 @@ the room?  Decide who is passing through the shadow
 door and who is staying behind.  You can send your 
 whole party in if you wish, or change your mind and 
 close off the shadow door.  Once you have decided, turn 
-to <b>903 </b>if at least one person enters the room, or <b>717</b> if 
+to <b>903</b> if at least one person enters the room, or <b>717</b> if 
 you close the shadow door.",1,903,""
 225,"You have a most pleasant stroll through the centre of 
 Chalice.  The streets are peaceful and the people orderly. 
@@ -3639,7 +3639,7 @@ the intrigues of foreigners.  Take your reward and never
 come in our presence again.”
 	
 The Iron King waves to one of his councillors, who 
-reluctantly places <b>350 silver coins </b>and an <b>iron greataxe </b>
+reluctantly places <b>350 silver coins</b> and an <b>iron greataxe</b>
 <b>(Fighting +2)*</b> into your hands.  Sensing that you are 
 lucky the ungrateful king even left you alive, you quickly 
 depart before his mood changes.  Turn to <b>75</b>.",1,75,""
@@ -3683,7 +3683,7 @@ upon his successful return – but now I have no sons left
 to inherit.  I wish you to have it.  It is what Garon would 
 have wanted.”
 	
-The old man presents you with an <b>amulet of health </b>
+The old man presents you with an <b>amulet of health</b>
 <b>(Max Health +1)</b>.  It would be churlish to refuse it.  You 
 leave the old man to his sorrows.  <i>Gain the code A86</i>, if 
 you do not have it already, and turn to <b>775</b>.",1,775,""
@@ -4063,7 +4063,7 @@ enough to own their own houses.  They are known as
 ‘doss tents’, and great casks and tables occupy the centre 
 of the tent where ale and food is served.  Loud music 
 and singing make sleep difficult, and you must stay 
-constantly vigilant for thieves.  For every <b>3 silver coins</b> 
+constantly vigilant for thieves.  For every <b>3 silver coins</b>
 you spend, each party member can recover 1 Health 
 point.  However, spellcasters cannot recharge their 
 spells here, as there is not enough privacy to attain the 
@@ -4075,15 +4075,15 @@ drooling from his chin.  “Only the most experienced
 ranger stands a chance of survival.”	
 When you are finished here, turn to <b>775</b>.",1,775,""
 277,"You examine the coffer carefully, but it does not seem 
-to be trapped.  Inside are <b>125 silver coins</b> and a <b>bronze </b>
+to be trapped.  Inside are <b>125 silver coins</b> and a <b>bronze</b>
 <b>locket</b>.  Take what you wish, and then continue down 
 the tunnel.  Turn to <b>20</b>.",1,20,""
 278,"Clearly your allegiance to the Everchild has not gone 
-unnoticed.  You search the zealots, finding three<b> crude </b>
+unnoticed.  You search the zealots, finding three<b> crude</b>
 <b>blades (Fighting +0)</b>, <b>60 silver coins</b> and the Sorcerer’s 
 spell book!  Sadly, the book has been badly damaged in 
 the battle, but at least one interesting spell has survived:
-<b>Dazing Lights </b>(Combat)
+<b>Dazing Lights</b> (Combat)
 Swirling lights dazzle your foes’ eyes.   
 When your opponents attack this round, they must 
 reduce the score of each of their dice by 1 point.
@@ -4540,7 +4540,7 @@ Barbarian Leader
 3+	
 8
 </tc>
-	If you win, you can take the barbarian leader’s <b>iron </b>
+	If you win, you can take the barbarian leader’s <b>iron</b>
 <b>greataxe (Fighting +2)*</b> and the <b>300 silver coins</b> the 
 barbarians were bribed with.  Not wishing to be found 
 surrounded by dead barbarians in the king’s hall, you 
@@ -4592,7 +4592,7 @@ Go east (turn to <b>23</b>)?",5,361,634,247,196,23,""
 into piles of dust.  You are relieved that the foul sorcerer 
 has finally met his end.  <i>Record the code A39</i>.
 	
-Your rewards are considerable.  A <b>masterwork blade </b>
+Your rewards are considerable.  A <b>masterwork blade</b>
 <b>(Fighting +3)</b> and some <b>chain armour (Armour +2)</b> are 
 stuffed into an urn, along with <b>900 silver coins</b>.  In an 
 ancient wooden box packed underneath rotten funeral 
@@ -4793,7 +4793,7 @@ another troop.  You have been captured!  Turn to <b>55</b>.",1,55,""
 thieves, as well as one of the Everchild’s men, lie dead. 
 Reasoning that you might as well take the thieves’ ill-
 gotten gains, you open the chests and crates to examine 
-what kind of goods they had stolen.  You count <b>75 silver </b>
+what kind of goods they had stolen.  You count <b>75 silver</b>
 <b>coins</b>, a <b>reference book (Lore +1)</b>, an <b>engagement ring</b>, 
 as well as large amounts of clothes. Thinking quickly, you 
 strip off your slave rags and change into more common 
@@ -4928,7 +4928,7 @@ Go west, into the desert (turn to <b>657</b>)?",10,201,375,595,110,272,33,369,82
 through the coffin, somewhat gingerly given the amount 
 of oozing fluid puddling at the bottom.
 	
-You manage to stomach extracting <b>240 silver coins</b> 
+You manage to stomach extracting <b>240 silver coins</b>
 and an <b>amulet of defence (Armour +1)</b>.  You also discover 
 the <b>Fairbrother family crest</b>, which was tucked into a 
 corner covered in ooze-soaked cloth.  	
@@ -5326,67 +5326,67 @@ welcoming you curtly.  All prices are in silver coins.
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
-<b>Crude Blade (Fighting +0)</b>	
+<b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>	
+<b>Maul (Fighting +1)*</b>
 50	
 25
-<b>Iron Shortsword (Fighting +1)</b>	
+<b>Iron Shortsword (Fighting +1)</b>
 200	
 100
-<b>Iron Greataxe (Fighting +2)*</b>	
+<b>Iron Greataxe (Fighting +2)*</b>
 -	
 150
-<b>Steel Longsword (Fighting +2)</b>	
+<b>Steel Longsword (Fighting +2)</b>
 -	
 400
-<b>Steel Greatsword (Fighting +3)*</b>	
+<b>Steel Greatsword (Fighting +3)*</b>
 -	
 450		
-<b>Shield (Armour +2)</b>	
+<b>Shield (Armour +2)</b>
 50	
 25
-<b>Hide Armour (Armour +1)</b>	
+<b>Hide Armour (Armour +1)</b>
 70	
 35
-<b>Bone Armour (Armour +2)</b>	
+<b>Bone Armour (Armour +2)</b>
 -	
 150
-<b>Bronze Armour (Armour +4)</b>	
+<b>Bronze Armour (Armour +4)</b>
 -	
 2000
-<b>Soft Boots (Stealth +1)</b>	
+<b>Soft Boots (Stealth +1)</b>
 500	
 250
-<b>Reference Book (Lore +1)</b>	
+<b>Reference Book (Lore +1)</b>
 500	
 250
-<b>Warm Cloak (Survival +1)</b>	
+<b>Warm Cloak (Survival +1)</b>
 -	
 250
-<b>Handsome brooch (Charisma +1)</b>	
+<b>Handsome brooch (Charisma +1)</b>
 -	
 250
-<b>Prybar</b>	
+<b>Prybar</b>
 100	
 50
-<b>Incense</b>	
+<b>Incense</b>
 -	
 90
-<b>Calligraphy Ink</b>	
+<b>Calligraphy Ink</b>
 2000	
 1000
-<b>Silver Idol</b>	
+<b>Silver Idol</b>
 -	
 50
-<b>Vial of Poison</b>	
+<b>Vial of Poison</b>
 -	
 50
-<b>Dragonyak Horn</b>	
+<b>Dragonyak Horn</b>
 -	
 35
-<b>Lizard Hide</b>	
+<b>Lizard Hide</b>
 -	
 25
 </tm>
@@ -5407,7 +5407,7 @@ king himself has not deigned to take the field and has
 left governorship of his army in the hands of his generals.
 	
 Record this reference number (<b>376</b>) and turn 
-to <b>300 </b>to see the rules for mass combat.  The king’s 
+to <b>300</b> to see the rules for mass combat.  The king’s 
 forces are arrayed below.  If you have the code A8, the 
 Bronzeguard are not present, since they were all slain 
 by your actions earlier.
@@ -5423,7 +5423,7 @@ Support:  None
 If you win the battle, turn to <b>214</b>.  If you lose, turn to <b>670</b>.",3,300,214,670,""
 377,"The thief reluctantly hands over <b>100 silver coins</b>.  When 
 the rest of your party climb through the window, he also 
-decides to throw in a <b>handsome brooch (Charisma +1)</b> 
+decides to throw in a <b>handsome brooch (Charisma +1)</b>
 to discourage any further extortion.  You slip away into 
 the streets together, the thief soon vanishing from sight.	
 Turn to <b>450</b>.",1,450,""
@@ -5498,7 +5498,7 @@ not the Everchild, certainly a sorceress of great power.
 Ask her how she came to be enslaved (turn to <b>629</b>)?	
 Ask her about the escape plan (turn to <b>743</b>)?",2,629,743,""
 380,"The door is unlocked and leads to a priest’s sanctum. 
-There is a small altar with a block of <b>incense</b> and <b>15 </b>
+There is a small altar with a block of <b>incense</b> and <b>15</b>
 <b>silver coins</b> on it.  The place is tidy, but there are no 
 comfortable bits of furniture such as chairs or tables here.  
 With no other exits available, you make your way to the 
@@ -5636,8 +5636,8 @@ materials into the building.  If you have the code A7
 and do not have the code A8, turn to <b>684</b>.  If not, you 
 have no business here and depart once the guards start 
 glowering at you across the street.  Turn to <b>75</b>.",2,684,75,""
-391,"The thief lies dead at your feet.  You may take his <b>iron </b>
-<b>shortsword (Fighting +1)</b>, his <b>leather armour (Armour </b>
+391,"The thief lies dead at your feet.  You may take his <b>iron</b>
+<b>shortsword (Fighting +1)</b>, his <b>leather armour (Armour</b>
 <b>+1)</b> and a pair of <b>soft boots (Stealth +1)</b>.  He also carries
 <b>30 silver coins</b>.  Eventually the city guards arrive and 
 you inform them what has just happened.  Fortunately, 
@@ -5708,13 +5708,13 @@ are in silver coins.
 Item	
 Buy	
 Sell
-<b>Crude Blade (Fighting +0)</b>	
+<b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>	
+<b>Maul (Fighting +1)*</b>
 50	
 25	
-<b>Shield (Armour +2)</b>	
+<b>Shield (Armour +2)</b>
 50	
 25
 <b>Incense</b> (One block only)	
@@ -5723,7 +5723,7 @@ Sell
 <b>Bluestone</b> (One stone only)	
 400	
 45
-<b>Talisman of St Elias</b>	
+<b>Talisman of St Elias</b>
 -	
 150
 	
@@ -5825,7 +5825,7 @@ Any troops that have not routed are returned to the
 Saltdad barracks.  You can restore their Morale and 
 Strength scores to maximum.
 	
-The Everchild is generous and awards you <b>2000 silver </b>
+The Everchild is generous and awards you <b>2000 silver</b>
 <b>coins</b>.  If you wish you can escort her back to Saltdad 
 (turn to <b>75</b>), or remain a while in Cursus (turn to <b>340</b>)?",2,75,340,""
 401,"Sar Jessica has a lingering strain in her arm from her 
@@ -5913,7 +5913,7 @@ Second Guard
 7
 </tc>
 Note:  Since you are currently unarmed, each party member’s Fighting score is reduced by 1.  Once you 
-have defeated one of the guards, you may take the <b>iron </b>
+have defeated one of the guards, you may take the <b>iron</b>
 <b>shortsword (Fighting +1)</b> that they are wielding and 
 use it in combat. 
 	
@@ -6028,7 +6028,7 @@ The following items are in the vault:
 	
 A <b>bar of gold bullion</b>
 	
-A <b>magical weave	</b>
+A <b>magical weave</b>
 A pile of <b>registry papers</b>
 	
 A <b>glittering necklace (Charisma +2)</b>
@@ -6726,7 +6726,7 @@ West, to the Withered Steps (turn to <b>115</b>)?
 South, towards Cursus (turn to <b>822</b>)?",3,614,115,822,""
 478,"With the orcs defeated you quickly search their guard 
 room.  In total <b>20 silver coins</b> lie scattered across the 
-table. You can take either orc’s <b>crude blade (Fighting </b>
+table. You can take either orc’s <b>crude blade (Fighting</b>
 <b>+0)</b> if you are short on weapons.  The first orc also carried
 a <b>shield (Armour +2)</b>.  <i>Gain the code A56</i>.	
 You return to the corridor outside.  Turn to <b>350</b>.",1,350,""
@@ -6796,7 +6796,7 @@ Second Guard
 7
 </tc>
 Note:  Since you are currently unarmed, each party member’s Fighting score is reduced by 1.  Once you 
-have defeated one of the guards, you may take the <b>iron </b>
+have defeated one of the guards, you may take the <b>iron</b>
 <b>shortsword (Fighting +1)</b> that they are wielding and 
 use it in combat. 	
 If your weapon stealing team is slain, turn to <b>292</b>.
@@ -7003,8 +7003,8 @@ inch.  To your anger you see that this door merely leads
 to the vault’s antechamber, an even larger vault door 
 standing on the other side that would take a dozen men 
 to open.  Fortunately, the antechamber does contain 
-some easily accessible treasure.  You find <b>500 silver </b>
-<b>coins</b>, an odd crystalline wand labelled as a <b>wayfinder </b>
+some easily accessible treasure.  You find <b>500 silver</b>
+<b>coins</b>, an odd crystalline wand labelled as a <b>wayfinder</b>
 <b>rod</b>, a bar of <b>gold bullion</b> and a block of <b>incense</b>.  
 	
 There are also a number of financial records, none of 
@@ -7102,7 +7102,7 @@ Light streams through a tiny crack in the ceiling, and
 you can hear sounds of the city high above you.
 	
 The walls are unscalable, but searching the broken 
-vases nets you <b>40 silver coins</b> and a <b>handsome brooch </b>
+vases nets you <b>40 silver coins</b> and a <b>handsome brooch</b>
 <b>(Charisma +1)</b>.  Pleased with your find, you swim back 
 to the Everchild and make your report.  Satisfied that 
 the only way to go is through the dry arch, she beckons 
@@ -8149,7 +8149,7 @@ Visit the zealotry commission (turn to <b>867</b>)?
 Attempt to rob the vault (turn to <b>281</b>)?	
 Leave the Great Ziggurat (turn to <b>340</b>)?",4,323,867,281,340,""
 575,"You can buy salt in bulk for any ships you have moored 
-in Cursus or Clifftop.  Each cargo unit costs <b>450 silver </b>
+in Cursus or Clifftop.  Each cargo unit costs <b>450 silver</b>
 <b>coins</b>, and will be transported to your ships for free. 
 Your ships must have room in their cargo holds in order 
 for you to buy salt here.	
@@ -8195,7 +8195,7 @@ Have someone attempt to navigate the room
 pyramid to see if any more horrors lurk within.  
 Fortunately the pyramid is not large, and you seem to 
 have cleared away all the snakemen.  You help yourself 
-to <b>200 silver coins </b>worth of jewels and artefacts before 
+to <b>200 silver coins</b> worth of jewels and artefacts before 
 returning to the scholars.
 	
 Now the area is safe Emlyn begins to take samples of 
@@ -8357,7 +8357,7 @@ die.  If you roll a 1, turn to <b>489</b>.  If you roll any other
 number, turn to <b>553</b>.",2,489,553,""
 592,"You are quickly recognised as the queen’s champions 
 by the cruel arena master.  Grovelling obsequiously, he 
-apologises for your detention, and even offers you <b>100 </b>
+apologises for your detention, and even offers you <b>100</b>
 <b>silver coins</b> by way of apology.  You may also take up to 
 four <b>crude blades (Fighting +0)</b> from the armoury to 
 replace your lost weapons. Banishing the arena master 
@@ -8544,7 +8544,7 @@ Hold your ground (turn to <b>149</b>)?
 Cast an Animal Speech spell, if you have it 	
 (turn to <b>248</b>)?",3,115,149,248,""
 606,"You quickly examine the bodies before the housecarls 
-arrive on the scene.  You find a little money, <b>20 silver </b>
+arrive on the scene.  You find a little money, <b>20 silver</b>
 <b>coins</b>.  Most damningly you find a <b>ring of the patriarch</b>. 
 These rings are only given out to the most loyal servants 
 of Cursus.  Clearly your allegiance to the Everchild will 
@@ -8623,7 +8623,7 @@ have nowhere to run,” you laugh.
 upon us.”
 	
 Record this reference number (<b>610</b>) and turn to 
-<b>300 </b>to see the rules for mass combat.  King Lothor’s 
+<b>300</b> to see the rules for mass combat.  King Lothor’s 
 forces are arrayed below.  You may choose a maximum 
 of six units from the Saltdad barracks to commit to 
 this battle.
@@ -8692,7 +8692,7 @@ weakness, come what may!”
 The bear lunges at you, swiping you to the floor with 
 his heavy paw.  Lose 3 Health points.  It seems you have 
 no choice but to fight with the bear.  	
-Turn back to <b>425 </b>and take the skill check!",1,425,""
+Turn back to <b>425</b> and take the skill check!",1,425,""
 616,"You know when to take a hint.  You carefully back away.  
 As you walk through an alleyway you hear the sounds 
 of shouting and drawn swords.  Blood is being spilt and 
@@ -8841,8 +8841,8 @@ to have such a beautiful creature working for him.  You
 tell him that you will not leave without your friends, 
 so he reluctantly frees them too.
 	
-As a parting gift he presents you with <b>120 silver </b>
-<b>coins </b>and a <b>handsome brooch (Charisma +1)</b> so you 
+As a parting gift he presents you with <b>120 silver</b>
+<b>coins</b> and a <b>handsome brooch (Charisma +1)</b> so you 
 can always think of him in the future.  Giving him a 
 chaste but meaningful kiss goodbye, you quickly flee 
 into the city centre before he can change his mind.  	
@@ -9187,7 +9187,7 @@ Leave the kitchen through the south door
 (turn to <b>736</b>)?",2,366,736,""
 651,"With the ghouls defeated you begin a grizzly search 
 through the remains in the burial chamber.  You find 
-<b>125 silver coins</b> and a strangely intact pair of <b>soft boots </b>
+<b>125 silver coins</b> and a strangely intact pair of <b>soft boots</b>
 <b>(Stealth +1)</b>.  <i>Gain the code A48</i>.
 	
 You find a bronze tablet, set into the wall, upon 
@@ -9456,12 +9456,12 @@ Offer to pay the sergeant to release the family
 Damn the Iron King! Attack the soldiers! 	
 (turn to <b>554</b>).",4,852,75,808,554,"image_029_p122_.jpeg"
 669,"With the orcs dead you move to loot the room and 
-examine their wargear.  The leader has a mighty <b>iron </b>
+examine their wargear.  The leader has a mighty <b>iron</b>
 <b>greataxe (Fighting +2)*</b> and is wearing a fine suit of 
-<b>bone armour (Armour +2)</b>.  Three <b>iron shortswords </b>
+<b>bone armour (Armour +2)</b>.  Three <b>iron shortswords</b>
 <b>(Fighting +1)</b> can be looted from the common warriors. 
-Searching the room you find an <b>iron key</b> and a <b>warm </b>
-<b>cloak (Survival +1)</b>.  Oddly, there are only <b>10 silver </b>
+Searching the room you find an <b>iron key</b> and a <b>warm</b>
+<b>cloak (Survival +1)</b>.  Oddly, there are only <b>10 silver</b>
 <b>coins</b>, not much for such a mighty leader.  	
 <i>Gain the code A64</i>.  Where will you go now?	
 Go through the west door (turn to <b>736</b>)?	
@@ -9754,7 +9754,7 @@ inked there.  It is the Unfailing Strike spell.  Any of
 your spellcasters can add this spell to their spellbooks 
 if they wish, but remember that you cannot have more 
 than six spells in a single spellbook at any given time.
-<b>Unfailing Strike </b>(Combat)
+<b>Unfailing Strike</b> (Combat)
 A pillar of energy sizzles into a single foe.
 Choose an opponent to lose 3 Health.
 <b>Recharge:  50 silver</b>
@@ -9809,7 +9809,7 @@ Turn to <b>340</b>.",1,340,""
 idol in the Caves of Uranu.  However, he has been 
 instructed to search for the idol alone.  If Akihiro wants 
 to undertake this quest now, turn to <b>154</b>.  If you would 
-rather stay together for the moment, turn back to <b>493</b> 
+rather stay together for the moment, turn back to <b>493</b>
 and read on.",2,154,493,""
 700,"You bend to help the injured Milagros, who tells you 
 not to worry.  “I’ve had much worse, but you are gracious 
@@ -9906,9 +9906,9 @@ Return to the city centre, turn to <b>19</b>.",6,82,652,756,855,505,19,""
 704,"“A trade, for bringing me the weave,” announces the 
 shaman, brightly.  “I brew potions for the tribe.  Choose 
 one, and it shall be yours.”  The shaman offers you one 
-of two potions.  The first is a <b>healing potion (restore 5 </b>
+of two potions.  The first is a <b>healing potion (restore 5</b>
 <b>Health)</b>, which you can drink at any time, including 
-during combat.  The second is a <b>potion of fluency (3 </b>
+during combat.  The second is a <b>potion of fluency (3</b>
 <b>Charisma successes)</b>, which you can drink during a 
 Charisma skill check to automatically gain 3 extra 
 successes.  You can only choose one potion.
@@ -10336,7 +10336,7 @@ If you succeed, turn to <b>195</b>.  If you fail, turn to <b>843</b>.",2,195,843
 of bones.  Approaching you can see it is the remains of 
 a Lhasbreath warrior, his grim bone armour glistening 
 in the waterless waste.  The poor devil has no use for his 
-things now.  You can take his <b>bone armour (Armour </b>
+things now.  You can take his <b>bone armour (Armour</b>
 <b>+2)</b>, his <b>iron shortsword (Fighting +1)</b> and <b>30 silver</b>
 <b>coins</b>.  Lamenting that he died so close to water, you
 look to leave the savage wasteland.	
@@ -10410,14 +10410,14 @@ character from the first.
 You cannot flee from Malronac, he will chase you 
 until the end of the world.  If you win, turn to <b>777</b>.",1,777,"image_032_p134_.jpeg"
 734,"You have slain the orcs, their blood weeping into the 
-ancient flagstones.  You can take up to five <b>crude blades </b>
+ancient flagstones.  You can take up to five <b>crude blades</b>
 <b>(Fighting +0)</b> if you need them.  Turning your attention 
 to the table you examine the artefacts that the orcs seem 
 to have dug up from the earth.  Is this what the orc 
 expedition is about?  Simple treasure hunting?
 	
 Some of the artefacts are plain bits of pottery with 
-no real value, but you do find a <b>handsome brooch </b>
+no real value, but you do find a <b>handsome brooch</b>
 <b>(Charisma +1)</b> and several other pieces of jewellery you 
 can sell for <b>350 silver coins</b>.  Add this money to your 
 adventure sheet now.  <i>Gain the code A74</i>.	
@@ -10660,7 +10660,7 @@ into the earth.  Eventually the stairs terminate at another
 tunnel.  Turn to <b>23</b>.",1,23,""
 748,"You wonder how many more snakemen can fit into this 
 temple!  In the devastation you find plenty of religious 
-silverwork worth <b>250 silver coins</b>.  A <b>handsome brooch </b>
+silverwork worth <b>250 silver coins</b>.  A <b>handsome brooch</b>
 <b>(Charisma +1)</b> lies amongst the chalices and statuettes 
 you loot.  There is a way onwards, your torchlight 
 reflecting some bronze plating ahead.  Intrigued you 
@@ -10803,13 +10803,13 @@ make it out of harbour.”
 	
 If you buy the ship give it a name and note it on 
 your adventure sheet with the following details:
-<b>Cog</b>	
+<b>Cog</b>
 Fighting 4	
 Health 7	
 Cargo 2 units
 	
 You can sell a Cog here for<b> 250 silver coins</b>, a Cursite 
-War Galley for <b>500 silver coins</b> and a Carrack<b> </b>for <b>1500 </b>
+War Galley for <b>500 silver coins</b> and a Carrack<b> for</b> <b>1500</b>
 <b>silver coins</b>.  You cannot sell other kinds of ship here.	
 Once you have done this, turn to <b>703</b>.",1,703,""
 757,"You wait boldly in the entrance until the stranger 
@@ -10841,37 +10841,37 @@ looking for something of interest.
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
-<b>Crude Blade (Fighting +0)</b>	
+<b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>	
+<b>Maul (Fighting +1)*</b>
 50	
 25
-<b>Iron Shortsword (Fighting +1)</b>	
+<b>Iron Shortsword (Fighting +1)</b>
 -	
 100
-<b>Iron Greataxe (Fighting +2)*</b>	
+<b>Iron Greataxe (Fighting +2)*</b>
 -	
 150	
-<b>Shield (Armour +2)</b>	
+<b>Shield (Armour +2)</b>
 50	
 25
-<b>Hide Armour (Armour +1)</b>	
+<b>Hide Armour (Armour +1)</b>
 -	
 30
-<b>Soft Boots (Stealth +1)</b>	
+<b>Soft Boots (Stealth +1)</b>
 -	
 250
-<b>Reference Book (Lore +1)</b>	
+<b>Reference Book (Lore +1)</b>
 -	
 250
-<b>Warm Cloak (Survival +1)</b>	
+<b>Warm Cloak (Survival +1)</b>
 500	
 250
-<b>Handsome brooch (Charisma +1)</b>	
+<b>Handsome brooch (Charisma +1)</b>
 -	
 250
-<b>Prybar</b>	
+<b>Prybar</b>
 -	
 50
 </tm>
@@ -10967,10 +10967,10 @@ Note:  Lotor will attack twice each round.  You must
 assign the damage of the second attack to a different 
 character from the first.
 	
-If you win, you may take Lotor’s <b>steel scimitar </b>
+If you win, you may take Lotor’s <b>steel scimitar</b>
 <b>(Fighting +2)</b>.  You swiftly release Akini’s aunt and dash 
 into the night, turn to <b>68</b>.",1,68,""
-767,"The chief ululates in pleasure as he produces the <b>magical </b>
+767,"The chief ululates in pleasure as he produces the <b>magical</b>
 <b>weave</b> from your pack and presents it to the shaman 
 (cross it off your adventure sheet).  If you speak Bando, 
 turn to <b>704</b>.  Otherwise, read on.
@@ -11006,40 +11006,40 @@ from ruined temples and lifted from rich travellers.
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
-<b>Crude Blade (Fighting +0)</b>	
+<b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>	
+<b>Maul (Fighting +1)*</b>
 50	
 25
-<b>Iron Shortsword (Fighting +1)</b>	
+<b>Iron Shortsword (Fighting +1)</b>
 -	
 100
-<b>Iron Greataxe (Fighting +2)*</b>	
+<b>Iron Greataxe (Fighting +2)*</b>
 -	
 150
-<b>Steel Scimitar (Fighting +2)</b>	
+<b>Steel Scimitar (Fighting +2)</b>
 800	
 400
-<b>Shield (Armour +2)</b>	
+<b>Shield (Armour +2)</b>
 50	
 25
-<b>Hide Armour (Armour +1)</b>	
+<b>Hide Armour (Armour +1)</b>
 -	
 35
-<b>Soft Boots (Stealth +1)</b>	
+<b>Soft Boots (Stealth +1)</b>
 500	
 250
-<b>Reference Book (Lore +1)</b>	
+<b>Reference Book (Lore +1)</b>
 500	
 250
-<b>Tome of Knowledge (Lore +2)</b>	
+<b>Tome of Knowledge (Lore +2)</b>
 1250	
 625
-<b>Warm Cloak (Survival +1)</b>	
+<b>Warm Cloak (Survival +1)</b>
 500	
 250
-<b>Handsome brooch (Charisma +1)</b>	
+<b>Handsome brooch (Charisma +1)</b>
 500	
 250
 </tm>
@@ -11106,7 +11106,7 @@ You are not disappointed.  As you suspected the skeletal
 remains leap to their feet, many other skeletons joining 
 them from the open caskets around the room.  	
 Turn to<b> 264</b>.",1,264,""
-773,"The naga has no treasure, but you may take a <b>magical </b>
+773,"The naga has no treasure, but you may take a <b>magical</b>
 <b>weave</b> from its skin before you leave the cave.  	
 Turn to <b>395</b>.",1,395,""
 774,"It is a rather more desperate struggle to repel the Bando 
@@ -11154,7 +11154,7 @@ The DC is only 4+ if you give the ogre <b>100 silver coins</b>.
 The DC is only 3+ if you give the ogre <b>200 silver coins</b>.	
 If you succeed, turn to <b>141</b>.  If you fail, turn to <b>295</b>.",2,141,295,""
 777,"The mighty metal horror comes crashing to the floor, 
-the lights in his eyes fading.  You may take his <b>steel </b>
+the lights in his eyes fading.  You may take his <b>steel</b>
 <b>greatsword (Fighting +3)*</b> if you wish.  Garrick the 
 healer thanks you profusely for saving his life.  He will 
 restore your entire party to their starting Health value 
@@ -11479,67 +11479,67 @@ wares.  Items without a buy price are not available here:
 <i>Item	</i>
 <i>Buy	</i>
 <i>Sell</i>
-<b>Crude Blade (Fighting +0)</b>	
+<b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>	
+<b>Maul (Fighting +1)*</b>
 50	
 25
-<b>Iron Shortsword (Fighting +1)</b>	
+<b>Iron Shortsword (Fighting +1)</b>
 200	
 100
-<b>Iron Greataxe (Fighting +2)*</b>	
+<b>Iron Greataxe (Fighting +2)*</b>
 -	
 150
-<b>Steel Longsword (Fighting +2)</b>	
+<b>Steel Longsword (Fighting +2)</b>
 -	
 400
-<b>Steel Greatsword (Fighting +3)*</b>	
+<b>Steel Greatsword (Fighting +3)*</b>
 -	
 500
-<b>Shield (Armour +2)</b>	
+<b>Shield (Armour +2)</b>
 50	
 25
-<b>Hide Armour (Armour +1)</b>	
+<b>Hide Armour (Armour +1)</b>
 70	
 35
-<b>Bone Armour (Armour +2)</b>	
+<b>Bone Armour (Armour +2)</b>
 -	
 150
-<b>Bronze Armour (Armour +4)</b>	
+<b>Bronze Armour (Armour +4)</b>
 -	
 2000
-<b>Soft Boots (Stealth +1)</b>	
+<b>Soft Boots (Stealth +1)</b>
 500	
 250
-<b>Reference Book (Lore +1)</b>	
+<b>Reference Book (Lore +1)</b>
 -	
 250
-<b>Warm Cloak (Survival +1)</b>	
+<b>Warm Cloak (Survival +1)</b>
 500	
 250
-<b>Handsome Brooch (Charisma +1)</b>	
+<b>Handsome Brooch (Charisma +1)</b>
 -	
 250
-<b>Prybar</b>	
+<b>Prybar</b>
 100	
 50
-<b>Incense</b>	
+<b>Incense</b>
 -	
 90
-<b>Bluestone</b>	
+<b>Bluestone</b>
 -	
 45
-<b>Engagement Ring</b>	
+<b>Engagement Ring</b>
 -	
 65
-<b>Vial of Poison</b>	
+<b>Vial of Poison</b>
 -	
 50
-<b>Dragonyak Horn</b>	
+<b>Dragonyak Horn</b>
 -	
 35
-<b>Lizard Hide</b>	
+<b>Lizard Hide</b>
 -	
 25
 </tm>
@@ -11616,7 +11616,7 @@ turn to <b>583</b>. Or you can give up in disgust (turn to <b>82</b>)?",2,583,82
 808,"The family owe the Iron King 200 silver coins, with an 
 additional 50 silver collection tax.  
 	
-If you have <b>250 silver coins </b>you can pay the family’s 
+If you have <b>250 silver coins</b> you can pay the family’s 
 tax (turn to <b>357</b>) or save money by slaying the guards 
 (turn to <b>554</b>) or simply leave (turn to <b>75</b>).",3,357,554,75,""
 809,"You are in a kitchen chamber filled with dead goblins.  
@@ -11630,15 +11630,15 @@ spellcasters can contribute their Lore skill dice.
 <i>Skill and DC:  Lore (5+)</i>
 <i>Successes Required:  3</i>
 If you succeed, turn to <b>145</b>.  If you fail, the darkness
-remains absolute. You manage to scavenge <b>15 silver </b>
+remains absolute. You manage to scavenge <b>15 silver</b>
 <b>coins</b> from the chamber before groping your way to 
 the exit.  Turn to <b>93</b>.",2,145,93,""
 811,"Skallos collapses with a whispered cry of vengeance. 
 There is silence in the chamber at last.  Skallos was a 
 well-equipped champion of darkness.  You may claim his 
-<b>black plate armour (Armour +3)</b> and take the <b>Skallos </b>
+<b>black plate armour (Armour +3)</b> and take the <b>Skallos</b>
 <b>runeblade (Fighting +3, Lore +2)</b>.  In addition, he wears 
-a <b>rugged cloak (Survival +2)</b> and has <b>750 silver coins </b>
+a <b>rugged cloak (Survival +2)</b> and has <b>750 silver coins</b>
 in jewellery about his body (add this money to your 
 adventure sheet).
 	
@@ -11696,7 +11696,7 @@ removed.  There are certainly enough supplies here for
 three or four dozen orcs for quite some time...
 	
 Fortunately, there are also some valuables, including 
-<b>400 silver coins</b> a <b>grey talisman</b> and some <b>soft boots </b>
+<b>400 silver coins</b> a <b>grey talisman</b> and some <b>soft boots</b>
 <b>(Stealth +1)</b>.  <i>Gain the code A65</i>.  	
 Once you have looted your fill, turn to <b>736</b>.",1,736,""
 817,"This level of the mines appears untroubled, and the 
@@ -11925,19 +11925,19 @@ Brekken will estimate into a cash value.
 <tm>
 <i>Item	</i>
 <i>Value</i>
-<b>Bronze Scorpion	</b>
+<b>Bronze Scorpion</b>
 25
-<b>Calligraphy Ink	</b>
+<b>Calligraphy Ink</b>
 100
-<b>Gold Portrait	</b>
+<b>Gold Portrait</b>
 125
-<b>Golden Candlestick	</b>
+<b>Golden Candlestick</b>
 75
-<b>Jewellery Box	</b>
+<b>Jewellery Box</b>
 250
-<b>Precious Tomes	</b>
+<b>Precious Tomes</b>
 150
-<b>Silver Idol	</b>
+<b>Silver Idol</b>
 50
 </tm>
 Brekken’s gang has found 500 silver coins worth of goods.  You are presented with <b>250 silver coins</b>. 
@@ -12050,7 +12050,7 @@ Northeast, to the Granite Hills (turn to <b>275</b>)?
 East, to Lhasbreath Oasis (turn to <b>590</b>)?	
 Southeast, towards the Mordain ruins (turn to <b>515</b>)?",5,775,137,275,590,515,""
 841,"You drop to your knees in exhaustion.  The battle is won 
-and you are triumphant.  Feel free to take the <b>dragon </b>
+and you are triumphant.  Feel free to take the <b>dragon</b>
 <b>head</b> as a memento of your glorious struggle.  You 
 eagerly sift through the dragon’s treasure.  Although 
 much of it is merely old bones, you still manage to find 
@@ -12085,7 +12085,7 @@ they are serious.  Still the mourners will not disperse.
 Slowly back away (turn to <b>616</b>)?	
 Defend the mourners, even if it risks your lives 	
 (turn to <b>367</b>)?",2,616,367,""
-844,"The king nods and snaps his fingers.  A purse of <b>250 </b>
+844,"The king nods and snaps his fingers.  A purse of <b>250</b>
 <b>silver coins</b> is placed into your hands.  At this the king 
 barges past you to continue his revelries elsewhere.  You 
 bow and leave the merry monarch to it.  Turn to <b>775</b>.",1,775,""
@@ -12319,7 +12319,7 @@ member must lose 3 Health points.
 	
 “Who dares disturb Imopposh the Mad?” he roars, 
 witchlights burning in his eyes.	
-Repel the spirit with a <b>Talisman of St Elias</b> 	
+Repel the spirit with a <b>Talisman of St Elias</b>
 (turn to <b>434</b>)?	
 Engage the undead horror in battle	
 (turn to <b>563</b>)?",2,434,563,"image_038_p159_.jpeg"
@@ -12354,7 +12354,7 @@ further.  You are unchained and shoved into one of
 the gate-rooms.  Through the heavy portcullis you can 
 hear the crowd muttering in anticipation. You can see 
 a number of crude weapons laid out for selection.  Any 
-party member may take a single <b>crude blade (Fighting </b>
+party member may take a single <b>crude blade (Fighting</b>
 <b>+0).</b>  In addition, a single<b> shield (Armour +2)</b>, and a
 <b>maul (Fighting +1)*</b> are here to be taken.  Remember
 that the maul is a two handed weapon (because its name 
@@ -12564,7 +12564,7 @@ to save the war and yourselves.
 <i>Skill and DC:  Fighting (4+)</i>
 <i>Successes Required:  5	</i>
 If you succeed, turn to <b>655</b>.  If you fail, turn to <b>440</b>.",2,655,440,""
-878,"There are <b>200 silver coins</b> and a <b>handsome brooch </b>
+878,"There are <b>200 silver coins</b> and a <b>handsome brooch</b>
 <b>(Charisma +1)</b> in the bag.  But can you really keep such 
 stolen property?  If Akihiro is in the party, turn to <b>622</b>.	
 Keep the loot (turn to <b>250</b>)?	
@@ -12632,7 +12632,7 @@ revenant has passed.  You inhale deeply.  It is a new day
 for you, from now until the end of your days. Turn to <b>840</b>.",1,840,""
 883,"Benches line the wall of this small room, each with a 
 number of hooks upon which hang mouldy rags.  Only 
-one garment has weathered the test of time, a <b>warm </b>
+one garment has weathered the test of time, a <b>warm</b>
 <b>cloak (Survival +1)</b>.  Take it, if you wish, and then 
 continue down the tunnel.  Turn to <b>647</b>.",1,647,""
 884,"There are many deep clefts in the earth that you can 
@@ -12760,7 +12760,7 @@ pays their wages you command them all aboard.
 	
 <i>Gain the code A68. </i>Cross your old ship off your 
 adventure sheet and replace it with this one:
-<b>Hulk</b>	
+<b>Hulk</b>
 Fighting 3	
 Health 5		
 Cargo 3 units
@@ -12787,16 +12787,16 @@ Finding treasure in this pile of trash won’t be
 easy, but a dedicated search does produce some items.   
 Make a Team Stealth check, DC4+.  For every success 
 you can claim one of the following items:  	
-<b>200 silver coins	</b>
+<b>200 silver coins</b>
 <b>Iron Greataxe (Fighting +2)	</b>
 <b>Bone Armour (Armour +2)	</b>
 <b>Soft Boots (Stealth +1)	</b>
 <b>Reference Book (Lore +1)	</b>
-<b>150 silver coins	</b>
-<b>Vial of Quicksilver	</b>
+<b>150 silver coins</b>
+<b>Vial of Quicksilver</b>
 <b>Grey Talisman</b>
 <b>	</b>
-<b>Incense	</b>
+<b>Incense</b>
 <b>Dragonyak Horn</b>
 After you have selected your items, <i>gain the code A78</i>. 
 Turn to<b> 165</b> to continue your adventure.",2,289,165,""
