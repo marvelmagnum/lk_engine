@@ -31,7 +31,7 @@ hindquarters.  For the moment there is nothing you can
 do with you and your companions in chains.  You swear 
 you will regain your freedom and start your lives anew. 
 But first, you must survive the horrors of slavery.	
-Turn to <b>631.</b>",1,631,""
+Turn to <b>631</b>.",1,631,""
 2,"The orcs snarl as they see you, lurching to attack. 
 <tc>
 <i>Opponent	</i>
@@ -47,13 +47,13 @@ Turn to <b>631.</b>",1,631,""
 3+	
 9
 </tc>
-	If you win, turn to <b>478.</b>  You can flee at the start of 
+	If you win, turn to <b>478</b>.  You can flee at the start of 
 your round if you wish.  If you do, the orcs will chase 
-you out of the dungeon.  Turn to <b>515.</b>",2,478,515,""
+you out of the dungeon.  Turn to <b>515</b>.",2,478,515,""
 3,"The treasure chest contains <b>200 silver coins</b> and a 
 <b>bluestone</b>.  Take what you wish, and then <i>record the </i>
 <i>code A45</i>.  Not wishing to tarry longer, you depart the 
-chamber and return to the crossroads.  Turn to <b>46.</b>",1,46,""
+chamber and return to the crossroads.  Turn to <b>46</b>.",1,46,""
 4,"You swoop Amelia up into your arms just before she 
 reaches the wine barrel.  She shrieks in delight and 
 throws an arm around your neck.
@@ -76,7 +76,7 @@ Her snores cut off a potentially romantic moment.
 Tucking her into bed you go to join the rest of your 
 companions.  Note in Amelia’s notes box that she has gained 
 a heart for Brash. Brash also gains a heart for Amelia.	
-Now turn to <b>280.</b>",1,280,""
+Now turn to <b>280</b>.",1,280,""
 5,"You meet up with the lead scholar, Emlyn Pass-Ross, 
 who is already loading supplies onto the mules.  She is 
 joined by three other young scholars who look fresh out 
@@ -127,7 +127,7 @@ distraction team can contribute to this check.
 If you succeed, turn to <b>364</b>.  If you fail, turn to <b>588</b>.",3,169,364,588,""
 8,"You cast your eye over the book.  It seems to detail 
 instructions about how to prepare skeletons for animation 
-and control.  If you have the code A75, turn to <b>845.</b>
+and control.  If you have the code A75, turn to <b>845</b>. 
 If not, read on.
 	
 It looks like the hard work has been done for you. 
@@ -206,7 +206,7 @@ way between the cities of Saltdad and Clifftop.
 Roll a die.	
 1-2 	 turn to <b>466.	</b>
 3 	turn to<b> 397.	</b>
-4-6 	 turn to <b>569.</b>",3,466,397,569,""
+4-6 	 turn to <b>569</b>.",3,466,397,569,""
 13,"What do you wish to do now?	
 Board your ship	
 (only if you have a ship here, turn to <b>851</b>)?	
@@ -220,7 +220,7 @@ Disappointed, you leave.  Turn to <b>453</b>.",1,453,""
 15,"There are few valuables amongst the goblins, though 
 you manage to scavenge <b>15 silver coins</b> from the entire 
 horde.  Pleased to have survived you make your way 
-onwards.  Turn to <b>395.</b>",1,395,""
+onwards.  Turn to <b>395</b>.",1,395,""
 16,"You have chosen to battle one of the dark knights of 
 Abraxas.  Good luck!
 <tc>
@@ -241,7 +241,7 @@ Notes: On any round when Skallos does not take damage, he will unleash a roar of
 party member must lose 1 point of Health, and Skallos 
 will restore 4 points of Health, up to his maximum of 
 20 Health points.	
-If you win, turn to <b>811.</b>",1,811,""
+If you win, turn to <b>811</b>.",1,811,""
 17,"Do you have a <b>tithe report</b>?  	
 If so, turn to <b>246</b>.  If not, read on.
 The Iron King is most displeased to see you.  
@@ -249,7 +249,7 @@ He clicks his fingers and soon you have been dragged
 away to the dungeons for a gruesome session of torture. 
 Each party member loses 4 Health points.  Afterwards, 
 the king has the guards dispose of you as they see fit.	
-Turn to <b>55.</b>",2,246,55,""
+Turn to <b>55</b>.",2,246,55,""
 18,"If you have the code A57, turn to <b>350</b>.  If not, read on.
 The door in front of you is stuck.  To get it open you will 
 have to force it.  To do this make the skill check below.  
@@ -267,7 +267,7 @@ beyond by turning to <b>350</b>.  If the door is still stuck you
 can keep attempting the skill check above until you 
 succeed, but your selected party member will lose 1 
 Health point each time they fail.  You can consider other 
-exits from the room by turning to <b>494.</b>",4,350,494,350,494,""
+exits from the room by turning to <b>494</b>.",4,350,494,350,494,""
 19,"You are in a dreadful city of poor mud-brick and 
 grass hovels, surrounded by weed-filled cropland. 
 Even the most impressive buildings are little more 
@@ -338,7 +338,7 @@ This continues each round until the priest has been slain.
 If you have a <b>hygliph flower</b>, the priest is put off by its 
 pungent odour and requires a 5+ on his attack rolls to 
 inflict damage during this battle.	
-If you win, turn to <b>881.</b>",2,714,881,""
+If you win, turn to <b>881</b>.",2,714,881,""
 21,"You are steering along the jungle peninsula, across waters 
 known as Cape Porta.  It is a famous lair of pirates and 
 other ne’er-do-wells.  Roll a die.  On a 1, turn to <b>429</b>. 
@@ -352,7 +352,7 @@ following:  <b>jewellery box</b>, <b>calligraphy ink</b>, <b>silver idol</b>,
 Brekken back onto the landing.  You decide, with a 
 mutual nod, that you have pushed your luck far enough 
 in the house and make your way back out of the windows 
-and into the streets of the city.  Turn to <b>833.</b>",1,833,""
+and into the streets of the city.  Turn to <b>833</b>.",1,833,""
 23,"You emerge into a short corridor running west to east. 
 To the west you can make out a crossroads.  To the 
 east a flight of stairs leads upwards.  There is a door in 
@@ -476,7 +476,7 @@ Zealot Healer
 Note:  The Zealot Healer will only attack if he is the last opponent standing.  Otherwise he will heal each zealot 
 2 Health points.  These additional points can take them 
 over their starting health.	
-If you win, turn to <b>63.</b>",2,657,63,""
+If you win, turn to <b>63</b>.",2,657,63,""
 29,"You curse as the thief fades from view.  You cannot face 
 the owner of the house for shame, and instead slip away 
 into the city.  Turn to <b>450</b>.",1,450,""
@@ -486,7 +486,7 @@ by the woes of a nomadic life.
 	
 If you have the code A1, and you do not have the 
 code A37, turn to <b>737</b>.  Otherwise you have nothing of 
-importance to discuss with him.  Turn back to <b>473.</b>",2,737,473,""
+importance to discuss with him.  Turn back to <b>473</b>.",2,737,473,""
 31,"If you have the code A56, turn to <b>788</b>.  If not, read on.
 	
 As you approach the door you do not see the orcs 
@@ -573,7 +573,7 @@ distraction team can join up with the weapons team for
 all future checks.",1,456,""
 36,"You are in the ogre’s bedroom.  It would be too unpleasant 
 (not to mention unhygienic) to rest here yourselves, so 
-you gingerly make your way back outside.  Turn to <b>310.</b>",1,310,""
+you gingerly make your way back outside.  Turn to <b>310</b>.",1,310,""
 37,"The Lhasbreath barbarian suddenly jolts, a blade sticking 
 out of his chest.  He falls away, to reveal a smirking Tash, 
 her crude sword dripping with blood.
@@ -582,7 +582,7 @@ her crude sword dripping with blood.
 by the clever thief.  Sar Jessica won’t soon forget this.  
 Note in Jessica’s notes box that she has gained a heart 
 for Tasha.  Tasha also gains a heart for Sar Jessica.	
-Now turn to <b>753.</b>",1,753,""
+Now turn to <b>753</b>.",1,753,""
 38,"You kill the orc in a single stroke.  He keels over, the 
 book slipping from his grasp.  <i>Gain the code A71</i>.
 Examine the black book he was reading (turn to <b>119</b>)?
@@ -672,7 +672,7 @@ skill (Fighting, Stealth, Lore, etc) by one point for each
 of your characters.  If you have explored other books first, 
 your party members can instead increase their maximum 
 Health scores by 1 point each.	
-Now turn to <b>313.</b>",1,313,""
+Now turn to <b>313</b>.",1,313,""
 42,"You return to the small reading room, mouldering books 
 scattered across the tiny library.  If you currently own a 
 <b>scroll of rage</b> you find nothing.  If you do not have this 
@@ -718,7 +718,7 @@ and increase their Lore skill by 1 point.
 <i>Gain the code A29</i>.
 	
 Bidding the odd couple farewell, you resume your 
-journey.  Turn to <b>614.</b>",1,614,""
+journey.  Turn to <b>614</b>.",1,614,""
 44,"Tackling the room will come in two stages.  Firstly, 
 you must attempt to figure out the safest route.   
 By examining the positions of the orc bodies you might 
@@ -737,7 +737,7 @@ following check.
 <i>Successes Required:  7</i>
 Note:  For every Lore success you achieved, lower the 
 number of successes required by 1.
-If you succeed, turn to <b>385.</b>  If you fail, turn to <b>769.</b>",2,385,769,""
+If you succeed, turn to <b>385</b>.  If you fail, turn to <b>769</b>.",2,385,769,""
 45,"Timing it just right, you begin to shove one another 
 in the water queue.  To make it convincing, you start 
 to exchange a few hard blows, attempting to drag 
@@ -748,7 +748,7 @@ can contribute to this check.
 <i>Stage a convincing fight (Team check)</i>
 <i>Skill and DC:  Fighting (4+)</i>
 <i>Successes Required:  3</i>
-If you succeed, turn to <b>837. </b> If you fail, turn to <b>762.</b>",2,837,762,""
+If you succeed, turn to <b>837. </b> If you fail, turn to <b>762</b>.",2,837,762,""
 46,"You have returned to the crossroads.  Above you daylight 
 streams through the exit shaft.	
 Go northwest (turn to <b>761</b>)?	
@@ -778,7 +778,7 @@ The queen is appalled at her loss but marshals her
 forces with a mother’s tenderness.  “This is not the end,” 
 she vows.  “We must rebuild our forces and gather new 
 allies.  Clifftop isn’t going anywhere, and neither am I.”	
-Turn to <b>620.</b>",1,620,""
+Turn to <b>620</b>.",1,620,""
 49,"Your return trip to Lhasbreath is mercifully uneventful, 
 and Sir Lawrence Ross lays on a grand banquet upon 
 your arrival.  You spend several days with the Ross’s, 
@@ -803,7 +803,7 @@ member and increase their Survival skill by 1 point.
 	
 Thanking Sir Lawrence and Emlyn for their 
 generosity, you depart into the city.  <i>Gain the code A85</i>. 
-Now turn to <b>775.</b>",1,775,""
+Now turn to <b>775</b>.",1,775,""
 50,"You manage to translate the brightly painted calendar, 
 to the delight of Kopu.  He is impressed with your work 
 and presents you with a <b>bluestone</b> as a reward.  You ask 
@@ -817,7 +817,7 @@ you press.
 “Well,” he says.  “It’s the thought that counts.”
 	
 Grumbling somewhat, you get some sleep whilst you 
-wait out the storm.  Turn to <b>585.</b>",1,585,""
+wait out the storm.  Turn to <b>585</b>.",1,585,""
 51,"Where will you travel next?	
 North, to the Granite Hills (turn to <b>275</b>)?	
 East, into the desert (turn to <b>202</b>)?	
@@ -840,13 +840,13 @@ bamboo cages, the mercenary tribesmen sell you off to
 a passing slaver ship in return for a few gemstones and 
 some curious-looking fabrics.  Roll a die to see where 
 you are eventually sold:
-1-2:  You are sold to the Saltdad Arena, turn to <b>631.</b>
+1-2:  You are sold to the Saltdad Arena, turn to <b>631</b>.
 3-4:  You are sold to the taskmasters of Clifftop,
-turn to <b>866.</b>
-5-6:  You are sold to the priests of Cursus, turn to <b>531.</b>",3,631,866,531,""
+turn to <b>866</b>.
+5-6:  You are sold to the priests of Cursus, turn to <b>531</b>.",3,631,866,531,""
 53,"There is no point in risking everyone at once.  
 Choose a party member to cross the beam first, and 
-then turn to <b>208.</b>",1,208,""
+then turn to <b>208</b>.",1,208,""
 54,"There are a number of close shaves, and even minor 
 impacts, but the raft holds steady as you correct its course 
 through the sloping rapids.  Eventually the waters calm, 
@@ -860,16 +860,16 @@ beach the raft onto the bank.
 	
 “Skilfully done,” smiles Emlyn as you help her and 
 the other scholars to shore.  “Let’s explore the unknown, 
-shall we?”  Turn to <b>763.</b>",1,763,""
+shall we?”  Turn to <b>763</b>.",1,763,""
 55,"The guards strip you of your money and equipment. 
 Cross off all items and silver on your adventure sheet.  
 Jail space is at a premium, so you are sold into slavery.  
 Roll a die to determine your fate.
-1-2:  You are sold to the Saltdad Arena, turn to <b>631.</b>
+1-2:  You are sold to the Saltdad Arena, turn to <b>631</b>.
 3-4:  You are sold to the taskmasters of Clifftop,
-turn to <b>866.</b>
-5-6:  You are sold to the priests of Cursus, turn to <b>531.</b>",3,631,866,531,""
-56,"If you have the code A23 turn to<b> 244.</b>  If not, read on.
+turn to <b>866</b>.
+5-6:  You are sold to the priests of Cursus, turn to <b>531</b>.",3,631,866,531,""
+56,"If you have the code A23 turn to<b> 244</b>.  If not, read on.
 You kiss the burning, rich-yellow sands as you emerge 
 from the shadow lands.  You are free from the tyranny 
 of the monochrome world.  Choose a party member and 
@@ -877,7 +877,7 @@ increase their Survival score by 1 point.
 <i>Gain the code A23. </i>
 	
 You head north, directly away from the Blackwall.  
-Turn to <b>511.</b>",2,244,511,""
+Turn to <b>511</b>.",2,244,511,""
 57,"The goblins' grasp of your language is rather poor, but 
 you endeavour to convince them that you are the enemies 
 of their enslavers.
@@ -886,8 +886,8 @@ of their enslavers.
 <i>Successes Required:  3</i>
 Note:  If you speak Bando, your DC is only 4+. Oddly, 
 the goblins are quite familiar with this language.  
-If you succeed, turn to <b>828.</b> If you fail, the goblins get 
-hostile, turn to <b>389.</b>",2,828,389,""
+If you succeed, turn to <b>828</b>. If you fail, the goblins get 
+hostile, turn to <b>389</b>.",2,828,389,""
 58,"As you are pouring the poison into the cauldron, the head 
 chef catches your hand.  “What’s that?” she demands 
 sharply.  You drop the vial (cross the <b>vial of poison</b> off 
@@ -916,14 +916,14 @@ team grimly draw their weapons and prepare to fight!
 5+	
 11	
 </tc>
-If you win, turn to <b>623.</b>",1,623,""
+If you win, turn to <b>623</b>.",1,623,""
 59,"You knock the guards down into the dirt and surge 
 forwards.  There is nowhere to hide but in the city itself so 
 you dash into the streets whilst the guards roar behind you.
 <i>Hide from the guards (Team check)</i>
 <i>Skill and DC:  Stealth (4+)</i>
 <i>Successes Required:  4</i>
-If you succeed, turn to <b>698. </b> If you fail, turn to<b> 758.</b>",2,698,758,""
+If you succeed, turn to <b>698. </b> If you fail, turn to<b> 758</b>.",2,698,758,""
 60,"The thief is almost in grabbing range.  He turns a corner 
 only to find himself in a dead-end alley.  He curses and 
 draws his sword.  “You’ve bitten off more than you can 
@@ -943,13 +943,13 @@ Thief of Royce
 members that fought the thief have died.  The thief will 
 take their possessions (cross off all items of equipment).  
 If you have any party members left they must mourn 
-their losses and turn to <b>450.</b>",2,391,450,""
+their losses and turn to <b>450</b>.",2,391,450,""
 61,"If you chose Brash turn to <b>4</b>.	
-If you chose Tasha turn to<b> 870.</b>
+If you chose Tasha turn to<b> 870</b>.
 	
 Otherwise you carry Amelia to bed after a few feeble 
 protestations.  Once she is safely tucked-in the rest of 
-the party retire as well.  Turn to <b>280.</b>",3,4,870,280,""
+the party retire as well.  Turn to <b>280</b>.",3,4,870,280,""
 62,"That night, you stroll along the terrace, the sky a canopy 
 of stars, reflected in the watery rice paddies that surround 
 the house.  You need some fresh air.  Being treated as a 
@@ -1012,7 +1012,7 @@ West, towards the Mordain ruins (turn to <b>515</b>)?",3,535,340,515,""
 64,"With the ascendancy of the Everchild the streets have 
 become safer and justice more accessible to the common 
 people.  Good news for the city, but it makes for a dull 
-walk through the ramshackle town.  Turn to<b> 75.</b>",1,75,""
+walk through the ramshackle town.  Turn to<b> 75</b>.",1,75,""
 65,"The party member reading the book is standing 
 immobile, lost in the mystic words of the cursed book. 
 What does the rest of the party do?	
@@ -1401,7 +1401,7 @@ your way back to the temple in Chalice.  Turn to <b>856</b>.",1,856,""
 89,"A great caravan of salt merchants, en route to Clifftop, 
 offer you their services.  Their merchants have various 
 odds and ends you might find useful.
-All prices are in <b>silver coins.</b>
+All prices are in <b>silver coins</b>.
 <tm>
 <i>Item	</i>
 <i>Buy	</i>
@@ -1409,7 +1409,7 @@ All prices are in <b>silver coins.</b>
 <b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>
+<b>Maul (Fighting +1)</b>*	
 50	
 20	
 <b>Shield (Armour +2)</b>
@@ -2094,27 +2094,26 @@ very best swords are not available for foreigners.
 <b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>
+<b>Maul (Fighting +1)</b>*	
 -	
 25
 <b>Iron Shortsword (Fighting +1)</b>
 200	
 100
-<b>Iron Greataxe (Fighting +2)*</b>
+<b>Iron Greataxe (Fighting +2)</b>*	
 -	
 150
 <b>Steel Longsword (Fighting +2)</b>
 800	
 400
-<b>Steel Greatsword (Fighting +3)*</b>
+<b>Steel Greatsword (Fighting +3)</b>*	
 -	
 450
 <b>Masterwork Blade (Fighting +3)</b>
 -	
 900
-<b>Masterwork Greatsword (Fighting +4)*</b>	 
--	
-1250
+</tm>
+<b>Masterwork Greatsword (Fighting +4)</b>*	 -	1250
 <b>Shield (Armour +2)</b>
 50	
 25
@@ -2161,6 +2160,88 @@ very best swords are not available for foreigners.
 -	
 50
 </tm>
+When you have finished here, turn to <b>4
+bu
+t rather 
+the shops and stalls are spread out amongst the well-
+tended districts.  Stern guards wearing fine longswords 
+and ceremonial robes patrol the streets, watching you 
+carefully as you go from shop to shop.  The finest 
+weapons in the valley are forged in this place, with 
+techniques that rival those of Longport, although the 
+very best swords are not available for foreigners.
+<tm>
+<i>Item	</i>
+<i>Buy	</i>
+<i>Sell</i>
+<b>Crude Blade (Fighting +0)</b>
+25	
+10
+<b>Maul (Fighting +1)</b>*	
+-	
+25
+<b>Iron Shortsword (Fighting +1)</b>
+200	
+100
+<b>Iron Greataxe (Fighting +2)</b>*	
+-	
+150
+<b>Steel Longsword (Fighting +2)</b>
+800	
+400
+<b>Steel Greatsword (Fighting +3)</b>*	
+-	
+450
+<b>Masterwork Blade (Fighting +3)</b>
+-	
+900
+</tm>
+<b>Masterwork Greatsword (Fighting +4)</b>*	 -	1250
+<b>Shield (Armour +2)</b>
+50	
+25
+<b>Hide Armour (Armour +1)</b>
+-	
+30
+<b>Bone Armour (Armour +2)</b>
+-	
+150
+<b>Bronze Armour (Armour +4)</b>
+-	
+2000
+<b>Soft Boots (Stealth +1)</b>
+500	
+250
+<b>Reference Book (Lore +1)</b>
+500	
+250
+<b>Warm Cloak (Survival +1)</b>
+-	
+250
+<b>Handsome brooch (Charisma +1)</b>
+-	
+250
+<b>Prybar</b>
+100	
+50
+<b>Incense</b>
+-	
+90
+<b>Goldwax Candle</b>
+-	
+100
+<b>Engagement Ring</b>
+-	
+65
+<b>Vial of Poison</b>
+-	
+50
+<b>Dragonyak Horn</b>
+-	
+35
+<b>Lizard Hide</b>
+-	
+50
 When you have finished here, turn to <b>450</b>.",1,450,""
 143,"You spend a full month with Che Long training up 
 the Bronzeguard.  They are a formidable sight in 
@@ -2358,7 +2439,7 @@ ears as you are once again lined up in the gatehouse in
 preparation for your latest bout.  Up to four <b>crude blades</b>
 <b>(Fighting +0)</b> are available to your characters.  Again, one 
 character may be armed with a <b>shield (Armour +2</b>), and 
-another with a two-handed <b>maul (Fighting +1)*</b>.	
+another with a two-handed <b>maul (Fighting +1)</b>*.	
 Equip your characters as you wish then turn to <b>170</b>.",1,170,""
 158,"The market of Lhasbreath is a noisy and vibrant place, 
 based around a stone amphitheatre and bedecked with 
@@ -2372,19 +2453,19 @@ only to return to steal a loose berry or fruit.
 <b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>
+<b>Maul (Fighting +1)</b>*	
 50	
 25
 <b>Iron Shortsword (Fighting +1)</b>
 200	
 100
-<b>Iron Greataxe (Fighting +2)*</b>
+<b>Iron Greataxe (Fighting +2)</b>*	
 300	
 150
 <b>Steel Longsword (Fighting +2)</b>
 -	
 400
-<b>Steel Greatsword (Fighting +3)*</b>
+<b>Steel Greatsword (Fighting +3)</b>*	
 -	
 450	
 <b>Shield (Armour +2)</b>
@@ -3640,7 +3721,7 @@ come in our presence again.”
 	
 The Iron King waves to one of his councillors, who 
 reluctantly places <b>350 silver coins</b> and an <b>iron greataxe</b>
-<b>(Fighting +2)*</b> into your hands.  Sensing that you are 
+<b>(Fighting +2)</b>* into your hands.  Sensing that you are 
 lucky the ungrateful king even left you alive, you quickly 
 depart before his mood changes.  Turn to <b>75</b>.",1,75,""
 247,"If you have the code A76, turn to <b>36</b>.  If not, read on.
@@ -4541,7 +4622,7 @@ Barbarian Leader
 8
 </tc>
 	If you win, you can take the barbarian leader’s <b>iron</b>
-<b>greataxe (Fighting +2)*</b> and the <b>300 silver coins</b> the 
+<b>greataxe (Fighting +2)</b>* and the <b>300 silver coins</b> the 
 barbarians were bribed with.  Not wishing to be found 
 surrounded by dead barbarians in the king’s hall, you 
 slip away into the night.  Turn to <b>775</b>.",1,775,""
@@ -4892,7 +4973,7 @@ flowery wreaths in exchange.  The tribe holler their
 acceptance of you, and soon a kind of impromptu 
 party begins, with wild dancing and sweet, fermented 
 fruit drinks.  As evening descends you are brought 
-before the shaman.  Turn to <b>381.</b>",1,381,""
+before the shaman.  Turn to <b>381</b>.",1,381,""
 340,"The city of Cursus is dominated by thirteen flat-
 topped step pyramids made of black stone.  It is the 
 spiritual and cultural centre of the valley, the domain 
@@ -5329,19 +5410,19 @@ welcoming you curtly.  All prices are in silver coins.
 <b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>
+<b>Maul (Fighting +1)</b>*	
 50	
 25
 <b>Iron Shortsword (Fighting +1)</b>
 200	
 100
-<b>Iron Greataxe (Fighting +2)*</b>
+<b>Iron Greataxe (Fighting +2)</b>*	
 -	
 150
 <b>Steel Longsword (Fighting +2)</b>
 -	
 400
-<b>Steel Greatsword (Fighting +3)*</b>
+<b>Steel Greatsword (Fighting +3)</b>*	
 -	
 450		
 <b>Shield (Armour +2)</b>
@@ -5711,7 +5792,7 @@ Sell
 <b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>
+<b>Maul (Fighting +1)</b>*	
 50	
 25	
 <b>Shield (Armour +2)</b>
@@ -5768,7 +5849,7 @@ At this the monkey closes his eyes and dies in your
 arms.  <i>Gain the code A43</i>.
 	
 Burying the monkey in the desert, you make your 
-way onwards.  Turn to <b>125.</b>",1,125,""
+way onwards.  Turn to <b>125</b>.",1,125,""
 400,"The plaza in the temple district is full.  Soldiers and 
 diplomats from across the valley fill it, from sweaty 
 Lhasbreath barbarians to dignified Chalice scholars.  
@@ -8640,10 +8721,10 @@ If you win, turn to <b>342</b>.
 If you lose, turn to <b>48</b>.",3,300,342,48,"image_028_p111_.jpeg"
 611,"The gatehouse’s weapon store is open to you. 
 You may take any of the following items:	
-<b>Hide armour (Armour +1)	</b>
-<b>Shield (Armour +2)	</b>
+<b>Hide armour (Armour +1)</b>
+<b>Shield (Armour +2)</b>
 <b>Maul (Fighting +1)*	</b>
-<b>Iron shortsword (Fighting +1)	</b>
+<b>Iron shortsword (Fighting +1)</b>
 <b>Crude blade (Fighting +0)</b> – you may take up to four 
 crude blades.
 	
@@ -9457,7 +9538,7 @@ Damn the Iron King! Attack the soldiers!
 (turn to <b>554</b>).",4,852,75,808,554,"image_029_p122_.jpeg"
 669,"With the orcs dead you move to loot the room and 
 examine their wargear.  The leader has a mighty <b>iron</b>
-<b>greataxe (Fighting +2)*</b> and is wearing a fine suit of 
+<b>greataxe (Fighting +2)</b>* and is wearing a fine suit of 
 <b>bone armour (Armour +2)</b>.  Three <b>iron shortswords</b>
 <b>(Fighting +1)</b> can be looted from the common warriors. 
 Searching the room you find an <b>iron key</b> and a <b>warm</b>
@@ -10237,7 +10318,7 @@ make the following skill check.
 <i>Tackle the thief (Individual check)</i>
 <i>Skill and DC:  Fighting (5+)</i>
 <i>Successes Required:  4</i>
-If you succeed, turn to <b>332</b>.  If you fail, turn to <b>528.</b>",2,332,528,""
+If you succeed, turn to <b>332</b>.  If you fail, turn to <b>528</b>.",2,332,528,""
 725,"You are wandering the desert, somewhat south of 
 the dilapidated town of Clifftop.  The searing heat 
 is quite unbearable, and you struggle to ration your 
@@ -10315,7 +10396,7 @@ check.
 <i>Force open window (Individual check)</i>
 <i>Skill and DC:  Fighting (5+)</i>
 <i>Successes Required:  3</i>
-Note:  If you have a <b>prybar,</b> you can gain a success on 
+Note:  If you have a <b>prybar</b>, you can gain a success on 
 a 4+ rather than a 5+.	
 If you succeed, turn to <b>305</b>.  	
 If you fail, turn to <b>443</b>.",2,305,443,""
@@ -10844,13 +10925,13 @@ looking for something of interest.
 <b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>
+<b>Maul (Fighting +1)</b>*	
 50	
 25
 <b>Iron Shortsword (Fighting +1)</b>
 -	
 100
-<b>Iron Greataxe (Fighting +2)*</b>
+<b>Iron Greataxe (Fighting +2)</b>*	
 -	
 150	
 <b>Shield (Armour +2)</b>
@@ -11009,13 +11090,13 @@ from ruined temples and lifted from rich travellers.
 <b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>
+<b>Maul (Fighting +1)</b>*	
 50	
 25
 <b>Iron Shortsword (Fighting +1)</b>
 -	
 100
-<b>Iron Greataxe (Fighting +2)*</b>
+<b>Iron Greataxe (Fighting +2)</b>*	
 -	
 150
 <b>Steel Scimitar (Fighting +2)</b>
@@ -11155,7 +11236,7 @@ The DC is only 3+ if you give the ogre <b>200 silver coins</b>.
 If you succeed, turn to <b>141</b>.  If you fail, turn to <b>295</b>.",2,141,295,""
 777,"The mighty metal horror comes crashing to the floor, 
 the lights in his eyes fading.  You may take his <b>steel</b>
-<b>greatsword (Fighting +3)*</b> if you wish.  Garrick the 
+<b>greatsword (Fighting +3)</b>* if you wish.  Garrick the 
 healer thanks you profusely for saving his life.  He will 
 restore your entire party to their starting Health value 
 before quickly packing up to leave the city forever.
@@ -11482,19 +11563,19 @@ wares.  Items without a buy price are not available here:
 <b>Crude Blade (Fighting +0)</b>
 25	
 10
-<b>Maul (Fighting +1)*</b>
+<b>Maul (Fighting +1)</b>*	
 50	
 25
 <b>Iron Shortsword (Fighting +1)</b>
 200	
 100
-<b>Iron Greataxe (Fighting +2)*</b>
+<b>Iron Greataxe (Fighting +2)</b>*	
 -	
 150
 <b>Steel Longsword (Fighting +2)</b>
 -	
 400
-<b>Steel Greatsword (Fighting +3)*</b>
+<b>Steel Greatsword (Fighting +3)</b>*	
 -	
 500
 <b>Shield (Armour +2)</b>
@@ -12355,8 +12436,8 @@ the gate-rooms.  Through the heavy portcullis you can
 hear the crowd muttering in anticipation. You can see 
 a number of crude weapons laid out for selection.  Any 
 party member may take a single <b>crude blade (Fighting</b>
-<b>+0).</b>  In addition, a single<b> shield (Armour +2)</b>, and a
-<b>maul (Fighting +1)*</b> are here to be taken.  Remember
+<b>+0)</b>.  In addition, a single<b> shield (Armour +2)</b>, and a
+<b>maul (Fighting +1)</b>* are here to be taken.  Remember
 that the maul is a two handed weapon (because its name 
 is followed by a ‘*’) and the party member wielding it
 cannot use a shield at the same time.	
@@ -12540,7 +12621,7 @@ raise their Fighting by 1 point.
 The mourners are shocked that anyone would so 
 brazenly fight and kill a kensai.  They disperse before 
 you, abandoning the casket on the ground.  The kensai 
-master had a well-made <b>steel longsword (Fighting +2) </b>
+master had a well-made <b>steel longsword (Fighting +2)</b>
 which you can take, if you wish.  Otherwise, you had 
 better flee the scene before more guards arrive.  	
 Turn to <b>450</b>.",1,450,""
@@ -12788,10 +12869,10 @@ easy, but a dedicated search does produce some items.
 Make a Team Stealth check, DC4+.  For every success 
 you can claim one of the following items:  	
 <b>200 silver coins</b>
-<b>Iron Greataxe (Fighting +2)	</b>
-<b>Bone Armour (Armour +2)	</b>
-<b>Soft Boots (Stealth +1)	</b>
-<b>Reference Book (Lore +1)	</b>
+<b>Iron Greataxe (Fighting +2)</b>
+<b>Bone Armour (Armour +2)</b>
+<b>Soft Boots (Stealth +1)</b>
+<b>Reference Book (Lore +1)</b>
 <b>150 silver coins</b>
 <b>Vial of Quicksilver</b>
 <b>Grey Talisman</b>
@@ -12964,5 +13045,5 @@ when making this skill check.
 If you open the door before perishing, turn to <b>123</b>.
 	
 If all your party members in the room die, the rest of 
-the party may venture on by turning to <b>717.</b>  You cannot 
+the party may venture on by turning to <b>717</b>.  You cannot 
 recover the equipment from your dead party members.",2,123,717,""
