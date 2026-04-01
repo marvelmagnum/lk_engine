@@ -476,13 +476,36 @@ class CloudSaveManager:
         """Verify Drive is actually reachable; update status and drop drive handle if not."""
         if not self.drive:
             return False
+
+        was_connected = self.drive is not None
         try:
-            self.drive.files().list(pageSize=1, fields="files(id)").execute()
+            self.drive.files().list(spaces="appDataFolder", pageSize=1, fields="files(id)").execute()
             return True
         except Exception:
-            self.drive = None
+            pass
+
+        # Recover from expired/stale sessions by reloading token credentials and rebuilding the service.
+        creds = self._load_token_credentials() or self.credentials
+        if creds:
+            self.credentials = creds
+            try:
+                if creds.expired and creds.refresh_token:
+                    creds.refresh(Request())
+                    if self.token_file_path:
+                        with open(self.token_file_path, "w", encoding="utf-8") as token_file:
+                            token_file.write(creds.to_json())
+
+                if creds.valid:
+                    self.drive = self._build_drive_service(creds)
+                    self.drive.files().list(spaces="appDataFolder", pageSize=1, fields="files(id)").execute()
+                    return True
+            except Exception:
+                pass
+
+        self.drive = None
+        if was_connected:
             self._notify_status_change()
-            return False
+        return False
 
     def is_cloud_connected(self, verify=False):
         """Report cloud connection state, with optional API reachability check."""
@@ -515,7 +538,7 @@ class CloudSaveManager:
 
             if creds.valid:
                 test_drive = self._build_drive_service(creds)
-                test_drive.files().list(pageSize=1, fields="files(id)").execute()
+                test_drive.files().list(spaces="appDataFolder", pageSize=1, fields="files(id)").execute()
                 self.drive = test_drive
                 if not was_connected:
                     self._notify_status_change()
@@ -530,7 +553,7 @@ class CloudSaveManager:
 
     def sync_all_saves(self):
         """Manual cloud sync (call on game exit)"""
-        if not self._check_drive_connectivity():
+        if not self.refresh_connection_status():
             return False
 
         uploaded = 0
