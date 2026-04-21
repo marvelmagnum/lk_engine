@@ -40,8 +40,8 @@ internet_icon_on = None
 internet_icon_off = None
 internet_check_in_progress = False
 pending_cloud_sync = False
-SAVE_PENDING_BG = "white"
-SAVE_SYNCED_BG = "#c6efce"
+dark_mode = False
+SAVE_SYNCED_BG = "#3bf760"
 CLOUD_STATUS_POLL_MS = 10000
 STATUS_ICON_WIDTH = 26
 
@@ -164,10 +164,10 @@ def update_save_indicator():
     if title_widget is None:
         return
 
-    # if pending_cloud_sync:
-    #     title_widget.config(bg=SAVE_PENDING_BG, fg="black")
-    # else:
-    #     title_widget.config(bg=SAVE_SYNCED_BG, fg="black")
+    if pending_cloud_sync:
+          title_widget.config(bg=bg_color, fg=fg_color)
+    else:
+        title_widget.config(bg=SAVE_SYNCED_BG)
 
 def mark_pending_cloud_sync():
     global pending_cloud_sync
@@ -729,6 +729,7 @@ def show_buttons(items):
 def switch_theme():
     global fg_color
     global bg_color
+    global dark_mode
 
     temp = fg_color
     fg_color = bg_color
@@ -736,6 +737,7 @@ def switch_theme():
 
     title_widget.config(bg=bg_color, fg=fg_color)
     text_widget.config(bg=bg_color, fg=fg_color)
+    dark_mode = not dark_mode
     update_save_indicator()
 
 if __name__ == "__main__":
