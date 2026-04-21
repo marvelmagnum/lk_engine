@@ -39,6 +39,9 @@ cloud_icon_off = None
 internet_icon_on = None
 internet_icon_off = None
 internet_check_in_progress = False
+pending_cloud_sync = False
+SAVE_PENDING_BG = "white"
+SAVE_SYNCED_BG = "#c6efce"
 CLOUD_STATUS_POLL_MS = 10000
 STATUS_ICON_WIDTH = 26
 
@@ -142,6 +145,7 @@ def load_image(image_path, image_label, text_widget):
         image_label.config(text=f"Failed to load image: {e}")
 
 def save_game():
+    global pending_cloud_sync
     # full_path = os.path.dirname(__file__)
     # game_file_path = os.path.join(full_path, "data", "game.sav")
     # with open(game_file_path, "w", encoding="utf-8") as text_file:
@@ -149,7 +153,31 @@ def save_game():
     save_payload = {
         "read_head": read_head
     }
-    saveman.save_game(1, save_payload)
+    cloud_sync_succeeded = saveman.save_game(1, save_payload, immediate_upload=True)
+
+    if cloud_sync_succeeded:
+        clear_pending_cloud_sync()
+
+    return cloud_sync_succeeded
+
+def update_save_indicator():
+    if title_widget is None:
+        return
+
+    # if pending_cloud_sync:
+    #     title_widget.config(bg=SAVE_PENDING_BG, fg="black")
+    # else:
+    #     title_widget.config(bg=SAVE_SYNCED_BG, fg="black")
+
+def mark_pending_cloud_sync():
+    global pending_cloud_sync
+    pending_cloud_sync = True
+    update_save_indicator()
+
+def clear_pending_cloud_sync():
+    global pending_cloud_sync
+    pending_cloud_sync = False
+    update_save_indicator()
 
 def load_game():
     # full_path = os.path.dirname(__file__)
@@ -168,6 +196,7 @@ def load_game():
         target = str(loaded["read_head"])
         if target in book_data:
             link_item(target)
+            clear_pending_cloud_sync()
 
 
 def show_world():
@@ -274,10 +303,24 @@ def _close_region(win):
     win.destroy()
     region_window = None
 
+def show_notes():
+    mark_pending_cloud_sync()
+    tk.messagebox.showinfo("Notes", "Notes feature is not implemented yet.")
+
+def show_party():
+    mark_pending_cloud_sync()
+    tk.messagebox.showinfo("Party", "Party feature is not implemented yet.")
+
+def on_link_button_click(target_index):
+    if str(target_index) != str(read_head):
+        mark_pending_cloud_sync()
+    link_item(target_index)
+
 def on_app_close():
     if saveman:
         try:
-            saveman.sync_all_saves()
+            if pending_cloud_sync:
+                save_game()
         except Exception:
             pass
     if root:
@@ -374,7 +417,7 @@ def poll_status_indicators():
 def main():
     # load book data
     load_data("book.csv")
-    
+
     # Create the main tkinter window
     global root
     global saveman
@@ -400,9 +443,16 @@ def main():
     load_button = tk.Button(title_frame, text="Load", font=("Impact", 12), command=load_game)
     load_button.pack(side=tk.LEFT, padx=(10, 2), pady=10)
 
+    load_divider = tk.Frame(title_frame, width=1, height=24, bg=bg_color)
+    load_divider.pack(side=tk.LEFT, padx=(2, 4), pady=10)
+
     # Add "World" button to the right of "Load"
     world_button = tk.Button(title_frame, text="World", font=("Impact", 12), command=show_world)
-    world_button.pack(side=tk.LEFT, padx=(2, 10), pady=10)
+    world_button.pack(side=tk.LEFT, padx=(2, 2), pady=10)
+
+    # Add "Region" button next to "World"
+    region_button = tk.Button(title_frame, text="Region", font=("Impact", 12), command=show_region)
+    region_button.pack(side=tk.LEFT, padx=(2, 5), pady=10)
 
     # Cloud and internet status indicators
     global cloud_status_label
@@ -432,17 +482,25 @@ def main():
 
     # Create the Text widget for displaying the title (Non-Scrollable)
     global title_widget
-    title_widget = tk.Label(title_frame, text="Title Placeholder", font=("Impact", 16), 
-                            bg=bg_color, fg=fg_color, padx=10, pady=10)
+    title_widget = tk.Label(title_frame, text="Title Placeholder", font=("Impact", 16),
+                            bg=SAVE_SYNCED_BG, fg="black", padx=10, pady=10)
     title_widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
+    update_save_indicator()
 
     # Add "Save" button to the right of the title
     save_button = tk.Button(title_frame, text="Save", font=("Impact", 12), command=save_game)
     save_button.pack(side=tk.RIGHT, padx=(2, 10), pady=10)
 
-    # Add "Region" button to the left of "Save"
-    region_button = tk.Button(title_frame, text="Region", font=("Impact", 12), command=show_region)
-    region_button.pack(side=tk.RIGHT, padx=(10, 2), pady=10)
+    save_divider = tk.Frame(title_frame, width=1, height=24, bg=bg_color)
+    save_divider.pack(side=tk.RIGHT, padx=(2, 4), pady=10)
+
+    # Add "Party" button to the left of the "Save"
+    party_button = tk.Button(title_frame, text="Party", font=("Impact", 12), command=show_party)
+    party_button.pack(side=tk.RIGHT, padx=(2, 2), pady=10)
+
+    # Add "Notes" button to the left of the "Party"
+    notes_button = tk.Button(title_frame, text="Notes", font=("Impact", 12), command=show_notes)
+    notes_button.pack(side=tk.RIGHT, padx=(5, 2), pady=10)
 
     # Keep cloud status on the right side for symmetry with net status on the left.
     cloud_status_label.pack(side=tk.RIGHT, padx=(6, 2), pady=10)
@@ -451,7 +509,7 @@ def main():
     global image_frame
     image_frame = tk.Frame(main_frame)
     image_frame.pack(fill=tk.X)
-  
+
     # Create a frame for the text area (left side)
     global text_frame
     text_frame = tk.Frame(main_frame)
@@ -487,14 +545,14 @@ def main():
     # Run the application
     root.mainloop()
 
-# link story item 
+# link story item
 def link_item(index):
     # Reset text widget height
     text_widget.config(height=int(660 / 20))  # Reset to default height
 
     global image_label
     global text_frame
-    
+
     # Check if the book item has an image
     if book_data[index].img:
         # If image_label doesn't exist, create it and pack the image_frame
@@ -548,7 +606,7 @@ def link_item(index):
                 if not next_match or match.start() < next_match.start():
                     next_match = match
                     tag_name = name
-        
+
         if next_match:
             # Insert normal text before the matched tag
             normal_text = book_data[index].content[pos:pos + next_match.start()]
@@ -557,16 +615,16 @@ def link_item(index):
             if tag_name == "combat_table_tag":
                 # Process table content
                 table_text = next_match.group(1).strip()
-                
+
                 # Split table cells by lines
                 table_cells = [line.strip() for line in table_text.split('\n') if line.strip()]
-                
+
                 # Break cells into rows of 4 items each
                 rows = [table_cells[i:i+4] for i in range(0, len(table_cells), 4)]
-                
+
                 # Determine max column widths for alignment
                 col_widths = [max(len(row[i]) for row in rows) for i in range(4)]
-                
+
                 # Insert table rows
 
                 for idx, row in enumerate(rows):
@@ -589,16 +647,16 @@ def link_item(index):
             elif tag_name == "market_table_tag":
                 # Process table content
                 table_text = next_match.group(1).strip()
-                
+
                 # Split table cells by lines
                 table_cells = [line.strip() for line in table_text.split('\n') if line.strip()]
-                
+
                 # Break cells into rows of 4 items each
                 rows = [table_cells[i:i+3] for i in range(0, len(table_cells), 3)]
-                
+
                 # Determine max column widths for alignment
                 col_widths = [max(len(row[i]) for row in rows) for i in range(3)]
-                
+
                 # Insert table rows
 
                 for idx, row in enumerate(rows):
@@ -617,7 +675,7 @@ def link_item(index):
                                 items.append(col.rstrip('\t').ljust(col_widths[j]))
 
                         formatted_row = " ".join(items)
-                        text_widget.insert(tk.END, formatted_row + '\n', "table_tag")          
+                        text_widget.insert(tk.END, formatted_row + '\n', "table_tag")
             else:
                 # Insert formatted text for bold or italic
                 formatted_text = next_match.group(1)
@@ -641,12 +699,12 @@ def link_item(index):
 
 # show a button for each item. Items is a list containing indexes
 def show_buttons(items):
-    uniques = [] 
+    uniques = []
     # remove duplicate links
     for item in items:
         if item not in uniques:
             uniques.append(item)
-    
+
     count = len(uniques)
     # can hold max 12 buttons
     # Adjust for best fit buttons (Optimal specs: width 5 chars, pad= 10 px)
@@ -663,7 +721,7 @@ def show_buttons(items):
 
     # Create some buttons and add them to the button_frame
     for item in uniques:
-        button = tk.Button(button_frame, text=item, width=final_width, command=partial(link_item, item), font=("Impact", 12))
+        button = tk.Button(button_frame, text=item, width=final_width, command=partial(on_link_button_click, item), font=("Impact", 12))
         button.pack(side=tk.LEFT, padx=final_pad, pady=10)
         buttons.append(button)
 
@@ -678,6 +736,7 @@ def switch_theme():
 
     title_widget.config(bg=bg_color, fg=fg_color)
     text_widget.config(bg=bg_color, fg=fg_color)
+    update_save_indicator()
 
 if __name__ == "__main__":
     main()

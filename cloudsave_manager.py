@@ -202,7 +202,7 @@ class CloudSaveManager:
         bg_color = "#2d2d2d"
         text_color = "#e0e0e0"
         button_style = {
-            'bg': '#4a6ea9', 
+            'bg': '#4a6ea9',
             'fg': 'white',
             'activebackground': '#5d8aff',
             'borderwidth': 0,
@@ -422,12 +422,16 @@ class CloudSaveManager:
             "timestamp": datetime.now().isoformat(),
             "data": game_data
         }
-        
+
         with open(save_path, 'w') as f:
             json.dump(save_data, f)
-            
-        if immediate_upload and self.drive:
-            self._upload_to_cloud(slot, save_data)
+
+        if immediate_upload:
+            if not self.refresh_connection_status():
+                return False
+            return self._upload_to_cloud(slot, save_data)
+
+        return True
 
     def load_game(self, slot):
         """Load with full conflict resolution"""
@@ -557,14 +561,24 @@ class CloudSaveManager:
             return False
 
         uploaded = 0
+        failed = 0
+        found_local_save = False
         for slot in range(1, 6):  # Assuming 5 save slots
             local = self._load_local(slot)
             if local:
+                found_local_save = True
                 if self._upload_to_cloud(slot, local):
                     uploaded += 1
+                else:
+                    failed += 1
 
         if uploaded:
-            self._show_info_popup(f"{uploaded} save(s) synced to cloud!")
+            self._show_info_popup(f"Saved game synced to cloud!")
+
+        if not found_local_save:
+            return True
+
+        return failed == 0
 
 
     def show_reconnect_button(self):
