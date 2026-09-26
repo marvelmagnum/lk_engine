@@ -29,6 +29,7 @@ fg_color = "black"
 bg_color = "white"
 world_window = None
 region_window = None
+notes_window = None
 saveman = None
 cloud_status_label = None
 internet_status_label = None
@@ -304,8 +305,30 @@ def _close_region(win):
     region_window = None
 
 def show_notes():
-    mark_pending_cloud_sync()
-    tk.messagebox.showinfo("Notes", "Notes feature is not implemented yet.")
+    global notes_window
+
+    # Toggle: close if already open
+    if notes_window is not None and tk.Toplevel.winfo_exists(notes_window):
+        notes_window.destroy()
+        notes_window = None
+        return
+
+    win = tk.Toplevel(root)
+    win.title("Notes")
+    win.resizable(True, True)
+    win.geometry("500x400")
+
+    notes_text = tk.Text(win, wrap=tk.WORD, font=("Cascadia Mono", 11), padx=10, pady=10)
+    notes_text.pack(fill=tk.BOTH, expand=True)
+    notes_text.focus_set()
+
+    notes_window = win
+    win.protocol("WM_DELETE_WINDOW", lambda: _close_notes(win))
+
+def _close_notes(win):
+    global notes_window
+    win.destroy()
+    notes_window = None
 
 def show_party():
     mark_pending_cloud_sync()
