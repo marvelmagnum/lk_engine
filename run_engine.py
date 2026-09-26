@@ -1,5 +1,6 @@
 import tkinter as tk
 import tkinter.messagebox
+from tkinter import ttk
 import csv
 import os
 import re
@@ -30,6 +31,8 @@ bg_color = "white"
 world_window = None
 region_window = None
 notes_window = None
+place_notes = {}
+current_notes_place = None
 saveman = None
 cloud_status_label = None
 internet_status_label = None
@@ -152,7 +155,8 @@ def save_game():
     # with open(game_file_path, "w", encoding="utf-8") as text_file:
     #     text_file.write(read_head)
     save_payload = {
-        "read_head": read_head
+        "read_head": read_head,
+        "notes": place_notes
     }
     cloud_sync_succeeded = saveman.save_game(1, save_payload, immediate_upload=True)
 
@@ -198,6 +202,10 @@ def load_game():
         if target in book_data:
             link_item(target)
             clear_pending_cloud_sync()
+
+    if isinstance(loaded, dict) and isinstance(loaded.get("notes"), dict):
+        place_notes.clear()
+        place_notes.update(loaded["notes"])
 
 
 def show_world():
@@ -304,13 +312,112 @@ def _close_region(win):
     win.destroy()
     region_window = None
 
+def _notes_selection_range(text_widget):
+    try:
+        return text_widget.index("sel.first"), text_widget.index("sel.last")
+    except tk.TclError:
+        return None, None
+
+def _ask_yes_no_centered(parent, title, message):
+    result = {"value": False}
+    dialog = tk.Toplevel(parent)
+    dialog.title(title)
+    dialog.resizable(False, False)
+    dialog.transient(parent)
+
+    tk.Label(dialog, text=message, padx=20, pady=16, wraplength=300, justify=tk.LEFT).pack()
+
+    button_frame = tk.Frame(dialog)
+    button_frame.pack(pady=(0, 12))
+
+    def on_yes():
+        result["value"] = True
+        dialog.destroy()
+
+    def on_no():
+        result["value"] = False
+        dialog.destroy()
+
+    tk.Button(button_frame, text="Yes", width=8, command=on_yes).pack(side=tk.LEFT, padx=6)
+    tk.Button(button_frame, text="No", width=8, command=on_no).pack(side=tk.LEFT, padx=6)
+
+    dialog.protocol("WM_DELETE_WINDOW", on_no)
+
+    # Center over the parent window, not the screen
+    dialog.update_idletasks()
+    w, h = dialog.winfo_width(), dialog.winfo_height()
+    x = parent.winfo_rootx() + (parent.winfo_width() - w) // 2
+    y = parent.winfo_rooty() + (parent.winfo_height() - h) // 2
+    dialog.geometry(f"{w}x{h}+{x}+{y}")
+
+    dialog.grab_set()
+    dialog.focus_set()
+    parent.wait_window(dialog)
+
+    return result["value"]
+
+def _toggle_notes_style(text_widget, toggle_bold=False, toggle_italic=False):
+    start, end = _notes_selection_range(text_widget)
+    if not start:
+        return
+    current_tags = text_widget.tag_names(start)
+    is_bold = "bold" in current_tags or "bold_italic" in current_tags
+    is_italic = "italic" in current_tags or "bold_italic" in current_tags
+
+    new_bold = (not is_bold) if toggle_bold else is_bold
+    new_italic = (not is_italic) if toggle_italic else is_italic
+
+    for tag in ("bold", "italic", "bold_italic"):
+        text_widget.tag_remove(tag, start, end)
+
+    if new_bold and new_italic:
+        text_widget.tag_add("bold_italic", start, end)
+    elif new_bold:
+        text_widget.tag_add("bold", start, end)
+    elif new_italic:
+        text_widget.tag_add("italic", start, end)
+
+def _toggle_notes_underline(text_widget):
+    start, end = _notes_selection_range(text_widget)
+    if not start:
+        return
+    if "underline" in text_widget.tag_names(start):
+        text_widget.tag_remove("underline", start, end)
+    else:
+        text_widget.tag_add("underline", start, end)
+
+NOTES_STYLE_TAGS = ("bold", "italic", "bold_italic", "underline")
+
+def _serialize_notes(text_widget):
+    data = {"text": text_widget.get("1.0", "end-1c"), "tags": {}}
+    for tag in NOTES_STYLE_TAGS:
+        ranges = text_widget.tag_ranges(tag)
+        pairs = [[str(ranges[i]), str(ranges[i + 1])] for i in range(0, len(ranges), 2)]
+        if pairs:
+            data["tags"][tag] = pairs
+    return data
+
+def _apply_notes_data(text_widget, data):
+    text_widget.delete("1.0", tk.END)
+    if isinstance(data, str):
+        text_widget.insert("1.0", data)
+        return
+    if not isinstance(data, dict):
+        return
+    text_widget.insert("1.0", data.get("text", ""))
+    for tag, pairs in data.get("tags", {}).items():
+        for start, end in pairs:
+            try:
+                text_widget.tag_add(tag, start, end)
+            except tk.TclError:
+                pass
+
 def show_notes():
     global notes_window
 
     # Toggle: close if already open
     if notes_window is not None and tk.Toplevel.winfo_exists(notes_window):
-        notes_window.destroy()
-        notes_window = None
+        _close_notes(notes_window)
         return
 
     win = tk.Toplevel(root)
@@ -318,15 +425,123 @@ def show_notes():
     win.resizable(True, True)
     win.geometry("500x400")
 
-    notes_text = tk.Text(win, wrap=tk.WORD, font=("Cascadia Mono", 11), padx=10, pady=10)
-    notes_text.pack(fill=tk.BOTH, expand=True)
+    top_bar = tk.Frame(win)
+    top_bar.pack(fill=tk.X, padx=8, pady=8)
+
+    tk.Label(top_bar, text="Place:", font=("Impact", 11)).pack(side=tk.LEFT, padx=(0, 6))
+
+    place_var = tk.StringVar()
+    place_combo = ttk.Combobox(top_bar, textvariable=place_var, values=sorted(place_notes.keys()))
+    place_combo.pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+    add_button = tk.Button(top_bar, text="Add", font=("Impact", 10))
+    add_button.pack(side=tk.LEFT, padx=(6, 0))
+
+    remove_button = tk.Button(top_bar, text="Del", font=("Impact", 10))
+    remove_button.pack(side=tk.LEFT, padx=(4, 0))
+
+    notes_frame = tk.Frame(win)
+    notes_frame.pack(fill=tk.BOTH, expand=True, padx=8, pady=(0, 8))
+
+    notes_text = tk.Text(notes_frame, wrap=tk.WORD, font=("Cascadia Mono", 11), padx=10, pady=10)
+    notes_text.grid(row=0, column=0, sticky="nsew")
+
+    notes_scrollbar = tk.Scrollbar(notes_frame, command=notes_text.yview)
+    notes_scrollbar.grid(row=0, column=1, sticky="ns")
+    notes_text.config(yscrollcommand=notes_scrollbar.set)
+
+    notes_frame.grid_rowconfigure(0, weight=1)
+    notes_frame.grid_columnconfigure(0, weight=1)
+
+    notes_text.tag_configure("bold", font=("Cascadia Mono", 11, "bold"))
+    notes_text.tag_configure("italic", font=("Cascadia Mono", 11, "italic"))
+    notes_text.tag_configure("bold_italic", font=("Cascadia Mono", 11, "bold italic"))
+    notes_text.tag_configure("underline", underline=True)
+
+    def on_bold(_event=None):
+        _toggle_notes_style(notes_text, toggle_bold=True)
+        return "break"
+
+    def on_italic(_event=None):
+        _toggle_notes_style(notes_text, toggle_italic=True)
+        return "break"
+
+    def on_underline(_event=None):
+        _toggle_notes_underline(notes_text)
+        return "break"
+
+    notes_text.bind("<Control-b>", on_bold)
+    notes_text.bind("<Control-i>", on_italic)
+    notes_text.bind("<Control-u>", on_underline)
+
+    def save_current_text():
+        if current_notes_place:
+            place_notes[current_notes_place] = _serialize_notes(notes_text)
+
+    def load_place(place):
+        global current_notes_place
+        _apply_notes_data(notes_text, place_notes.get(place, ""))
+        current_notes_place = place
+
+    def select_place(place):
+        save_current_text()
+        if place not in place_notes:
+            place_notes[place] = ""
+            place_combo["values"] = sorted(place_notes.keys())
+        place_var.set(place)
+        load_place(place)
+
+    def on_place_selected(_event=None):
+        new_place = place_var.get().strip()
+        if new_place:
+            select_place(new_place)
+
+    def on_add_place():
+        new_place = place_var.get().strip()
+        if new_place:
+            select_place(new_place)
+
+    def on_remove_place():
+        global current_notes_place
+        target = place_var.get().strip()
+        if not target or target not in place_notes:
+            return
+        if not _ask_yes_no_centered(win, "Remove Place", f"Delete \"{target}\" and all its notes?"):
+            return
+        del place_notes[target]
+        place_combo["values"] = sorted(place_notes.keys())
+        if current_notes_place == target:
+            current_notes_place = None
+        notes_text.delete("1.0", tk.END)
+        place_var.set("")
+
+    def on_text_change(_event=None):
+        save_current_text()
+
+    place_combo.bind("<<ComboboxSelected>>", on_place_selected)
+    place_combo.bind("<Return>", lambda e: on_add_place())
+    add_button.config(command=on_add_place)
+    remove_button.config(command=on_remove_place)
+    notes_text.bind("<KeyRelease>", on_text_change)
+
+    # Restore last-selected place, if any, otherwise fall back to the first known place
+    if current_notes_place and current_notes_place in place_notes:
+        place_var.set(current_notes_place)
+        load_place(current_notes_place)
+    elif place_notes:
+        first_place = sorted(place_notes.keys())[0]
+        place_var.set(first_place)
+        load_place(first_place)
+
     notes_text.focus_set()
 
     notes_window = win
-    win.protocol("WM_DELETE_WINDOW", lambda: _close_notes(win))
+    win.protocol("WM_DELETE_WINDOW", lambda: _close_notes(win, save_current_text))
 
-def _close_notes(win):
+def _close_notes(win, save_callback=None):
     global notes_window
+    if save_callback:
+        save_callback()
     win.destroy()
     notes_window = None
 
