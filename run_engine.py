@@ -671,13 +671,59 @@ def poll_status_indicators():
     root.after(CLOUD_STATUS_POLL_MS, poll_status_indicators)
 
 def main():
-    # load book data
-    load_data(f"{loaded_book_index}_book.csv")
+    global root
+    root = tk.Tk()
+    window_width = 555
+    window_height = 750
+    background = "#dddee0"
+    root.title("Legendary Kingdoms")
+    x = (root.winfo_screenwidth() - window_width) // 2
+    y = (root.winfo_screenheight() - window_height) // 2
+    root.geometry(f"{window_width}x{window_height}+{x}+{y}")
+    root.resizable(False, False)
+    root.configure(bg=background)
 
-    # Create the main tkinter window
+    data_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data")
+    title_image = resize_image(Image.open(os.path.join(data_path, "title.JPG")), window_width)
+    title_photo = ImageTk.PhotoImage(title_image)
+    title_label = tk.Label(root, image=title_photo, bg=background, borderwidth=0)
+    title_label.image = title_photo
+    title_label.place(x=0, y=0)
+
+    publisher_image = Image.open(os.path.join(data_path, "publisher.JPG"))
+    publisher_photo = ImageTk.PhotoImage(publisher_image)
+    publisher_label = tk.Label(root, image=publisher_photo, bg=background, borderwidth=0)
+    publisher_label.image = publisher_photo
+    publisher_label.place(relx=0, rely=1, anchor=tk.SW)
+
+    menu_frame = tk.Frame(root, bg=background)
+    tk.Button(
+        menu_frame, text="New Game", width=18, font=("Impact", 16),
+        bg=background, command=partial(start_game, False)
+    ).pack(pady=7)
+    tk.Button(
+        menu_frame, text="Load Game", width=18, font=("Impact", 16),
+        bg=background, command=partial(start_game, True)
+    ).pack(pady=7)
+    tk.Button(
+        menu_frame, text="Quit Game", width=18, font=("Impact", 16),
+        bg=background, command=root.destroy
+    ).pack(pady=7)
+    menu_frame.update_idletasks()
+    title_height = title_image.height
+    menu_center_y = title_height + (window_height - title_height) // 2
+    menu_frame.place(relx=0.5, y=menu_center_y, anchor=tk.CENTER)
+
+    root.mainloop()
+
+def start_game(load_saved=False):
     global root
     global saveman
-    root = tk.Tk()
+
+    load_data(f"{loaded_book_index}_book.csv")
+    for widget in root.winfo_children():
+        widget.destroy()
+
     root.title(book_title)
     root.geometry("606x800")
     root.resizable(False, False)
@@ -797,9 +843,8 @@ def main():
     Tooltip(button, "Toggle dark mode")
 
     link_item(read_head)
-
-    # Run the application
-    root.mainloop()
+    if load_saved:
+        load_game()
 
 # link story item
 def link_item(index):
