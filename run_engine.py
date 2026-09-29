@@ -272,7 +272,7 @@ def show_region():
         return
 
     full_path = os.path.dirname(os.path.realpath(__file__))
-    img_path = os.path.join(full_path, "data", "region.jpg")
+    img_path = os.path.join(full_path, "data", f"{loaded_book_index}_region.jpg")
 
     try:
         image = Image.open(img_path)
