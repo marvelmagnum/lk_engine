@@ -3,11 +3,12 @@ from tkinter import filedialog
 from PIL import Image, ImageTk
 import os
 import csv
+from book_config import BOOK_INDEX
 
 book_title = ""
 book_data = {}
-data_file_name = "book.csv"
-img_data_file = "images.csv"
+data_file_name = f"{BOOK_INDEX}_book.csv"
+img_data_file = f"{BOOK_INDEX}_images.csv"
 
 class BookIndex:
     content = ""
@@ -59,11 +60,37 @@ def validate_input(new_value):
     except ValueError:
         return False
 
+def update_image_mapping(image_name, section_index):
+    full_path = os.path.dirname(__file__)
+    data_path = os.path.join(full_path, "data", img_data_file)
+    rows = []
+
+    if os.path.exists(data_path):
+        with open(data_path, mode="r", encoding="utf-8", newline="") as infile:
+            rows = list(csv.reader(infile))
+
+    for row in rows:
+        if row and row[0] == image_name:
+            if len(row) < 2:
+                row.append(str(section_index))
+            else:
+                row[1] = str(section_index)
+            break
+    else:
+        rows.append([image_name, str(section_index)])
+
+    with open(data_path, mode="w", encoding="utf-8", newline="") as outfile:
+        csv.writer(outfile).writerows(rows)
+
 def image_viewer(root):
     full_path = os.path.dirname(__file__)
     folder_path = os.path.join(full_path, "data")
 
-    images = [f for f in os.listdir(folder_path) if f.lower().endswith((".jpg", ".jpeg"))]
+    images = sorted(
+        filename for filename in os.listdir(folder_path)
+        if filename.startswith(f"{BOOK_INDEX}_image_")
+        and filename.lower().endswith((".jpg", ".jpeg"))
+    )
     current_index = 0
     
     # Check if there are no jpeg images in the folder
@@ -71,14 +98,16 @@ def image_viewer(root):
         print("No JPEG images found in the folder.")
         root.quit()
 
-    # # for generating the initial image data file (commented)
-    # full_path = os.path.dirname(__file__)
-    # data_path = os.path.join(full_path, "data", img_data_file)
+    data_path = os.path.join(full_path, "data", img_data_file)
+    if not os.path.exists(data_path):
+        with open(data_path, mode="w", encoding="utf-8", newline="") as file:
+            csv.writer(file).writerows((img, "") for img in images)
 
-    # # fetch the img data and update book data
-    # with open(data_path, mode ='w', encoding="utf-8") as file:
-    #     for img in images:
-    #         file.write(img + ',\n')
+    image_sections = {}
+    with open(data_path, mode="r", encoding="utf-8", newline="") as file:
+        for row in csv.reader(file):
+            if len(row) > 1 and row[1].strip():
+                image_sections[row[0]] = row[1].strip()
 
     photo_references = []
     for img in images:
@@ -102,7 +131,9 @@ def image_viewer(root):
         # Print the contents of the textbox to the console
         img_link = textbox.get()
         if img_link in book_data.keys():
-            book_data[img_link].img = photo_references[current_index-1][1]
+            image_name = photo_references[current_index-1][1]
+            book_data[img_link].img = image_name
+            update_image_mapping(image_name, img_link)
         
         # Clear the textbox
         textbox.delete(0, tk.END)
@@ -135,7 +166,10 @@ def image_viewer(root):
 
                 # Update the image count and label
                 image_count_label.config(text=f"{current_index}/{len(photo_references)}")
-                image_name_label.config(text=f"{photo_references[current_index][1]}")
+                image_name = photo_references[current_index - 1][1]
+                image_name_label.config(text=image_name)
+                textbox.delete(0, tk.END)
+                textbox.insert(0, image_sections.get(image_name, ""))
 
                 # If this is the last image, change the button text to "Quit"
                 if current_index == len(photo_references):
@@ -174,9 +208,11 @@ def image_viewer(root):
     # Create a button to show the next image
     next_button = tk.Button(control_frame, text="Next", command=save_img_link)
     next_button.pack(side=tk.LEFT)  # Place the button to the right of the textbox
+    root.bind("<Return>", lambda _event: save_img_link())
 
     # Show the first image initially
     show_next_image()
+    textbox.focus_set()
 
 def add_image_data(filename):
     full_path = os.path.dirname(__file__)
@@ -212,7 +248,8 @@ def main():
     root.title("JPEG Image Viewer")
     root.resizable(False, False)
 
-    interactive_mode = False
+    interactive_mode = False  # Set to True to enable interactive image mapping mode; 
+            # False if you already have mapped image data and just need to pack the images to book data
 
     load_data(data_file_name)
 

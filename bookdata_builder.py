@@ -1,5 +1,6 @@
 import re
 import os
+from book_config import BOOK_INDEX
 
 book = ""
 
@@ -178,8 +179,8 @@ def convert_to_csv(input_file, output_file):
                     outfile.write(f"\n{section_number} {section_content}\n")
 
 # Input and output file paths
-input_file = 'extracted_text.txt'
-output_file = 'book.csv'
+input_file = f'{BOOK_INDEX}_extracted_text.txt'
+output_file = f'{BOOK_INDEX}_book.csv'
 
 # Convert the input file to the desired CSV format
 convert_to_csv(input_file, output_file)

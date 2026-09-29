@@ -3,6 +3,7 @@ import re
 import fitz  # PyMuPDF
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
+from book_config import BOOK_INDEX
 
 def extract_text_and_images(pdf_path):
     full_path = os.path.realpath(__file__)
@@ -52,7 +53,10 @@ def extract_text_and_images(pdf_path):
             image_count += 1
 
             # Save the image
-            image_filename = f"{image_path}/image_{image_count:03}_p{page_num + 1}_.{image_ext}"
+            image_filename = os.path.join(
+                image_path,
+                f"{BOOK_INDEX}_image_{image_count:03}_p{page_num + 1}_.{image_ext}"
+            )
             with open(image_filename, "wb") as img_file:
                 img_file.write(image_data)
     
@@ -64,7 +68,7 @@ def extract_text_and_images(pdf_path):
     extracted_text = find_tables(extracted_text)
     
     # Save the extracted text to a file
-    text_file_path = os.path.join(output_path, "extracted_text.txt")
+    text_file_path = os.path.join(output_path, f"{BOOK_INDEX}_extracted_text.txt")
     with open(text_file_path, "w", encoding="utf-8") as text_file:
         text_file.write(extracted_text)
     

@@ -16,6 +16,7 @@ import json
 
 
 root = None
+loaded_book_index = "b1"
 book_title = ""
 title_widget = None
 text_frame = None
@@ -31,6 +32,7 @@ bg_color = "white"
 world_window = None
 region_window = None
 notes_window = None
+party_window = None
 place_notes = {}
 current_notes_place = None
 saveman = None
@@ -546,8 +548,24 @@ def _close_notes(win, save_callback=None):
     notes_window = None
 
 def show_party():
-    mark_pending_cloud_sync()
-    tk.messagebox.showinfo("Party", "Party feature is not implemented yet.")
+    global party_window
+
+    if party_window is not None and tk.Toplevel.winfo_exists(party_window):
+        _close_party(party_window)
+        return
+
+    win = tk.Toplevel(root)
+    win.title("Party")
+    win.resizable(True, True)
+    win.geometry("500x400")
+
+    party_window = win
+    win.protocol("WM_DELETE_WINDOW", lambda: _close_party(win))
+
+def _close_party(win):
+    global party_window
+    win.destroy()
+    party_window = None
 
 def on_link_button_click(target_index):
     if str(target_index) != str(read_head):
@@ -654,7 +672,7 @@ def poll_status_indicators():
 
 def main():
     # load book data
-    load_data("book.csv")
+    load_data(f"{loaded_book_index}_book.csv")
 
     # Create the main tkinter window
     global root
